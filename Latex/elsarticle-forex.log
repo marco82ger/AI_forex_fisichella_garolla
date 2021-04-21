@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  21 APR 2021 11:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  21 APR 2021 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -382,42 +382,42 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 73.
- (./introduction.tex)
+ (./introduction.tex
 Overfull \hbox (2.22221pt too wide) has occurred while \output is active
 [] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 84.
+(hyperref)                removing `\<def>-command' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cnotenum' on input line 84.
+(hyperref)                removing `\cnotenum' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 84.
+(hyperref)                removing `\<def>-command' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@corref' on input line 84.
+(hyperref)                removing `\@corref' on input line 12.
 
 [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./elsarticle-forex.bbl) [2] (./elsarticle-forex.aux)
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(./filippo_exp.tex) [2] (./elsarticle-forex.bbl) [3] (./elsarticle-forex.aux)
 Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
-(rerunfilecheck)             Checksum: 6CD5936C1AE1AD457709C8927BDA528B;429.
+(rerunfilecheck)             Checksum: D653423F799AD5416C20B7E506E3E44A;491.
  ) 
 Here is how much of TeX's memory you used:
- 9526 strings out of 478994
- 140333 string characters out of 5858185
- 453100 words of memory out of 5000000
- 26868 multiletter control sequences out of 15000+600000
- 411257 words of font info for 53 fonts, out of 8000000 for 9000
+ 9515 strings out of 478994
+ 140240 string characters out of 5858185
+ 456100 words of memory out of 5000000
+ 26861 multiletter control sequences out of 15000+600000
+ 408492 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,7n,88p,454b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,7n,88p,753b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -435,10 +435,10 @@ ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (2 pages, 171271 bytes).
+Output written on elsarticle-forex.pdf (3 pages, 177224 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
