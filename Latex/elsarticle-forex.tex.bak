@@ -41,7 +41,7 @@
 
 \begin{frontmatter}
 
-\title{Elsevier \LaTeX\ template\tnoteref{mytitlenote}}
+\title{FOREX meet A.I.\tnoteref{mytitlenote}}
 \tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
 
 %% Group authors per affiliation:
@@ -80,6 +80,9 @@ This template helps you to create a properly formatted \LaTeX\ manuscript.
 
 %---------- RELATED WORK -----
 
+%---------- PRELIMINARIES ------
+
+\input{preliminaries}
 
 %---------- Experiments-----
 \input{filippo_exp}

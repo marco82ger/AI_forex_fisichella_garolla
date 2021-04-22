@@ -1,0 +1,8 @@
+\section{Preliminaries}
+
+\subsection{Trading System: Meta Trader 5}
+
+\subsection{Technical indicators}
+In our trading system, XX technical indicators are used as the basis of trading rules. These technical indicators are: Adaptive Moving Average, Average Directional Moving Index, Bollinger Bands, Double Exponential Moving Average, Envelope Moving Avarage, Parabolic SAR, Fractal Adaptive Moving Avarage, Standard Deviation, Triple Exponential Moving Average, Avarage True Range, Bears Power, Bulls Power, MACD (Moving Average Convergence Divergence), Stochastic oscillator, William' Percentage Range, Momentum, RSI (Relative Strength Index), and Heiken Ashi Candles.
+
+\subsection{TGenetic Algorithm}
