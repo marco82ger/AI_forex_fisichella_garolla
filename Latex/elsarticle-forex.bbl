@@ -5,6 +5,36 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{Raimundo18}
+M.~S. Raimundo, J.~Okamoto, Svr-wavelet adaptive model for forecasting
+  financial time series, in: 2018 International Conference on Information and
+  Computer Technologies (ICICT), 2018, pp. 111--114.
+\newblock \href {http://dx.doi.org/10.1109/INFOCT.2018.8356851}
+  {\path{doi:10.1109/INFOCT.2018.8356851}}.
+
+\bibitem{Taveeapiradeecharoen19}
+P.~Taveeapiradeecharoen, K.~Chamnongthai, N.~Aunsri, Bayesian compressed vector
+  autoregression for financial time-series analysis and forecasting, IEEE
+  Access 7 (2019) 16777--16786.
+\newblock \href {http://dx.doi.org/10.1109/ACCESS.2019.2895022}
+  {\path{doi:10.1109/ACCESS.2019.2895022}}.
+
+\bibitem{Serjam18}
+C.~Serjam, A.~Sakurai,
+  \href{https://doi.org/10.1007/s40595-018-0108-x}{Analyzing predictive
+  performance of linear models on high-frequency currency exchange rates},
+  Vietnam Journal of Computer Science 5~(2) (2018) 123--132.
+\newblock \href {http://dx.doi.org/10.1007/s40595-018-0108-x}
+  {\path{doi:10.1007/s40595-018-0108-x}}.
+\newline\urlprefix\url{https://doi.org/10.1007/s40595-018-0108-x}
+
+\bibitem{Achchab17}
+S.~Achchab, O.~Bencharef, A.~Ouaarab, A combination of regression techniques
+  and cuckoo search algorithm for forex speculation, in: {\'A}.~Rocha, A.~M.
+  Correia, H.~Adeli, L.~P. Reis, S.~Costanzo (Eds.), Recent Advances in
+  Information Systems and Technologies, Springer International Publishing,
+  Cham, 2017, pp. 226--235.
+
 \bibitem{Feynman1963118}
 R.~Feynman, F.~{Vernon Jr.}, The theory of a general quantum system interacting
   with a linear dissipative system, Annals of Physics 24 (1963) 118--173.

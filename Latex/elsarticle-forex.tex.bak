@@ -79,6 +79,8 @@ This template helps you to create a properly formatted \LaTeX\ manuscript.
 \input{introduction}
 
 %---------- RELATED WORK -----
+\input{relatedwork}
+
 
 %---------- PRELIMINARIES ------
 

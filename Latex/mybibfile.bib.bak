@@ -57,23 +57,3 @@ pages="226--235",
 abstract="This paper describes a hybrid model formed by a mixture of regression techniques and Cuckoo Search algorithm to speculate USD/EUR variations. Inspired by ARMA model we propose a dataset composed of historical data of USD/EUR and (JYN, EUR and BRP) variations. The dataset is used to train four regression algorithms: Multiple linear regression, Support vector regression, Partial Least Squares regression and CRT regression tree; the generated regression weights of these algorithms will be used as inputs to Cuckoo Search algorithm. The effectiveness of the proposed system against classical regression algorithms is confirmed by experiments on exchange rate prediction within the period from January 2014 to January 2016.",
 isbn="978-3-319-56535-4"
 }
-
-
-@article{Serjam18,
-	abstract = {We generate a large number of predictive models by applying linear kernel SVR to historical currency rates'bid data for three currency pairs obtained from high-frequency trading. The bid tick data are converted into equally spaced (1 min) data. Differences of price between the previous successive timeframes are used as features to predict the direction of movement of the price in the next timeframe. Different values for the number of training samples, number of features, and the length of the timeframes are used when learning the models. These models are used to conduct simulated currency trading in the year following the one in which the model was learned. Profits (sum of realized differences in best bid prices when order is executed), hit ratios, and number of trades executed using these models are recorded. The experiments indicate that while it is difficult to construct models using only historical data that consistently perform well, there are models that show good performance under certain pre-defined conditions, and that many of these models have an interesting property. Upon examining the parameters of these models, we discover that they have all negative coefficients and a negligibly small intercept, while having positive profits and good hit ratio. This suggests a simple yet effective trading strategy. Finally, we examine the historical data to find corroboration for the pattern suggested by the generated models and present the results.},
-	author = {Serjam, Chanakya and Sakurai, Akito},
-	da = {2018/05/01},
-	date-added = {2021-04-22 20:16:24 +0200},
-	date-modified = {2021-04-22 20:16:24 +0200},
-	doi = {10.1007/s40595-018-0108-x},
-	id = {Serjam2018},
-	isbn = {2196-8896},
-	journal = {Vietnam Journal of Computer Science},
-	number = {2},
-	pages = {123--132},
-	title = {Analyzing predictive performance of linear models on high-frequency currency exchange rates},
-	ty = {JOUR},
-	url = {https://doi.org/10.1007/s40595-018-0108-x},
-	volume = {5},
-	year = {2018},
-	Bdsk-Url-1 = {https://doi.org/10.1007/s40595-018-0108-x}}
