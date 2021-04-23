@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: elsarticle-forex.aux
 The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
-You've used 6 entries,
+You've used 8 entries,
             2937 wiz_defined-function locations,
-            722 strings with 6555 characters,
-and the built_in function-call counts, 2372 in all, are:
-= -- 239
-> -- 61
-< -- 2
-+ -- 24
-- -- 18
-* -- 187
-:= -- 319
-add.period$ -- 11
-call.type$ -- 6
-change.case$ -- 6
+            736 strings with 7461 characters,
+and the built_in function-call counts, 3223 in all, are:
+= -- 317
+> -- 94
+< -- 3
++ -- 36
+- -- 28
+* -- 261
+:= -- 435
+add.period$ -- 14
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 75
-empty$ -- 257
-format.name$ -- 24
-if$ -- 604
+cite$ -- 8
+duplicate$ -- 110
+empty$ -- 351
+format.name$ -- 38
+if$ -- 829
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 32
-num.names$ -- 8
-pop$ -- 39
+int.to.str$ -- 8
+missing$ -- 8
+newline$ -- 42
+num.names$ -- 12
+pop$ -- 61
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 144
+skip$ -- 186
 stack$ -- 0
-substring$ -- 168
-swap$ -- 33
-text.length$ -- 2
+substring$ -- 193
+swap$ -- 46
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 19
-width$ -- 7
-write$ -- 68
+while$ -- 24
+width$ -- 9
+write$ -- 90

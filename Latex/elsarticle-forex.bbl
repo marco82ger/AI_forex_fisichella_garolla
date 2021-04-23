@@ -35,16 +35,38 @@ S.~Achchab, O.~Bencharef, A.~Ouaarab, A combination of regression techniques
   Information Systems and Technologies, Springer International Publishing,
   Cham, 2017, pp. 226--235.
 
-\bibitem{Feynman1963118}
-R.~Feynman, F.~{Vernon Jr.}, The theory of a general quantum system interacting
-  with a linear dissipative system, Annals of Physics 24 (1963) 118--173.
-\newblock \href {http://dx.doi.org/10.1016/0003-4916(63)90068-X}
-  {\path{doi:10.1016/0003-4916(63)90068-X}}.
+\bibitem{Chandrinos18}
+S.~K. Chandrinos, N.~D. Lagaros,
+  \href{https://www.sciencedirect.com/science/article/pii/S2214716017301148}{Construction
+  of currency portfolios by means of an optimized investment strategy},
+  Operations Research Perspectives 5 (2018) 32--44.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.orp.2018.01.001}
+  {\path{doi:https://doi.org/10.1016/j.orp.2018.01.001}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S2214716017301148}
 
-\bibitem{Dirac1953888}
-P.~Dirac, The lorentz transformation and absolute time, Physica 19~(1-–12)
-  (1953) 888--896.
-\newblock \href {http://dx.doi.org/10.1016/S0031-8914(53)80099-6}
-  {\path{doi:10.1016/S0031-8914(53)80099-6}}.
+\bibitem{Pradeepkumar17}
+D.~Pradeepkumar, V.~Ravi,
+  \href{https://www.sciencedirect.com/science/article/pii/S1568494617301862}{Forecasting
+  financial time series volatility using particle swarm optimization trained
+  quantile regression neural network}, Applied Soft Computing 58 (2017) 35--52.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.asoc.2017.04.014}
+  {\path{doi:https://doi.org/10.1016/j.asoc.2017.04.014}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1568494617301862}
+
+\bibitem{Das19}
+S.~R. Das, Kuhoo, D.~Mishra, M.~Rout,
+  \href{https://www.sciencedirect.com/science/article/pii/S0378437118311476}{An
+  optimized feature reduction based currency forecasting model exploring the
+  online sequential extreme learning machine and krill herd strategies},
+  Physica A: Statistical Mechanics and its Applications 513 (2019) 339--370.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.physa.2018.09.021}
+  {\path{doi:https://doi.org/10.1016/j.physa.2018.09.021}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0378437118311476}
+
+\bibitem{Galeshchuk17}
+S.~Galeshchuk, S.~Mukherjee, Forex trading strategy optimization, in:
+  E.~Bucciarelli, S.-H. Chen, J.~M. Corchado (Eds.), Decision Economics: In the
+  Tradition of Herbert A. Simon's Heritage, Springer International Publishing,
+  Cham, 2018, pp. 69--76.
 
 \end{thebibliography}
