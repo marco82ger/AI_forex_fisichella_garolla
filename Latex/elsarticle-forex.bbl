@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -68,5 +68,105 @@ S.~Galeshchuk, S.~Mukherjee, Forex trading strategy optimization, in:
   E.~Bucciarelli, S.-H. Chen, J.~M. Corchado (Eds.), Decision Economics: In the
   Tradition of Herbert A. Simon's Heritage, Springer International Publishing,
   Cham, 2018, pp. 69--76.
+
+\bibitem{Ni19}
+L.~Ni, Y.~Li, X.~Wang, J.~Zhang, J.~Yu, C.~Qi,
+  \href{https://www.sciencedirect.com/science/article/pii/S1877050919302066}{Forecasting
+  of forex time series data based on deep learning}, Procedia Computer Science
+  147 (2019) 647--652, 2018 International Conference on Identification,
+  Information and Knowledge in the Internet of Things.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.procs.2019.01.189}
+  {\path{doi:https://doi.org/10.1016/j.procs.2019.01.189}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1877050919302066}
+
+\bibitem{Dash18}
+R.~Dash,
+  \href{https://www.sciencedirect.com/science/article/pii/S1568494618301029}{Performance
+  analysis of a higher order neural network with an improved shuffled frog
+  leaping algorithm for currency exchange rate prediction}, Applied Soft
+  Computing 67 (2018) 215--231.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.asoc.2018.02.043}
+  {\path{doi:https://doi.org/10.1016/j.asoc.2018.02.043}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1568494618301029}
+
+\bibitem{Ahmed20}
+S.~Ahmed, S.-U. Hassan, N.~R. Aljohani, R.~Nawaz,
+  \href{https://www.sciencedirect.com/science/article/pii/S1568494620307183}{Flf-lstm:
+  A novel prediction system using forex loss function}, Applied Soft Computing
+  97 (2020) 106780.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.asoc.2020.106780}
+  {\path{doi:https://doi.org/10.1016/j.asoc.2020.106780}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1568494620307183}
+
+\bibitem{58}
+B.~{Jubert de Almeida}, R.~{Ferreira Neves}, N.~Horta,
+  \href{https://www.sciencedirect.com/science/article/pii/S1568494618300036}{Combining
+  support vector machine with genetic algorithms to optimize investments in
+  forex markets with high leverage}, Applied Soft Computing 64 (2018) 596--613.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.asoc.2017.12.047}
+  {\path{doi:https://doi.org/10.1016/j.asoc.2017.12.047}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1568494618300036}
+
+\bibitem{59}
+T.~N.~T. Thu, V.~D. Xuan, Using support vector machine in forex predicting, in:
+  2018 IEEE International Conference on Innovative Research and Development
+  (ICIRD), 2018, pp. 1--5.
+\newblock \href {http://dx.doi.org/10.1109/ICIRD.2018.8376303}
+  {\path{doi:10.1109/ICIRD.2018.8376303}}.
+
+\bibitem{Lee19}
+R.~S. Lee,
+  \href{https://www.sciencedirect.com/science/article/pii/S2405918818300990}{Cosmos
+  trader – chaotic neuro-oscillatory multiagent financial prediction and
+  trading system}, The Journal of Finance and Data Science 5~(2) (2019) 61--82.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.jfds.2019.01.001}
+  {\path{doi:https://doi.org/10.1016/j.jfds.2019.01.001}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S2405918818300990}
+
+\bibitem{BARTOS201757}
+E.~Bartoš, R.~Pinčák,
+  \href{https://www.sciencedirect.com/science/article/pii/S0378437117302273}{Identification
+  of market trends with string and d2-brane maps}, Physica A: Statistical
+  Mechanics and its Applications 479 (2017) 57--70.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.physa.2017.03.014}
+  {\path{doi:https://doi.org/10.1016/j.physa.2017.03.014}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0378437117302273}
+
+\bibitem{8376549}
+P.~Taveeapiradeecharoen, N.~Aunsri, Dynamic model averaging for daily forex
+  prediction: A comparative study, in: 2018 International Conference on Digital
+  Arts, Media and Technology (ICDAMT), 2018, pp. 321--325.
+\newblock \href {http://dx.doi.org/10.1109/ICDAMT.2018.8376549}
+  {\path{doi:10.1109/ICDAMT.2018.8376549}}.
+
+\bibitem{CONTRERAS20181}
+A.~V. Contreras, A.~Llanes, A.~Pérez-Bernabeu, S.~Navarro, H.~Pérez-Sánchez,
+  J.~J. López-Espín, J.~M. Cecilia,
+  \href{https://www.sciencedirect.com/science/article/pii/S1569190X18300571}{Enmx:
+  An elastic network model to predict the forex market evolution}, Simulation
+  Modelling Practice and Theory 86 (2018) 1--10.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.simpat.2018.04.008}
+  {\path{doi:https://doi.org/10.1016/j.simpat.2018.04.008}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1569190X18300571}
+
+\bibitem{WILINSKI2019163}
+A.~Wilinski,
+  \href{https://www.sciencedirect.com/science/article/pii/S0957417419303033}{Time
+  series modeling and forecasting based on a markov chain with changing
+  transition matrices}, Expert Systems with Applications 133 (2019) 163--172.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.eswa.2019.04.067}
+  {\path{doi:https://doi.org/10.1016/j.eswa.2019.04.067}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0957417419303033}
+
+\bibitem{Seifollahi}
+S.~Seifollahi, M.~Shajari,
+  \href{https://doi.org/10.1007/s10844-018-0504-9}{Word sense disambiguation
+  application in sentiment analysis of news headlines: an applied approach to
+  forex market prediction}, Journal of Intelligent Information Systems 52~(1)
+  (2019) 57--83.
+\newblock \href {http://dx.doi.org/10.1007/s10844-018-0504-9}
+  {\path{doi:10.1007/s10844-018-0504-9}}.
+\newline\urlprefix\url{https://doi.org/10.1007/s10844-018-0504-9}
 
 \end{thebibliography}
