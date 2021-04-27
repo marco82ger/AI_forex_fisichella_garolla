@@ -169,4 +169,13 @@ S.~Seifollahi, M.~Shajari,
   {\path{doi:10.1007/s10844-018-0504-9}}.
 \newline\urlprefix\url{https://doi.org/10.1007/s10844-018-0504-9}
 
+\bibitem{OZTURK2016170}
+M.~Ozturk, I.~H. Toroslu, G.~Fidan,
+  \href{https://www.sciencedirect.com/science/article/pii/S1568494616300369}{Heuristic
+  based trading system on forex data using technical indicator rules}, Applied
+  Soft Computing 43 (2016) 170--186.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.asoc.2016.01.048}
+  {\path{doi:https://doi.org/10.1016/j.asoc.2016.01.048}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1568494616300369}
+
 \end{thebibliography}

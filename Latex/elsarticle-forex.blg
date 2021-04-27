@@ -7,45 +7,45 @@ Repeated entry---line 130 of file mybibfile.bib
  : @article{Chandrinos18
  :                      ,
 I'm skipping whatever remains of this entry
-You've used 19 entries,
+You've used 20 entries,
             2937 wiz_defined-function locations,
-            824 strings with 10660 characters,
-and the built_in function-call counts, 7147 in all, are:
-= -- 723
-> -- 198
+            833 strings with 10937 characters,
+and the built_in function-call counts, 7498 in all, are:
+= -- 760
+> -- 208
 < -- 5
-+ -- 78
-- -- 59
-* -- 602
-:= -- 963
-add.period$ -- 36
-call.type$ -- 19
-change.case$ -- 20
++ -- 82
+- -- 62
+* -- 635
+:= -- 1012
+add.period$ -- 38
+call.type$ -- 20
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 234
-empty$ -- 785
-format.name$ -- 77
-if$ -- 1857
+cite$ -- 20
+duplicate$ -- 244
+empty$ -- 822
+format.name$ -- 81
+if$ -- 1947
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 19
-newline$ -- 95
-num.names$ -- 23
-pop$ -- 120
+int.to.str$ -- 20
+missing$ -- 20
+newline$ -- 100
+num.names$ -- 24
+pop$ -- 125
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 410
+skip$ -- 427
 stack$ -- 0
-substring$ -- 398
-swap$ -- 100
+substring$ -- 419
+swap$ -- 104
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 49
-width$ -- 21
-write$ -- 212
+while$ -- 51
+width$ -- 22
+write$ -- 223
 (There was 1 error message)

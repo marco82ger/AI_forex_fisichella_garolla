@@ -252,3 +252,36 @@ author = {Antoni Wilinski},
 keywords = {Markov chain, Prediction in time series, Investment strategies, Machine learning, Transition matrices},
 abstract = {The subject of this research is prediction in a financial time series based on a model in the form of Markov chains. The essence of the considered algorithm is to create a sequence of time windows with a fixed length and a fixed division into intervals in the field of function values. The aim of the optimization consisting in finding the best window length, the number of windows and the number of intervals is to increase the predictive efficiency of the transition matrices. In the categories of expert systems, the presented computer program can be considered as imitating and replacing the investor in his manual activity and strongly supporting his mental effort. Two completely different time series were considered: the EUR/USD 1 h currency pair, and the WIG20 1d – the most important Polish stock exchange index. In both cases, the satisfactory adaptability of the proposed method was demonstrated, along with very good properties enabling the building of an effective investment strategy. Essential tests were performed for first-order Markov chains. These tests were also used for comparing the results of the study based on a Markov model of the second-order, which also achieved good results.}
 }
+
+@article{Seifollahi,
+	abstract = {Sentiment analysis of textual content has become a popular approach for market prediction. However, lack of a process for word sense disambiguation makes it questionable whether the sentiment expressed by the context is correctly identified. Meanwhile, many studies in natural language processing have focused on word sense disambiguation. However, there has been a weak link between the two logically relevant fields of study. Therefore, with two motivations, we propose a system for FOREX market prediction that exploits word sense disambiguation in sentiment analysis of news headlines and predicts the directional movement of a currency pair. The first motivation is the implementation of a novel word sense disambiguation that can determine the proper senses of all significant words in a news headline. The main contributions of this work that make the first motivation possible, are the introduction of novel approaches termed Relevant Gloss Retrieval, Similarity Threshold, Verb Nominalization, and also optimization measures to decrease execution time. The second motivation is to prove that determination of proper senses of significant words in textual contents can improve the determination of sentiment, conveyed by the context, and consequently any application based on sentiment analysis. Inclusion of the word sense disambiguation into the proposed system proves the achievement of the second motivation. Carried out tests with the same dataset prove that the proposed system outperforms one of the best systems (to our best knowledge) proposed for market prediction and improves accuracy from 83.33{\%} to 91.67{\%}. The detail for reproduction of the system is amply provided.},
+	author = {Seifollahi, Saeed and Shajari, Mehdi},
+	da = {2019/02/01},
+	date-added = {2021-04-26 17:01:33 +0200},
+	date-modified = {2021-04-26 17:01:33 +0200},
+	doi = {10.1007/s10844-018-0504-9},
+	id = {Seifollahi2019},
+	isbn = {1573-7675},
+	journal = {Journal of Intelligent Information Systems},
+	number = {1},
+	pages = {57--83},
+	title = {Word sense disambiguation application in sentiment analysis of news headlines: an applied approach to FOREX market prediction},
+	ty = {JOUR},
+	url = {https://doi.org/10.1007/s10844-018-0504-9},
+	volume = {52},
+	year = {2019},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s10844-018-0504-9}}
+
+@article{OZTURK2016170,
+title = {Heuristic based trading system on Forex data using technical indicator rules},
+journal = {Applied Soft Computing},
+volume = {43},
+pages = {170-186},
+year = {2016},
+issn = {1568-4946},
+doi = {https://doi.org/10.1016/j.asoc.2016.01.048},
+url = {https://www.sciencedirect.com/science/article/pii/S1568494616300369},
+author = {Murat Ozturk and Ismail Hakki Toroslu and Guven Fidan},
+keywords = {Forex, Technical analysis, Technical indicator, Trading rule, Heuristic methods, Genetic algorithm, Trading system},
+abstract = {Technical indicators are widely used in Forex and other financial markets which are the building blocks of many trading systems. A trading system is based on technical indicators or pattern-based approaches which produces buy/sell signals to trade in the market. In this paper, a heuristic based trading system on Forex data, which is developed using popular technical indicators is presented. The system grounds on selecting and combining the trading rules based on indicators using heuristic methods. The selection of the trading rules is realized by using Genetic algorithm and a greedy search heuristic. A weighted majority voting method is proposed to combine the technical indicator based trading rules to form a single trading rule. The experiments are conducted on 2 major currency pairs in 3 different time frames where promising results are achieved.}
+}

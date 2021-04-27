@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  26 APR 2021 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  27 APR 2021 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,20 +406,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-(./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex) (./trading.tex)
-(./filippo_exp.tex [6]) (./elsarticle-forex.bbl [7]) [8]
+(./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex [6]) (./trading.tex)
+(./filippo_exp.tex) [7] (./elsarticle-forex.bbl [8]) [9]
 (./elsarticle-forex.aux)
 Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
-(rerunfilecheck)             Checksum: 3F35DB26F0DB9CEDD2DC6C5A0DC55E6B;1844.
+(rerunfilecheck)             Checksum: 57D9FBA458634BA2E54474B0F91A6483;2036.
  ) 
 Here is how much of TeX's memory you used:
- 9621 strings out of 478994
- 141801 string characters out of 5858185
- 464372 words of memory out of 5000000
- 26928 multiletter control sequences out of 15000+600000
+ 9626 strings out of 478994
+ 141888 string characters out of 5858185
+ 461388 words of memory out of 5000000
+ 26931 multiletter control sequences out of 15000+600000
  408192 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,7n,88p,1334b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,7n,88p,1334b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -436,10 +436,10 @@ e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/
 21/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/202
 1/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/
 texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (8 pages, 207504 bytes).
+Output written on elsarticle-forex.pdf (9 pages, 209697 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
