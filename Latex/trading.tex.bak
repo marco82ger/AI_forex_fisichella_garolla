@@ -1,2 +1,84 @@
 \section{Trading Strategies}
 
+
+\subsection{The GA MOdGenetic Algorithm for variables' parameters selection}
+The unstable and chaotic structure of exchanges in FX market complicates forecast analysis. This leads to the utilization of optimisation methods. There are many heuristic methods, such as genetic algorithm (GA), simulated annealing (SA), etc. to resolve optimisation problems. Heuristic algorithms are extensively used for solving problems of high computational complexity, alternatively of going via all of the options, which takes up a considerable quantity of time. GA is one of the most popular heuristic optimisation approach that generates options which evolve in time \cite{OZTURK2016170}. GA is based totally on evolution and genetics. Heuristic strategies yield nearly but not necessarily optimal solution with reasonable computational effort and time.
+
+Genetic algorithm refers to the heuristic algorithm, which offers an acceptable answer to the hassle in the majority of virtually practically significant cases, however the correctness of the decisions has no longer been tested mathematically, and is used most frequently for problems, the analytical solution of which is very hard or even impossible.
+
+GA contains the concepts, borrowed from nature. These are the ideas of heredity and variability. Heredity is the capacity of organisms to transmit their traits and evolutionary characteristics to their offspring. Thanks to this capability, all living organisms pass the characteristics of their species in their offspring.
+
+The variety of genes in living beings assures the genetic variety of the population and is random, considering nature would not have a manner of knowing in advance which characteristics may be most useful for the future (weather exchange, famine, dryness and so forth.). This variability allows the appearance of creatures with new features, which could live in the new environmental conditions and transmit the new traits to the offspring.
+
+In GA there are two types of variations carried out within the algorithm: (i) the mutation, which is the variability arising due to the emergence of mutations; (ii) combination which arises from the aggregate of genes with the aid of mating.
+
+The \textit{gene} is the basic unit of information transfer: a structural and functional unit of heredity, which controls the development of a particular features or trait. We are able to call one variable of the function the gene. The gene is represented via a actual quantity: a real number. The set of gene- variables of the studied characteristic is the characterizing characteristic of the \textit{chromosome}.
+
+The chromosome representation of the  Slow Stochastic Oscillator rule is illustrated in Table \ref{tab:Chromosome} as an example, where K Period, D Period and Slowing are the genes.
+
+\begin{center}
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+K Period & D Period & Slowing \\ 
+\hline 
+10 & 3 & 6 \\ 
+\hline 
+\end{tabular} 
+\caption{\label{tab:Chromosome}Chromosome representation of the  Slow Stochastic Oscillator rule.}
+\end{table}
+\end{center}
+
+
+All samples of the identical evolutionary era are mixed into a population. Furthermore, the population is arbitrarily divided into two identical colonies: the parent and the descendant colonies. Due to crossing the parental species, which are decided on from the whole population, and different operators of the GA, there is a colony of offspring, which is identical to half the scale of the population.
+
+In our work, the GA algorithm module is implemented within the MetaTrader 5 platform~\footnote{https://www.metatrader5.com/en/trading-platform}.
+Hereafter we report the steps on how the GA module works:
+
+\begin{enumerate}
+\setlength\itemsep{0.3em}
+\item Firstly, a range of values as function of start-stop-step values is defined for each gene of a chromosome.
+\item Secondly, the chromosomes which represent the parameter combos are randomly generated to shape an initial proto-population.
+\item Thirdly, for each chromosome the fitness value is computed and sent to be simulated into the Trading Module.
+\item Finally, we run the main loop of the GA until the selected number of offspring iterations are generated:
+\begin{itemize}	
+	\item Making ready the population for reproduction, after disposing of chromosome duplicates.
+	\item Isolation and protection of the reference chromosome (with the best fitness cost).
+	\item For each mating and mutation, new parents are picked up on every time, getting ready the population for the subsequent era.
+	\item Evaluation of genes of the best offspring with the genes of the reference chromosome. If the chromosome of the best offspring is higher than the reference chromosome, then replace the reference chromosome.
+\end{itemize}
+\end{enumerate}
+
+We experimented with several parameters' values in order to tune the GA. For sake of clarity, there are no universal parameters' values, and it is a good practice to assign them on the basis of the domain. We varied the scale of the population, which range between 64 and 256, and the threshold value of the epochs number. We did not choose too large values, since this did not accelerate finding solution to the problem. 
+As a result, we have observed the subsequent parameter settings for GA pretty exceptional for our problem (Table~\ref{tab:GAPS}):
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Number of chromosomes in the colony} & 100 \\ 
+\hline 
+\textbf{Number of epochs without progress} &  50\\ 
+\hline 
+\textbf{Probability of mutation of each gene in \%} &  5\\  
+\hline 
+\end{tabular} 
+\caption{\label{tab:GAPS}GA parameter settings.}
+\end{table}
+
+
+The following optimization criteria were considered for GA and used with the fitness metric:
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item Balance max - the highest value of the balance.
+\item Net Profit max - the highest value of the net profit.
+\item Expected Payoff max - a statistically calculated value showing the average return of one deal.
+\item Drawdown max - difference between the initial deposit and the minimal level below initial deposit throughout the whole testing period.
+\item Recovery Factor max — the highest value of the riskiness of the strategy, i.e. the amount of money risked by the Expert Advisor to make the profit it obtained.
+\item Sharpe Ratio max — the highest value of the efficiency and stability of a strategy. It reflects the ratio of the arithmetical mean profit for the position holding time to the standard deviation from it.
+\end{itemize}
+
+For our GA module, we decided to use as fitness metric the net profit.
+In conclusion, the output of the GA module is a chromosome which has the greatest fitness value discovered.
+%https://www.mql5.com/en/articles/55

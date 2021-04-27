@@ -95,15 +95,6 @@ This template helps you to create a properly formatted \LaTeX\ manuscript.
 
 %-----
 
-\section{Front matter}
-
-The author names and affiliations could be formatted in two ways:
-\begin{enumerate}[(1)]
-\item Group the authors per affiliation.
-\item Use footnotes to indicate the affiliations.
-\end{enumerate}
-See the front matter of this document for examples. You are recommended to conform your choice to the journal you are submitting to.
-
 \bibliography{mybibfile}
 
 \end{document}

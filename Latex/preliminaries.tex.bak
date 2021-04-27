@@ -4,22 +4,3 @@
 
 \subsection{Technical indicators}
 In our trading system, XX technical indicators are used as the basis of trading rules. These technical indicators are: Adaptive Moving Average, Average Directional Moving Index, Bollinger Bands, Double Exponential Moving Average, Envelope Moving Avarage, Parabolic SAR, Fractal Adaptive Moving Avarage, Standard Deviation, Triple Exponential Moving Average, Avarage True Range, Bears Power, Bulls Power, MACD (Moving Average Convergence Divergence), Stochastic oscillator, William' Percentage Range, Momentum, RSI (Relative Strength Index), and Heiken Ashi Candles.
-
-\subsection{Genetic Algorithm for variables' parameters selection}
-The unstable and chaotic structure of exchanges in FX market complicates forecast analysis. This leads to the utilization of optimisation methods. There are many heuristic methods, such as genetic algorithm (GA), simulated annealing (SA), etc. to resolve optimisation problems. Heuristic algorithms are extensively used for solving problems of high computational complexity, alternatively of going via all of the options, which takes up a considerable quantity of time. GA is one of the most popular heuristic optimisation approach that generates options which evolve in time \cite{OZTURK2016170}. GA is based totally on evolution and genetics. Heuristic strategies yield nearly but not necessarily optimal solution with reasonable computational effort and time.
-
-Genetic algorithm refers to the heuristic algorithm, which offers an acceptable answer to the hassle in the majority of virtually practically significant cases, however the correctness of the decisions has no longer been tested mathematically, and is used most frequently for problems, the analytical solution of which is very hard or even impossible.
-
---
-GA contains the concepts, borrowed from nature. These are the ideas of heredity and variability. Heredity is the capacity of organisms to transmit their traits and evolutionary characteristics to their offspring. Thanks to this capability, all living organisms pass the characteristics of their species in their offspring.
-
-The variety of genes in living beings assures the genetic variety of the population and is random, considering nature would not have a manner of knowing in advance which characteristics may be most useful for the future (weather exchange, famine, dryness and so forth.). This variability allows the appearance of creatures with new features, which could live in the new environmental conditions and transmit the new traits to the offspring.
-
-In GA there are two types of variations carried out within the algorithm: (i) the mutation, which is the variability arising due to the emergence of mutations; (ii) combination which arises from the aggregate of genes with the aid of mating.
-
-The \textit{gene} is the basic unit of information transfer: a structural and functional unit of heredity, which controls the development of a particular features or trait. We are able to call one variable of the function the gene. The gene is represented via a actual quantity: a real number. The set of gene- variables of the studied characteristic is the characterizing characteristic of the \textit{chromosome}.
-
-
-All specimens of the same evolutionary era are combined into a population. Moreover, the population is arbitrarily divided into two equal colonies: the parent and the descendant colonies. As a result of crossing the parental species, which are selected from the entire population, and other operators of the GA, there is a colony of new offspring, which is equal to half the size of the population, which replaces the colony of the offspring in the population.
---
-https://www.mql5.com/en/articles/55
