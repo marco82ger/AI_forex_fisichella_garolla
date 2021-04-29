@@ -1,7 +1,58 @@
 \section{Trading Strategies}
 
+\subsection{Trading Simulation Layer}
+This layer is used to simulate any buying and selling rule on the given time series data with respect to specific currency pairs in order to generate buy/sell/StopLoss/TakeProfit signals (hereafter explained) and calculate net profit as well as different statistics (number trades/deals, total net profit, number of ticks, balance drawdown absolute/max/relative, consecutive wins/profit, consecutive losses, and many others.) at the end of the simulation. Our trading simulation system adopts a realistic approach to compute the net profit: we use a demo account with a trading broker \footnote{https://www.icmarkets.com/en/open-trading-account/demo/} simulating the placement of buy/sell positions. Our choice to go through a demo trading account is fundamental for realistically computing the gain and loss of our proposed approach. Finally, the net profit of the simulated trading rule is used as fitness value for the GA layer. 
 
-\subsection{The GA module: a Genetic Algorithm for variables' parameters selection}
+
+\textbf{CHECK Market Order page 82 ans SL and TP page 83. Riscrivere prox linea}
+
+The simulation and calculation of net profit of a trading rule is given in Algorithm \ref{alg:tradingSim}.
+
+\begin{algorithm}
+\KwIn{A set of extracted features $F$; a set of articles $A$; a fixed threshold $\tau$}
+\KwOut{all the feature burst distributions $\theta_{type}$, i.e. $\theta_v$, $\theta_d$, and $\theta_l$}
+\Begin{ 
+$N$ := count the number of articles within $A$\; 
+$D$ := count the number of distinct date $t$, according to articles' timestamps, in $A$\;
+$P[|F|]$ := array storing the dominant period $P_f$ for each feature $f \in F$\;
+$S[|F|]$ := array storing the dominant power spectrum $S_f$ for each feature $f \in F$\;
+$FeatureDistributions[|F|][D]$ := matrix storing the vectors of feature trajectories $y_f$ for each feature $f$ over the dates $t$\;
+$FourierFeatureDistributions[|F|][D]$ := matrix storing the decomposition of the vectors of feature trajectories $y_f$ into the sequence of complex vectors via the discrete Fourier transform $DFT$\;
+
+\For{each distinct date $t$ in $A$}{
+$N(t)$ := count the number of articles at date $t$\;
+} 
+\For{each feature $f$ in $F$ }{
+$DF_f$ := count the total number of articles containing entity $f$\; 
+\For{each distinct date $t$ in $A$ }{ 
+{ $DF_f(t)$ := count the number of articles containing feature $f$ at date $t$\; 
+\text{DF-IDF} := $ \frac{DF_f(t)}{N(t)}*\log \left(\frac{N}{DF_f}\right)$\; 
+Store \text{DF-IDF} into $FeatureDistributions[f][t]$\; 
+}
+}
+}
+Compute $FourierFeatureDistributions$ using $DFT$ on $FeatureDistributions$\;
+\For{each feature $f$ in $F$ }{
+$type$ := type of feature $f$\;
+$P[f]$ := compute the dominant period $P_f$ of the corresponding feature\;
+$S[f]$ := compute the dominant power spectrum $S_f$ of the corresponding feature\;
+\If{$S[f] \geq \tau$}{
+\If{$P[f] > \bigl\lceil \frac{P}{2} \bigr\rceil$}{
+Model the feature by a Gaussian distribution (aperiodic feature $f_{ap}$)\;
+}
+\Else{
+Model the feature by a mixture of $K=\lfloor P / P_f\rfloor$ Cauchy-Lorentz distributions (periodic feature $f_p$)\;
+}
+}
+}
+}
+\caption{Feature Analysis using feature burst distributions}
+\label{alg:tradingSim}
+\end{algorithm}
+
+\subsection{A.I. Convolutional Layer}
+
+\subsection{The GA layer: a Genetic Algorithm for variables' parameters selection}
 The unstable and chaotic structure of exchanges in FX market complicates forecast analysis. This leads to the utilization of optimisation methods. There are many heuristic methods, such as genetic algorithm (GA), simulated annealing (SA), etc. to resolve optimisation problems. Heuristic algorithms are extensively used for solving problems of high computational complexity, alternatively of going via all of the options, which takes up a considerable quantity of time. GA is one of the most popular heuristic optimisation approach that generates options which evolve in time \cite{OZTURK2016170}. GA is based totally on evolution and genetics. Heuristic strategies yield nearly but not necessarily optimal solution with reasonable computational effort and time.
 
 Genetic algorithm refers to the heuristic algorithm, which offers an acceptable answer to the hassle in the majority of virtually practically significant cases, however the correctness of the decisions has no longer been tested mathematically, and is used most frequently for problems, the analytical solution of which is very hard or even impossible.
@@ -33,14 +84,14 @@ K Period & D Period & Slowing \\
 
 All samples of the identical evolutionary era are mixed into a population. Furthermore, the population is arbitrarily divided into two identical colonies: the parent and the descendant colonies. Due to crossing the parental species, which are decided on from the whole population, and different operators of the GA, there is a colony of offspring, which is identical to half the scale of the population.
 
-In our work, the GA algorithm module is implemented within the MetaTrader 5 platform~\footnote{https://www.metatrader5.com/en/trading-platform}.
-Hereafter we report the steps on how the GA module works:
+In our work, the GA algorithm layer is implemented within the MetaTrader 5 platform~\footnote{https://www.metatrader5.com/en/trading-platform}.
+Hereafter we report the steps on how the GA layer works:
 
 \begin{enumerate}
 \setlength\itemsep{0.3em}
 \item Firstly, a range of values as function of start-stop-step values is defined for each gene of a chromosome.
 \item Secondly, the chromosomes which represent the parameter combos are randomly generated to shape an initial proto-population.
-\item Thirdly, for each chromosome the fitness value is computed and sent to be simulated into the Trading Module.
+\item Thirdly, for each chromosome the fitness value is computed and sent to be simulated into the Trading Layer.
 \item Finally, we run the main loop of the GA until the selected number of offspring iterations are generated:
 \begin{itemize}	
 	\item Making ready the population for reproduction, after disposing of chromosome duplicates.
@@ -79,6 +130,6 @@ The following optimization criteria were considered for GA and used with the fit
 \item Sharpe Ratio max — the highest value of the efficiency and stability of a strategy. It reflects the ratio of the arithmetical mean profit for the position holding time to the standard deviation from it.
 \end{itemize}
 
-For our GA module, we decided to use as fitness metric the net profit.
-In conclusion, the output of the GA module is a chromosome which has the greatest fitness value discovered.
+For our GA layer, we decided to use as fitness metric the net profit.
+In conclusion, the output of the GA layer is a chromosome which has the greatest fitness value discovered.
 %https://www.mql5.com/en/articles/55
