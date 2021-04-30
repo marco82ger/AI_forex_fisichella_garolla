@@ -4,51 +4,19 @@
 This layer is used to simulate any buying and selling rule on the given time series data with respect to specific currency pairs in order to generate buy/sell/StopLoss/TakeProfit signals (hereafter explained) and calculate net profit as well as different statistics (number trades/deals, total net profit, number of ticks, balance drawdown absolute/max/relative, consecutive wins/profit, consecutive losses, and many others.) at the end of the simulation. Our trading simulation system adopts a realistic approach to compute the net profit: we use a demo account with a trading broker \footnote{https://www.icmarkets.com/en/open-trading-account/demo/} simulating the placement of buy/sell positions. Our choice to go through a demo trading account is fundamental for realistically computing the gain and loss of our proposed approach. Finally, the net profit of the simulated trading rule is used as fitness value for the GA layer. 
 
 
-\textbf{CHECK Market Order page 82 ans SL and TP page 83. Riscrivere prox linea}
+\textbf{CHECK Market Order page 82 ans SL and TP page 83. Riscrivere prox linee}
 
 The simulation and calculation of net profit of a trading rule is given in Algorithm \ref{alg:tradingSim}.
+iI the first instance, an order is a request to make a trade to open a position.
 
-\begin{algorithm}
-\KwIn{A set of extracted features $F$; a set of articles $A$; a fixed threshold $\tau$}
-\KwOut{all the feature burst distributions $\theta_{type}$, i.e. $\theta_v$, $\theta_d$, and $\theta_l$}
-\Begin{ 
-$N$ := count the number of articles within $A$\; 
-$D$ := count the number of distinct date $t$, according to articles' timestamps, in $A$\;
-$P[|F|]$ := array storing the dominant period $P_f$ for each feature $f \in F$\;
-$S[|F|]$ := array storing the dominant power spectrum $S_f$ for each feature $f \in F$\;
-$FeatureDistributions[|F|][D]$ := matrix storing the vectors of feature trajectories $y_f$ for each feature $f$ over the dates $t$\;
-$FourierFeatureDistributions[|F|][D]$ := matrix storing the decomposition of the vectors of feature trajectories $y_f$ into the sequence of complex vectors via the discrete Fourier transform $DFT$\;
+A trade is made when the order is matched to a counterparty, ie if you are a buyer, you've found a seller to sell to you, or vice versa.
 
-\For{each distinct date $t$ in $A$}{
-$N(t)$ := count the number of articles at date $t$\;
-} 
-\For{each feature $f$ in $F$ }{
-$DF_f$ := count the total number of articles containing entity $f$\; 
-\For{each distinct date $t$ in $A$ }{ 
-{ $DF_f(t)$ := count the number of articles containing feature $f$ at date $t$\; 
-\text{DF-IDF} := $ \frac{DF_f(t)}{N(t)}*\log \left(\frac{N}{DF_f}\right)$\; 
-Store \text{DF-IDF} into $FeatureDistributions[f][t]$\; 
-}
-}
-}
-Compute $FourierFeatureDistributions$ using $DFT$ on $FeatureDistributions$\;
-\For{each feature $f$ in $F$ }{
-$type$ := type of feature $f$\;
-$P[f]$ := compute the dominant period $P_f$ of the corresponding feature\;
-$S[f]$ := compute the dominant power spectrum $S_f$ of the corresponding feature\;
-\If{$S[f] \geq \tau$}{
-\If{$P[f] > \bigl\lceil \frac{P}{2} \bigr\rceil$}{
-Model the feature by a Gaussian distribution (aperiodic feature $f_{ap}$)\;
-}
-\Else{
-Model the feature by a mixture of $K=\lfloor P / P_f\rfloor$ Cauchy-Lorentz distributions (periodic feature $f_p$)\;
-}
-}
-}
-}
-\caption{Feature Analysis using feature burst distributions}
-\label{alg:tradingSim}
-\end{algorithm}
+Once a trade is opened, you hold a position. A position is exposure to the market and will move the balance in your account up or down in line with market movements.
+
+Finally you place an order to close a position which will result in an trade opposite to the direction you initially took, eg if you initially bought, now you sell to close.
+
+
+
 
 \subsection{A.I. Convolutional Layer}
 

@@ -101,6 +101,76 @@ This template helps you to create a properly formatted \LaTeX\ manuscript.
 
 \input{trading}
 
+\begin{algorithm}
+\KwIn{
+
+$signal$: A trading signal: trading rule buy/sell signal data to open buy/sell position; 
+
+$marketMovingHoriz$: Definition of Market moving horizontally; 
+
+$symbol$: The selected currency pair;
+
+$stopLoss$: Initial fixed Stop-Loss in points;
+
+$sellPosCount$: The count of open SELL positions;
+
+$FixedVolume$:  Volume in lots;
+
+$RiskPercent$:  Maximum risk per trade with respect to the current balance;
+
+$takeProfit_XSL$: Multiplier factor of Take-Profit with respect to Stop-Loss}
+\KwOut{A list of opened positions}
+\While{$OnTick()$}{
+$newBar$= CheckNewBar()\;
+\If {$(newBar==true)$}{
+\tcc{Open BUY position and close all SELL positions}
+\If{$(signal==BUY)$}{
+\tcc{Close open SELL positions}
+\If{$(sellPosCount > 0)$}{
+CloseAllSellPosition()\;
+}
+\tcc{Do not open another BUY if there is a current BUY position opened with a price in a close range}
+\If{$(currentBar.Close > (lastPriceBuyOpenPosition + (marketMovingHoriz/2)) ||
+currentBar.Close < (lastPriceBuyOpenPosition - (marketMovingHoriz/2))$}
+{
+\tcc{Compute StopLoss, expressed in points}
+$dynamicStopLoss$ = DynamicStopLoss()\;
+$stopLossDistance$ = MathMax($dynamicStopLoss, stopLoss$)\; 
+\tcc{UseMoneyManagement. E.g. max Risk can be 10\%of the overall balance}
+$tradeSize$=MoneyManagement($symbol, FixedVolume, RiskPercent, stopLossDistance$)\;
+\tcc{takeProfit is X times stopLoss. If it is zero it is not considered}
+$buyProfit$ = BuyTakeProfit($symbol, takeProfit_XSL, currentBar.Price$)\; 
+\tcc{Buy}
+$glBuyPlaced$=Trade.Buy($tradeSize, stopLossDistance, buyProfit, symbol$)\; 
+}	
+}
+\tcc{Open SELL position and close all BUY positions}
+\If{$(signal==SELL)$}{
+\tcc{Close open BUY positions}
+\If{$(buyPosCount > 0)$}{
+CloseAllBuyPosition()\;
+}
+\tcc{Do not open another SELL if there is a current SELL position opened with a price in a close range}
+\If{$(currentBar.Close > (lastPriceSellOpenPosition + (marketMovingHoriz/2)) ||
+currentBar.Close < (lastPriceSellOpenPosition - (marketMovingHoriz/2))$}
+{
+\tcc{Compute StopLoss, expressed in points}
+$dynamicStopLoss$ = DynamicStopLoss()\;
+$stopLossDistance$ = MathMax($dynamicStopLoss, stopLoss$)\; 
+\tcc{UseMoneyManagement. E.g. max Risk can be 10\%of the overall balance}
+$tradeSize$=MoneyManagement($symbol, FixedVolume, RiskPercent, stopLossDistance$)\;
+\tcc{takeProfit is X times stopLoss. If it is zero it is not considered}
+$buyProfit$ = SellTakeProfit($symbol, takeProfit_XSL, currentBar.Price$)\; 
+\tcc{Buy}
+$glBuyPlaced$=Trade.Sell($tradeSize, stopLossDistance, buyProfit, symbol$)\; 
+}	
+}
+}
+}
+\caption{Opening buy and sell positions}
+\label{alg:tradingSim}
+\end{algorithm}
+
 %---------- Experiments-----
 \input{filippo_exp}
 
