@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  30 APR 2021 18:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  3 MAY 2021 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,53 +634,54 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 (./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex) (./trading.tex
-[6] [7] [8])
-Overfull \hbox (78.35713pt too wide) in paragraph at lines 172--172
+[6]
+Overfull \hbox (73.62915pt too wide) in paragraph at lines 79--79
 []$\OML/cmm/m/it/10 tradeSize$\OT1/cmr/m/n/10 =MoneyManagement($\OML/cmm/m/it/1
-0 symbol; FixedVolume; RiskPercent; stopLossDistance$\OT1/cmr/m/n/10 ); 
+0 symbol; fixedVolume; riskPercent; stopLossDistance$\OT1/cmr/m/n/10 ); 
  []
 
 
-Overfull \hbox (20.36096pt too wide) in paragraph at lines 172--172
+Overfull \hbox (20.36096pt too wide) in paragraph at lines 79--79
 []$\OML/cmm/m/it/10 glBuyPlaced$\OT1/cmr/m/n/10 =TradeBuy($\OML/cmm/m/it/10 tra
 deSize; stopLossDistance; buyProfit; symbol$\OT1/cmr/m/n/10 ); 
  []
 
-(./filippo_exp.tex) (./elsarticle-forex.bbl [9] [10] [11]) [12]
-(./elsarticle-forex.aux)
+[7] [8] [9] [10] [11]) (./filippo_exp.tex [12]) (./elsarticle-forex.bbl
+[13]) [14] (./elsarticle-forex.aux)
 Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
-(rerunfilecheck)             Checksum: 825F95FE20DA2983F04995CBD91DA304;2389.
+(rerunfilecheck)             Checksum: 669032F75EE605AAF20DE8B0B77406CC;3228.
  ) 
 Here is how much of TeX's memory you used:
- 13798 strings out of 478994
- 205934 string characters out of 5858185
- 543390 words of memory out of 5000000
- 30997 multiletter control sequences out of 15000+600000
- 411800 words of font info for 60 fonts, out of 8000000 for 9000
+ 13813 strings out of 478994
+ 206151 string characters out of 5858185
+ 544570 words of memory out of 5000000
+ 31004 multiletter control sequences out of 15000+600000
+ 412159 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,20n,88p,1334b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,19n,88p,1334b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (12 pages, 251518 bytes).
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on elsarticle-forex.pdf (14 pages, 270921 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 378 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
