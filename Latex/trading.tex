@@ -1,4 +1,20 @@
-\section{Trading Strategies}
+\section{The Trading System}
+In this section, we present our trading system which uses teh trading simulation modules and GA to select and combine trading rules coming both from technical indicators as depicted in the previous section and from our AI module described in Section~\ref{subsection:ai} to generate buy/sell signals. The trading system uses time series price data of 6 currency pairs: 4 major pairs like GBPUSD, EURUSD, USDCHF and USDJPY, and 2 minor pairs like EURGBP and GBPJPY.
+
+The idea to combine trading rules it is borrowed by the real world of trading, where traders and analysts before opening positions on the market try to confirm their decision suing different approaches and indicators. 
+
+Two phases constitute our proposed trading system: in the first phase, each trading rule, both the AI-based rule and the trading rules from technical indicators, is tested for selection and in the second phase, profitable rules among the qualified rules are selected and combined. Training data is used in the learning step of the trading system.
+
+An overview of the two phases of the proposed framework is illustrated in Fig.~\ref{fig:sys}. In the following sub-sections, the phases of the system are explained in detail.
+
+\begin{figure}[h]
+\includegraphics[scale=0.3]{framework}
+\centering
+\caption{The framework of our trading system.}
+\label{fig:sys} 
+\end{figure}
+
+
 
 \subsection{Trading Simulation Layer}
 \label{subsection:trading}
@@ -89,7 +105,7 @@ Secondly, we check if a signal $BUY$ has being triggered. If so, we verify if se
 \subsubsection{Money Management for computing the trade size}
 Money Management is a procedure to best set position size with respect to risk. Most traders use the same fixed trade volume for every trade. This can result in trades that are too large or too small for the amount of money that is being risked.
 
-To calculate an optimal trade size, we use the distance of the stop loss price from the trade entry price as well as a percentage of the current balance to determine the maximum risk per trade. A good guideline is to limit your risk per trade to 2-4\% of your current balance. This value was computed by our GA module (more details in Section~\ref{subsection:ga}), where the risk-value is represented as a gene of a chromosome. If for some reason we cannot calculate a trade volume (i.e. stop loss or percentage has not been specified), we will fall back to a specified fixed trade volume.
+To calculate an optimal trade size, we use the distance of the stop loss price from the trade entry price as well as a percentage of the current balance to determine the maximum risk per trade. A good guideline is to limit your risk per trade to 2-4\% of your current balance. This value was computed by our GA module (more details in Section~\ref{subsection:ga}), where the risk-value is represented as a gene (i.e. $risk\%$) of a chromosome. If for some reason we cannot calculate a trade volume (i.e. stop loss or percentage has not been specified), we will fall back to a specified fixed trade volume.
 
 Let's show the Algorithm~\ref{alg:mm} that explains the $MoneyManagement()$ method of Algorithm \ref{alg:tradingSim}. 
 
@@ -152,7 +168,7 @@ One of the most common error made by traders is invalid stop prices. A stop loss
 
 So far we introduced an initial fixed stop loss in points, but there are other ways of determining a stop loss price, such as using an indicator value or a technical support/resistance level. The DynamiyStopLoss() function in Algorithm \ref{alg:tradingSim} retrieves the lowest lowest Low (since we are opening a buy position, otherwise it would have been the highest High) of the last 5 bars and assign the result to $dynymicStopLoss$ variable. For sake of clarity, this value of checking the last 5 bars was computed by our GA module, where the interval-value is represented as a gene (i.e. $intervalSL$) of a chromosome. The same was, we computed the gene $takeProfitXSL$, as the multiplier factor of take profit with respect to stop loss, in points, and found out the best value equal to 2.
 
-We conclude this paragraph introducing the trailing stop. A trailing stop is a stop loss that moves as a position increases in profit. For a buy order, the trailing stop moves up in price as the position gains in profit, and for a sell order, the trailing stop moves down in price as the position gains in profit. A trailing stop typically follows the current price by a specified number of points, defined in our algorithm as $trailingStop$ variable. For example, if a trailing stop is set to $500$ points, then the stop loss begins moving once the current price is at least $500$ points away from the stop loss price. We can delay a trailing stop by requiring a minimum level of profit be reached first, specified in our algorithm as $minimumProfit$ variable. Both $trailingStop$ and $minimumProfit$ values are computed by our GA module as values of genes of a chromosome; the best output was found with $trailingStop$ equal to $450$ points and $minimumProfit$ equal to $700$ points. 
+We conclude this paragraph introducing the trailing stop. A trailing stop is a stop loss that moves as a position increases in profit. For a buy order, the trailing stop moves up in price as the position gains in profit, and for a sell order, the trailing stop moves down in price as the position gains in profit. A trailing stop typically follows the current price by a specified number of points, defined in our algorithm as $trailingStop$ variable. For example, if a trailing stop is set to $500$ points, then the stop loss begins moving once the current price is at least $500$ points away from the stop loss price. We can delay a trailing stop by requiring a minimum level of profit be reached first, specified in our algorithm as $minProfit$ variable. Both $trailingStop$ and $minProfit$ values are computed by our GA module as values of genes of a chromosome; the best output was found with $trailingStop$ equal to $450$ points and $minProfit$ equal to $700$ points. 
 
 Until now, we presented a fixed trailing stop, but we trailed also dynamically following an indicator, such as the Parabolic Stop and reverse (PSAR) indicator. The PSAR was used to set as stop loss that progressively moves closer to the high or low of the current bar. When the PSAR value gets close, or the trend reverses, the PSAR will reverse direction. If the PSAR is below the current bar, then we trail the stop for an open buy position. If the PSAR price is above the most current bar, then we will trail the stop for an open sell position. In our system, the usage or not of the dynamic trailing with PSAR indicator was evaluated by the GA module using a binary gene in the chromosome, which discarded its usage.
 
@@ -161,7 +177,9 @@ The last step of trading simulation layer is the computation of the total net pr
 For each open position that is closed, either due to reverse signal triggered by our system or meeting the stop loss or meeting the take profit, a profit or loss is computed. The sum of all the gains/losses in the entire temporal window under consideration for a specific currency pair constitutes our total net profit.
 
 
-\subsection{A.I. Convolutional Layer}
+\subsection{AI Convolutional Layer}
+\label{subsection:ai}
+
 
 \subsection{The GA layer: a Genetic Algorithm for variables' parameters selection}
 \label{subsection:ga}
@@ -177,16 +195,16 @@ In GA there are two types of variations carried out within the algorithm: (i) th
 
 The \textit{gene} is the basic unit of information transfer: a structural and functional unit of heredity, which controls the development of a particular features or trait. We are able to call one variable of the function the gene. The gene is represented via a actual quantity: a real number. The set of gene- variables of the studied characteristic is the characterizing characteristic of the \textit{chromosome}.
 
-The chromosome representation of the  Slow Stochastic Oscillator rule is illustrated in Table \ref{tab:Chromosome} as an example, where K Period, D Period and Slowing are the genes.
+The chromosome representation of the  Slow Stochastic Oscillator rule is illustrated in Table \ref{tab:Chromosome} as an example, where the period $K$, the period $D$ and $Slowing$ are the genes directly related to the oscillator, while the genes representing the interval of the stop loss, $intervalSL$, the multiplier factor of take profit with respect to stop loss, $takeProfitXSL$, the money management risk in percentage, $risk\%$, the trailing of the current price by a specified number of points, $trailingStop$, and the minimum profit for activating the trailing stop, $minProfit$, the are the genes related to the trade.
 
 \begin{center}
 \begin{table}[htb]
 \centering
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline 
-K Period & D Period & Slowing \\ 
+K & D & Slowing & intervalSL & takeProfitXSL & risk\% & trailingStop & minProfit\\ 
 \hline 
-10 & 3 & 6 \\ 
+10 & 3 & 6 & 5 & 2 & 2 & 500 & 700\\ 
 \hline 
 \end{tabular} 
 \caption{\label{tab:Chromosome}Chromosome representation of the  Slow Stochastic Oscillator rule.}

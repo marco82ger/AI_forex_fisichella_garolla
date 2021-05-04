@@ -7,11 +7,13 @@
 \usepackage{url}
 \usepackage[ruled,vlined]{algorithm2e}
 \usepackage{graphicx}
+\graphicspath{ {../img/} }
 \usepackage{subfig}
 \usepackage{verbatim}
 \usepackage{multirow}
 \usepackage [table]{xcolor}
 \usepackage{colortbl}
+
 \modulolinenumbers[5]
 
 \journal{Journal of \LaTeX\ Templates}
