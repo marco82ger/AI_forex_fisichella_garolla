@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  5 MAY 2021 18:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  6 MAY 2021 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,7 +634,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 (./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex) (./trading.tex
-<../img//framework.pdf, id=156, 891.06178pt x 440.34422pt>
+<../img//framework.pdf, id=160, 891.06178pt x 440.34422pt>
 File: ../img//framework.pdf Graphic file (type pdf)
 <use ../img//framework.pdf>
 Package pdftex.def Info: ../img//framework.pdf  used on input line 11.
@@ -655,16 +655,17 @@ Overfull \hbox (20.36096pt too wide) in paragraph at lines 100--100
 deSize; stopLossDistance; buyProfit; symbol$\OT1/cmr/m/n/10 ); 
  []
 
-[7 <../img//framework.pdf>] [8] [9] [10] [11] [12] [13]) (./filippo_exp.tex)
-(./elsarticle-forex.bbl [14] [15]) [16] (./elsarticle-forex.aux)
+[7 <../img//framework.pdf>] [8] [9] [10] [11] [12] [13] [14])
+(./filippo_exp.tex) (./elsarticle-forex.bbl [15] [16]) [17]
+(./elsarticle-forex.aux)
 Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
-(rerunfilecheck)             Checksum: 39CC615D28429E9FAC0B7D8CFCEACB69;3158.
+(rerunfilecheck)             Checksum: E4822ABD6770C288888715D6A55BFF54;3639.
  ) 
 Here is how much of TeX's memory you used:
- 13829 strings out of 478994
- 206423 string characters out of 5858185
- 545727 words of memory out of 5000000
- 31014 multiletter control sequences out of 15000+600000
+ 13839 strings out of 478994
+ 206547 string characters out of 5858185
+ 545933 words of memory out of 5000000
+ 31017 multiletter control sequences out of 15000+600000
  412159 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,19n,88p,1334b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -687,10 +688,10 @@ e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (16 pages, 320028 bytes).
+Output written on elsarticle-forex.pdf (17 pages, 322794 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 370 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 388 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

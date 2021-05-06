@@ -1,9 +1,9 @@
 \section{The Trading System}
-In this section, we present our trading system which uses the trading simulation layer and GA to select and combine trading rules coming both from technical indicators as depicted in the previous section and from our AI layer described in Section~\ref{subsection:ai} to generate buy/sell signals. The trading system uses time series price data of 6 currency pairs: 4 major pairs like GBPUSD, EURUSD, USDCHF and USDJPY, and 2 minor pairs like EURGBP and GBPJPY.
+In this section, we present our trading system which uses the trading simulation layer and GA to select and combine trading rules coming both from technical indicators, as depicted in the previous section, and from our AI layer, described in Section~\ref{subsection:ai}, to generate buy/sell signals. The trading system uses time series price data of 6 currency pairs: 4 major pairs like GBPUSD, EURUSD, USDCHF and USDJPY, and 2 minor pairs like EURGBP and GBPJPY.
 
-The idea to combine trading rules it is borrowed by the real world of trading, where traders and analysts before opening positions on the market try to confirm their decision suing different approaches and indicators. 
+The idea to combine trading rules it is borrowed by the real world of trading, where traders and analysts, before opening positions on the market, try to confirm their decision using different approaches and indicators. 
 
-Two phases constitute our proposed trading system: in the first phase, each trading rule, both the AI-based rule and the trading rules from technical indicators, is tested for selection and in the second phase, profitable rules among the qualified rules are selected and combined. Training data is used in the learning step of the trading system.
+Two phases constitute our proposed trading system: in the first phase, each trading rule, both the AI-based rule and the trading rules from technical indicators, are tested for selection and in the second phase, profitable rules among the qualified rules are selected and combined. Training data is used in the learning step of the trading system.
 
 An overview of the two phases of the proposed framework is illustrated in Fig.~\ref{fig:sys}. In the following sub-sections, the phases of the system are explained in detail.
 
@@ -15,9 +15,9 @@ An overview of the two phases of the proposed framework is illustrated in Fig.~\
 \end{figure}
 
 \subsection{Phase 1: each trading rule is tested for selection}
-The goal of this first phase is the selection of trading rules, both the AI-based rule and the trading rules from technical indicators. Three layers are employed in such a phase: AI (Section~\ref{subsection:ai}), GA (Section~\ref{subsection:ga}) and the Trading Simulation (Section~\ref{subsection:trading})layers. 
+The goal of this first phase is the selection of trading rules, both the AI-based rule and the trading rules from technical indicators. Three layers are employed in such a phase: AI (Section~\ref{subsection:ai}), GA (Section~\ref{subsection:ga}) and the Trading Simulation (Section~\ref{subsection:trading}) layers. 
 
-As depicted on the left part of Fig.~\ref{fig:sys}, each trading rules from technical indicators discussed in the previous section and for the AI-based rule are given as input to the GA layer which randomly generates chromosomes representing with their genes several parameter combinations both directly related to the specific trading rule (e.g. period $D$ for the Slow Stochastic Oscillator rule) and related to the trade (e.g. the money management risk in percentage, $risk\%$, explained hereafter). Then, all of these candidate rules with several parameter combos are simulated over the historical training data using the Trading Simulation layer which gives as output the Net Profit provided as the fitness value to the GA layer. Following, the best performing chromosome for each rule in term of net profit is selected. 
+As depicted on the left part of Fig.~\ref{fig:sys}, each trading rules from technical indicators, as discussed previously, and the AI-based rule are given as input to the GA layer which randomly generates chromosomes representing their genes with several parameter combinations both directly related to the specific trading rule (e.g. period $D$ for the Slow Stochastic Oscillator rule) and related to the trade (e.g. the money management risk in percentage, $risk\%$, explained hereafter). Then, all of these candidate rules with several parameter combos are simulated over the historical training data using the Trading Simulation layer which gives as output the Net Profit provided as the fitness value to the GA layer. Following, the best performing chromosome for each rule in term of net profit is selected. 
 The rules whose best chromosome does not have a positive net profit are directly eliminated and do not pass to the second phase.
 
 
@@ -102,7 +102,7 @@ $glBuyPlaced$=TradeBuy($tradeSize, stopLossDistance, buyProfit, symbol$)\;
 \end{algorithm}
 \vspace{\baselineskip}% Insert a blank line
 
-We first check if a new bar occurred. This is important to adhere to the respective period chosen, e.g. 1-minute,  5-minute, 15 minutes, an hourly, daily and weekly bar chart and so on.
+We first check if a new bar occurred. This is important to adhere to the respective period chosen, e.g. 1-minute,  5-minute, 15 minutes, an hourly, daily and weekly bar chart and so on. For our experimentation we chose 4-hours (4H).
 Secondly, we check if a signal $BUY$ has being triggered. If so, we verify if sell positions are still open and close them. Then, we check if there is another buy position opened previously with a price in a close range of the current one. If so, we do not open a new open position.
 
 \noindent At this point, we compute the trade size using the money management function, the stop loss and the take profit. Finally, we open the buy position. In the following sub sections, the details of the latter computations. 
@@ -201,9 +201,12 @@ The variety of genes in living beings assures the genetic variety of the populat
 
 In GA there are two types of variations carried out within the algorithm: (i) the mutation, which is the variability arising due to the emergence of mutations; (ii) combination which arises from the aggregate of genes with the aid of mating.
 
-The \textit{gene} is the basic unit of information transfer: a structural and functional unit of heredity, which controls the development of a particular features or trait. We are able to call one variable of the function the gene. The gene is represented via a actual quantity: a real number. The set of gene- variables of the studied characteristic is the characterizing characteristic of the \textit{chromosome}.
+The \textit{gene} is the basic unit of information transfer: a structural and functional unit of heredity, which controls the development of a particular features or trait. We are able to call one variable of the function the gene. The gene is represented via a actual quantity: a real number. The set of gene-variables of the studied characteristic is the characterizing characteristic of the \textit{chromosome}.
 
-The chromosome representation of the  Slow Stochastic Oscillator rule is illustrated in Table \ref{tab:Chromosome} as an example, where the period $K$, the period $D$ and $Slowing$ are the genes directly related to the oscillator, while the genes representing the interval of the stop loss, $intervalSL$, the multiplier factor of take profit with respect to stop loss, $takeProfitXSL$, the money management risk in percentage, $risk\%$, the trailing of the current price by a specified number of points, $trailingStop$, and the minimum profit for activating the trailing stop, $minProfit$, are the genes related to the trade.
+In our approach we have two types of chromosome representation: one associated to rules from technical indicator and one associated to AI-based rule. 
+The chromosome representing rules coming from technical indicators have two types of genes: the genes associated to the technical indicator and the genes associated to the trade.
+
+Let's provide an example: the chromosome representation of the  Slow Stochastic Oscillator rule is illustrated in Table \ref{tab:Chromosome}, where the period $K$, the period $D$ and $Slowing$ are the genes directly related to the oscillator, while the genes representing the interval of the stop loss, $intervalSL$, the multiplier factor of take profit with respect to stop loss, $takeProfitXSL$, the money management risk in percentage, $risk\%$, the trailing of the current price by a specified number of points, $trailingStop$, and the minimum profit for activating the trailing stop, $minProfit$, are the genes related to the trade.
 
 \begin{center}
 \begin{table}[htb]
@@ -218,6 +221,8 @@ K & D & Slowing & intervalSL & takeProfitXSL & risk\% & trailingStop & minProfit
 \caption{\label{tab:Chromosome}Chromosome representation of the  Slow Stochastic Oscillator rule.}
 \end{table}
 \end{center}
+
+Instead, the chromosome representing AI-based rule has only genes associated to the trade, since all the machine model parameters (e.g. model weights) are computed already during training time of the model. As an example, the chromosome will contain only the genes $intervalSL$, $takeProfitXSL$, $risk\%$, $trailingStop$ and $minProfit$.
 
 All samples of the identical evolutionary era are mixed into a population. Furthermore, the population is arbitrarily divided into two identical colonies: the parent and the descendant colonies. Due to crossing the parental species, which are decided on from the whole population, and different operators of the GA, there is a colony of offspring, which is identical to half the scale of the population.
 
@@ -274,4 +279,37 @@ In conclusion, the output of the GA layer is a chromosome which has the greatest
 \subsection{Phase 2: selecting and combining profitable rules}
 From the first phase we get for each trading rule, both from technical indicators and AI-based, the best chromosome which has the best fitness value. The rules whose best chromosome does not have a positive net profit are directly eliminated and do not pass to this second phase, where the qualified rules are combined to form a trading system. Two layers are used for the selection of the combo trading rules: GA layer and again the Trading Simulation layer, as employed in the first phase.
 
-As depicted on the right part of Fig.~\ref{fig:sys},
+As depicted on the right part of Fig.~\ref{fig:sys}, at the beginning the GA layer takes in input trading rules selected from the first phase, then GA generates randomly chromosome candidates. It is important to highlight that in this phase the chromosomes are of a different typology with respect to the first phase, in fact each chromosome represents a different rules selection solution; more details will be revealed in Section~\ref{subsection:ga2}. The output of this layer are candidate chromosomes sent to the Trading Simulation layer which simulates their behaviour over the historical training data. The latter layer gives as output the Net Profit provided as the fitness value back to the GA layer. This process is looping until the best chromosomes having the highest Net Profit are obtained.
+
+\subsubsection{The GA layer: a Genetic Algorithm for selecting combination of trading rules}
+\label{subsection:ga2}
+
+It is important to stress how the GA layer of this phase differs form the one of the first phase. Here the GA layer is used to combine the qualified rules from the first phase to form a trading system. 
+
+\begin{center}
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Rule 1 & Rule 2 & Rule 3 & $\cdot\cdot\cdot$ & Rule N \\ 
+\hline 
+0 & 1 & 0 & $\cdot\cdot\cdot$ & 1\\ 
+\hline 
+\end{tabular} 
+\caption{\label{tab:ChromosomeCombo}Chromosome representation of a candidate rules combination}
+\end{table}
+\end{center}
+
+\noindent Hereafter we report the steps on how this layer works:
+
+\begin{enumerate}
+\setlength\itemsep{0.3em}
+\item In primis, each chromosome is constituted by the same number of genes as the number of qualified rules from the first phase. Each gene is binary, i.e. represented by either 0 or 1 denoting whether the trading rule is selected to be present in the combination. As an example, the chromosome representation with $N$ trading rules is illustrated in Table~\ref{tab:ChromosomeCombo}.
+\item Then, the GA layer generates randomly chromosome candidates with the goal to form an initial population.
+\item Thirdly, for each chromosome the fitness value is computed and sent to be simulated into the Trading Layer.
+\item GA goes into the same loop as reported in Section~\ref{subsection:ga}.
+\end{enumerate}
+
+The fitness metric is the Net Profit for GA layer; its parameters are the same of the ones presented in Section~\ref{subsection:ga}. This process is looping until the best chromosomes having the highest Net Profit are obtained. 
+
+Finally, from this layer we output the one best chromosome which has the best fitness value found so far and represent the final rules combination.
