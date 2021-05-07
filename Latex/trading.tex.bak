@@ -304,15 +304,27 @@ Rule 1 & Rule 2 & Rule 3 & $\cdot\cdot\cdot$ & Rule N \\
 
 \begin{enumerate}
 \setlength\itemsep{0.3em}
-\item In primis, each chromosome is constituted by the same number of genes as the number of qualified rules from the first phase. Each gene is binary, i.e. represented by either 0 or 1 denoting whether the trading rule is selected to be present in the combination. As an example, the chromosome representation with $N$ trading rules is illustrated in Table~\ref{tab:ChromosomeCombo}.
+\item In primis, each chromosome is constituted by the same number of genes as the number of qualified rules from the first phase. Each gene is binary, i.e. represented by either 0 or 1 denoting whether the trading rule is selected to be present in the combination. As an example, the chromosome representation with $N$ trading rules is illustrated in Table~\ref{tab:ChromosomeCombo}. In this example, the total amount of combination is $2^N$.
 \item Then, the GA layer generates randomly chromosome candidates with the goal to form an initial population.
 \item Thirdly, for each chromosome the fitness value is computed and sent to be simulated into the Trading Layer.
-\item GA goes into teh same loop as reported in Section~\ref{subsection:ga}.
-\begin{itemize}	
-	\item 
-\end{itemize}
+\item GA goes into the same loop as reported in Section~\ref{subsection:ga}.
 \end{enumerate}
 
 The fitness metric is the Net Profit for GA layer; its parameters are the same of the ones presented in Section~\ref{subsection:ga}. This process is looping until the best chromosomes having the highest Net Profit are obtained. 
 
 Finally, from this layer we output the one best chromosome which has the best fitness value found so far and represent the final rules combination.
+
+\subsubsection{Trading Simulation Layer: computing the Net Profit of the rules combinations}
+\label{subsection:trading2}
+
+This is the final layer which combines the qualified trading rules extracted by the chromosomes to generate buy/sell open position signals similar to a unique trading ensemble rule and forms the combined trading system. A hard voting method is used in this layer.
+
+\noindent Hereafter we report the steps on how this layer works:
+
+\begin{enumerate}
+\setlength\itemsep{0.3em}
+\item At the beginning, for each qualified trading rules this layer stores the values of the genes $intervalSL$, $takeProfitXSL$, $risk\%$, $trailingStop$ and $minProfit$.
+\item Then, for each chromosome the Trading Simulation layer computes the average of these four genes for the activated rules in the chromosome, i.e. the rules whose gene is set to 1.
+\item Consequently, to open a position we use an \textit{ensemble} approach with \textit{statistical mode}: we open a buy/sell position if this is the most frequent signal sent by the trading rules active in the chromosome, just like a hard voting classifier. Then the Net Profit is given as output.
+\item The rest of the steps exectuted by this layer are the same as reported in Section~\ref{subsection:trading}.
+\end{enumerate}
