@@ -326,5 +326,5 @@ This is the final layer which combines the qualified trading rules extracted by 
 \item At the beginning, for each qualified trading rules this layer stores the values of the genes $intervalSL$, $takeProfitXSL$, $risk\%$, $trailingStop$ and $minProfit$.
 \item Then, for each chromosome the Trading Simulation layer computes the average of these four genes for the activated rules in the chromosome, i.e. the rules whose gene is set to 1.
 \item Consequently, to open a position we use an \textit{ensemble} approach with \textit{statistical mode}: we open a buy/sell position if this is the most frequent signal sent by the trading rules active in the chromosome, just like a hard voting classifier. Then the Net Profit is given as output.
-\item The rest of the steps exectuted by this layer are the same as reported in Section~\ref{subsection:trading}.
+\item The rest of the steps executed by this layer are the same as reported in Section~\ref{subsection:trading}.
 \end{enumerate}
