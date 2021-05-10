@@ -5,4 +5,5 @@ This repository contains all documents, datasets and code files used and develop
 First install Metatrader 5: https://www.metatrader5.com/en/download
 
 Drag and drop all files contained in directory MQL5_2020_06_15/Include into the same directory in MT5. 
-The main file is located inside MQL5_2020_06_15/Experts/Advisors/EA_istoch_BB_v08. The extension ex5 is the executable version of the source code contained in the file with extension mq5.  You can open the source code using the Metatrader Editor, otherwise we can directly use the executable and experiment that in MT5. 
+
+The main file is located inside MQL5_2020_06_15/Experts/Advisors/EA_istoch_BB_v08. Drag and drop the file EA_istoch_BB_v08.ex5 located into /Experts/Advisors/ in the same directory of MT5. The extension ex5 is the executable version of the source code contained in the file with extension mq5.  You can open the source code using the Metatrader Editor, otherwise we can directly use the executable and experiment that in MT5. 
