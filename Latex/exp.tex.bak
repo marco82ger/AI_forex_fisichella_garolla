@@ -2,5 +2,21 @@
 
 \subsection{Investment Setup}
 
+\subsubsection{Evaluation Metrics}
+Profit
+
+Total trades
+
+Profit Factor
+
+Expected Payoff
+
+Drawdown in \%
+
+Recovery Factor
+
+Sharpe Ratio
+
+
 \input{filippo_exp}
 
