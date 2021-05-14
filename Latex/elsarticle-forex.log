@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  10 MAY 2021 12:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  14 MAY 2021 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,8 +633,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-(./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex) (./trading.tex
-<../img//framework.pdf, id=164, 891.06178pt x 440.34422pt>
+(./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex [6]) (./trading.tex
+<../img//framework.pdf, id=207, 891.06178pt x 440.34422pt>
 File: ../img//framework.pdf Graphic file (type pdf)
 <use ../img//framework.pdf>
 Package pdftex.def Info: ../img//framework.pdf  used on input line 11.
@@ -643,7 +643,7 @@ Package pdftex.def Info: ../img//framework.pdf  used on input line 11.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
+[7]
 Overfull \hbox (73.62915pt too wide) in paragraph at lines 100--100
 []$\OML/cmm/m/it/10 tradeSize$\OT1/cmr/m/n/10 =MoneyManagement($\OML/cmm/m/it/1
 0 symbol; fixedVolume; riskPercent; stopLossDistance$\OT1/cmr/m/n/10 ); 
@@ -655,23 +655,17 @@ Overfull \hbox (20.36096pt too wide) in paragraph at lines 100--100
 deSize; stopLossDistance; buyProfit; symbol$\OT1/cmr/m/n/10 ); 
  []
 
-[7 <../img//framework.pdf>] [8] [9] [10] [11] [12] [13] [14]) (./exp.tex
-(./filippo_exp.tex)) (./elsarticle-forex.bbl [15] [16]) [17]
+[8 <../img//framework.pdf>] [9] [10] [11] [12] [13] [14] [15]) (./exp.tex
+(./filippo_exp.tex)) (./elsarticle-forex.bbl [16] [17]) [18]
 (./elsarticle-forex.aux)
-
-Package rerunfilecheck Warning: File `elsarticle-forex.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `elsarticle-forex.out':
-(rerunfilecheck)             Before: C9A04FD9CF8177E0E0AD397529F91602;4117
-(rerunfilecheck)             After:  DFA92B7C43D80A09C804317193A6B814;4856.
+Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
+(rerunfilecheck)             Checksum: 1D4EA7ABFB3796C34E8B37CD89A39ABB;5459.
  ) 
 Here is how much of TeX's memory you used:
- 13852 strings out of 478994
- 206730 string characters out of 5858185
- 546047 words of memory out of 5000000
- 31020 multiletter control sequences out of 15000+600000
+ 13865 strings out of 478994
+ 206963 string characters out of 5858185
+ 546070 words of memory out of 5000000
+ 31029 multiletter control sequences out of 15000+600000
  412159 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,19n,88p,1334b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -695,10 +689,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (17 pages, 330152 bytes).
+Output written on elsarticle-forex.pdf (18 pages, 333113 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 404 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 488 PDF objects out of 1000 (max. 8388607)
+ 436 compressed objects within 5 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

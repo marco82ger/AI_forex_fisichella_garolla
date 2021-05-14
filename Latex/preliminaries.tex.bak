@@ -11,3 +11,29 @@ Finally, placing an order to close a position will result in an trade opposite t
 
 \subsection{Technical indicators}
 In our trading system, XX technical indicators are used as the basis of trading rules. These technical indicators are: Adaptive Moving Average, Average Directional Moving Index, Bollinger Bands, Double Exponential Moving Average, Envelope Moving Avarage, Parabolic SAR, Fractal Adaptive Moving Avarage, Standard Deviation, Triple Exponential Moving Average, Avarage True Range, Bears Power, Bulls Power, MACD (Moving Average Convergence Divergence), Stochastic oscillator, William' Percentage Range, Momentum, RSI (Relative Strength Index), and Heiken Ashi Candles.
+
+\subsection{Trading Rules}
+
+\subsubsection{Trading Rules with Dynamic Channels}
+
+Many operating strategies built for short-term trading use signals provided by what are known in technical jargon as 'dynamic channels'. In some cases the strategies are of type trend following, that is they aim to follow the main trend present on the market, in other cases instead they are of type reversal in how much they try to take advantage of a possible reversal of trend.
+The principle of base of these operating techniques is based on the individualization of some bands of oscillation (envelopes) that:
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item Contain for the greater part of the time the movement of the prices.
+\item They concur to characterize the trend followed from the prices.
+\item They supply interesting reversal signals.
+\end{itemize}
+
+These channels are dynamic in how much, measuring (even if in various way) the present instability on the market, they are adapted to the movements (cyclical) carried out from the prices, that alternate in fact phases of consolidation (in which the instability is reduced) to directional/impulsive phases (in which the instability increases in meaningful way). The technique of the bands requires the identification of:
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item A central reference average, which serves to identify and exploit the primary trend present in the market;
+\item A lower band and an upper band, which constitute respectively a support and a resistance of dynamic type (as they move according to the volatility recorded on the market) and which contain the movement of prices.
+\end{itemize}
+
+When volatility is low the two bands narrow and approach prices (the channel width is reduced), when volatility is high the two bands widen and move away from prices (the channel width increases). 
+
+We begin therefore with the description of the more used dynamic channels, beginning from the Channel of Donchian and the Bands of Stoller. 
