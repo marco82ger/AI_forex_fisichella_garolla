@@ -37,3 +37,49 @@ These channels are dynamic in how much, measuring (even if in various way) the p
 When volatility is low the two bands narrow and approach prices (the channel width is reduced), when volatility is high the two bands widen and move away from prices (the channel width increases). 
 
 We begin therefore with the description of the more used dynamic channels, beginning from the Channel of Donchian and the Bands of Stoller. 
+
+\paragraph{\textbf{The Donchian channel}}\mbox{}
+
+One of the first operational techniques based on the use of channels was invented by Richard Donchian who built a trend following system based on the identification of the highs and lows of the last 20 days (the original system was based on the \textit{Donchian 4-week rule}). With this technique:
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item Long positions were opened when prices exceeded the highest high of the last 20 days.
+\item One would open short positions when they fall below the lowest low of the last 20 days.
+\end{itemize}  
+
+With this technique one goes in search of the classic breakout signals that can initiate a directional movement. Draft however of a system that has been applied with success during the years $'80$ on the market of the commodities (where the tendencies were stable and consisting) but that in the course of the time has diminished its efficiency. For this reason it has been gone to the search of techniques in a position to exploiting also the frequent and unexpected reversals of tendency that are verified when the prices catch up important zones of resistance and/or support.
+
+\paragraph{\textbf{Stoller Bands}}\mbox{}
+
+An experienced commodities trader, Manning Stoller, has constructed an operating technique (Stoller Average Range Channels, STARC) which uses the concept of the Average True Range (ATR). This differs from the simple daily range (the difference between the high and the low price) in that it also takes into account whether there is a gap-up or gap-down.
+The ATR is the greater of these three differences:
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item Today's maximum price minus today's minimum price.
+\item Today's maximum price minus yesterday's closing price.
+\item Yesterday's closing price minus today's low price.
+\end{itemize}  
+
+
+To calculate the Stoller Bands, a 6-period moving average is calculated, to which the 15-period moving average of the Average True Range multiplied by two is added (to obtain the upper band) and subtracted (to obtain the lower band).
+There are therefore three reference lines:
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item The Upper Band equals to 6-period moving average plus $(ATR*2)$.
+\item The Central Average equals to the 6-period moving average.
+\item The Lower Band = 6-period moving average - (ATR*2).
+\end{itemize}  
+
+- t
+- the Central Average = the 6-period moving average;
+- t
+
+To difference of the technique proposed from Donchian (of trend following type), the Bands of Stoller come used in order to obtain of the signals of reversal.
+In particular:
+- short signals are obtained when prices go beyond the upper band and draw a reversal short bar (for example a shooting);
+- long signals are obtained when the prices come down under the inferior band and draw a bar of reversal long (as an example a hammer). In the next article we will describe the other types of dynamic channels: the Bollinger Bands, the Keltner channel and the Standard Error Bands.
+
+Translated with www.DeepL.com/Translator (free version)
