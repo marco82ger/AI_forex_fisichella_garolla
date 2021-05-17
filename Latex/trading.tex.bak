@@ -1,5 +1,5 @@
 \section{The Trading System}
-In this section, we present our trading system which uses the trading simulation layer and GA to select and combine trading rules coming both from technical indicators, as depicted in the previous section, and from our AI layer, described in Section~\ref{subsection:ai}, to generate buy/sell signals. The trading system uses time series price data of 6 currency pairs: 4 major pairs like GBPUSD, EURUSD, USDCHF and USDJPY, and 2 minor pairs like EURGBP and GBPJPY.
+In this section, we present our trading system which uses the trading simulation layer and GA to select and combine trading rules coming both from technical indicators, as depicted in the previous section, and from our AI layer, described in Section~\ref{subsection:ai}, to generate buy/sell signals. The trading system uses time series price data of 6 currency pairs: 4 major pairs like GBP/USD, EUR/USD, USD/CHF and USD/JPY, and 2 minor pairs like EUR/GBP and GBP/JPY.
 
 The idea to combine trading rules it is borrowed by the real world of trading, where traders and analysts, before opening positions on the market, try to confirm their decision using different approaches and indicators. 
 
@@ -159,7 +159,7 @@ Next, we calculate the amount of margin to risk, retrieving the account balance 
 
 To calculate our trade volume, we divide the margin to risk ($margin$) by the stop loss in points ($stopLossDistance$) and divide the result by $tickSize$. Then we pass our calculated trade volume to VerifyVolume() function. The latter verification is done since most Forex brokers allow trade sizes as small as 0.01 lots, but some brokers have a higher minimum trade size or do not use micro lots.
 
-Let's clarify this with an example. We want to place an order risking no more than $2\%$ of our account balance of \$ $5000$. The initial stop loss will be placed $500$ points away from the order opening price. The symbol is EURUSD and we are using mini lots of $0.1$, so the tick size will be $\$1$ per point. $2\%$ of $\$5000$ is $\$100$, so this value will be saved in the $margin$ variable. The value of the $tickSize$ variable will be $\$1$.
+Let's clarify this with an example. We want to place an order risking no more than $2\%$ of our account balance of \$ $5000$. The initial stop loss will be placed $500$ points away from the order opening price. The symbol is EUR/USD and we are using mini lots of $0.1$, so the tick size will be $\$1$ per point. $2\%$ of $\$5000$ is $\$100$, so this value will be saved in the $margin$ variable. The value of the $tickSize$ variable will be $\$1$.
 $\$100$ divided by $500$ points is $0.2$. Every point of movement will equakl approximately $\$0.20$ of profit or loss. $0.2$ divided by $\$1$ equals $0.2$, so our trade value will be $0.2$ lots. If this trade of $0.2$ lots hits its initial stop loss $500$ points away, the loss will be approximately $\$100$. If the stop loss distance is $200$ points aways, the trade valume will be $0.5$ lots, but the maximum loss is still $\$100$.
 
 \paragraph{\textbf{Stop Loss and Take Profit}}\mbox{}

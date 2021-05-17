@@ -1,11 +1,14 @@
 \section{Preliminaries}
 
-\subsection{Trading}
+\subsection{Trading in Forex}
 In first instance, an order is a request to make a trade to open a position.
 A trade is made when the order is matched to a counterpart, i.e a buyer has found a seller, or vice versa.
-Once a trade is opened, it constitutes a position. A position is exposure to the market and will move the balance in the account up or down in line with market movements.
+Once a trade is opened, it constitutes a position. A position is exposure to the market and will move the balance in the account up or down in line with market movements. Placing an order to close a position will result in a trade opposite to the direction initially took, e.g. if we initially bought, now we sell to close. When we open a buy position, we are \textit{long}, while when we sell we are \textit{short}.
 
-Finally, placing an order to close a position will result in an trade opposite to the direction initially took, e.g. if we initially bought, now we sell to close.
+To be able to start a exchange in Forex, one need to open a position. There are alternatives to open a position: both buying the base currency and selling the quote one (going long) or selling the base one and buying for the quote forex currency (going short). The base and quote currencies are the first and second currencies in a foreign money pair, respectively. For instance, GBP is the base and USD is the quote currencies in GBP/USD forex pair.
+
+A trader can use leverage within the buying and selling. Leverage is the ratio which lets in to trade big amount with a small sum of money. As an instance, if one trades \$ $1000$ with a leverage $1:30$ in GBP/USD, the amount of buying and selling transaction will be \$ $30,000$ instead of \$ $1000$.
+The profit or loss of a buying and selling transaction is calculated with the aid of subtracting the final value from the initial price of the foreign money pair. Assume the trader goes long  \$ $30,000$ in GBP/USD with a buying price of $1.4060$ and closes his position with a selling price of $1.4090$. The difference is $0.0030$ equals to 20 pips. Due to the fact the initial position is long and price went up, the transaction is profitable and the earnings is $30,000 * 0.0030 =$ \$90. Consequently the trader wants the price of the forex pair to growth whilst he/she is long and decrease when he/she is short to be able to get profit.
 
 \subsection{Trading System: Meta Trader 5}
 
@@ -38,7 +41,7 @@ When volatility is low the two bands narrow and approach prices (the channel wid
 
 We begin therefore with the description of the more used dynamic channels, beginning from the Channel of Donchian and the Bands of Stoller. 
 
-\paragraph{\textbf{The Donchian channel}}\mbox{}
+\paragraph{\textbf{Donchian channel}}\mbox{}
 
 One of the first operational techniques based on the use of channels was invented by Richard Donchian who built a trend following system based on the identification of the highs and lows of the last 20 days (the original system was based on the \textit{Donchian 4-week rule}). With this technique:
 
@@ -80,4 +83,36 @@ The difference from the technique proposed from Donchian (of trend following typ
 \setlength\itemsep{0.3em}
 \item Short signals are obtained when prices go beyond the upper band and draw a reversal short bar (for example a shooting).
 \item Long signals are obtained when the prices come down under the inferior band and draw a bar of reversal long (as an example a hammer).
+\end{itemize} 
+
+\paragraph{\textbf{Bollinger Bands}}\mbox{}
+
+Bollinger Bands are composed of three lines: a central moving average and two bands, one upper and one lower, which automatically widen and narrow according to the volatility expressed by the market. The calculation of Bollinger Bands, according to the original formula of its creator, is simple: 
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item The value of the upper band is obtained by adding to the central moving average (e.g. at 20 periods) the value of the standard deviation multiplied by two. 
+\item The lower band is obtained by subtracting the standard deviation multiplied by two from the moving average (e.g. at 20 periods). 
+\end{itemize} 
+
+In this way, when the market is moving sideways, volatility is reduced and the two bands compress around prices. When the market is in a directional phase (either positive or negative), volatility increases and the two bands move away from the prices.
+
+The strategies that can be constructed with the Bollinger Bands are substantially two:\\
+
+\noindent\textit{1. The volatility breakout.} When the bands are compressed around the prices, it means that on the market a marked contraction of the volatility has been verified, situation that can anticipate the beginning of an impulsive movement that often is born with a bar of breakout bullish or bearish. In this case it can be constructed a strategy of trend-following type, time to exploit the trend bullish or bearish that is established thanks to the breakout. For example:
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item A long position can be opened when prices, following a breakout, accelerate to the upside and push beyond the upper band. The signal must be confirmed by both a close of the candle which is above the upper band and the next candle, which must not be bearish.
+\item A short position can be opened when prices, following the breakout, fall rapidly and fall below the lower band. The signal is confirmed both by a close of the candle which is below the lower band and by the next candle which must not be bullish. 
+\end{itemize} 
+
+This is an interesting strategy from a theoretical point of view, but it can result in a late entry into the market, with prices having already made a significant movement.\footnote{In order to use signals of breakout it is preferable to use the Channel of Keltner, much more rapid in signalling the beginning of a directional trend.}  \\
+
+\noindent\textit{2. The signals of reversal.} The second technique is of reversal and is that one that is preferred, in how much it exploits the exhaustion of a movement to the rise or the end of a trend negative, and is based on the individualisation of a configuration of reversal, that it is verified when the prices are carried to contact of one of the two bands: 
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item A bearish signal occurs when the market rips to the upside, crosses the upper band (the upper shadow of the first candle is above the upper band), but then prices undergo a correction and return just below the band itself and the next session draws a bear candle.The signal can be strengthened demanding that the Slow Stochastic gives a short signal (with the line \%K that, inside the area of iper-bought, crosses from the high towards the bottom the line \%D).
+\item A bullish signal is had when the market accuses one brusca decrease, comes down under the inferior band (the first candle has one lower shadow under the inferior band), but then the prices bounce and return endured over the same band and draw one second candle bull.The signal can be strengthened demanding that the Slow Stochastic supplies one signal long (with the line \%K that, inside the area of iper-sold, crosses from the bottom towards the high the line \%D).
 \end{itemize} 
