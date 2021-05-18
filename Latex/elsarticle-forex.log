@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  17 MAY 2021 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  18 MAY 2021 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,23 +633,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-(./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+(./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex [6]
+<../img//candle.pdf, id=210, 261.81805pt x 185.91336pt>
+File: ../img//candle.pdf Graphic file (type pdf)
+<use ../img//candle.pdf>
+Package pdftex.def Info: ../img//candle.pdf  used on input line 28.
+(pdftex.def)             Requested size: 130.90869pt x 92.95645pt.
+ [7 <../img//candle.pdf>] [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-) (./trading.tex [9]
-<../img//framework.pdf, id=228, 891.06178pt x 440.34422pt>
+[10]) (./trading.tex
+<../img//framework.pdf, id=253, 891.06178pt x 440.34422pt>
 File: ../img//framework.pdf Graphic file (type pdf)
 <use ../img//framework.pdf>
 Package pdftex.def Info: ../img//framework.pdf  used on input line 11.
 (pdftex.def)             Requested size: 267.32059pt x 132.10428pt.
- [10 <../img//framework.pdf>]
+ [11 <../img//framework.pdf>]
 Overfull \hbox (73.62915pt too wide) in paragraph at lines 100--100
 []$\OML/cmm/m/it/10 tradeSize$\OT1/cmr/m/n/10 =MoneyManagement($\OML/cmm/m/it/1
 0 symbol; fixedVolume; riskPercent; stopLossDistance$\OT1/cmr/m/n/10 ); 
@@ -661,25 +667,16 @@ Overfull \hbox (20.36096pt too wide) in paragraph at lines 100--100
 deSize; stopLossDistance; buyProfit; symbol$\OT1/cmr/m/n/10 ); 
  []
 
-[11] [12] [13] [14] [15] [16] [17] [18]) (./exp.tex (./filippo_exp.tex))
-(./elsarticle-forex.bbl [19] [20]) [21] (./elsarticle-forex.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `elsarticle-forex.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `elsarticle-forex.out':
-(rerunfilecheck)             Before: 1D4EA7ABFB3796C34E8B37CD89A39ABB;5459
-(rerunfilecheck)             After:  0EDAD175763EDCCF9BEB252871D45E56;5510.
+[12] [13] [14] [15] [16] [17] [18] [19]) (./exp.tex (./filippo_exp.tex))
+(./elsarticle-forex.bbl [20] [21]) [22] (./elsarticle-forex.aux)
+Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
+(rerunfilecheck)             Checksum: 0EDAD175763EDCCF9BEB252871D45E56;5510.
  ) 
 Here is how much of TeX's memory you used:
- 13872 strings out of 478994
- 207027 string characters out of 5858185
- 546074 words of memory out of 5000000
- 31029 multiletter control sequences out of 15000+600000
+ 13888 strings out of 478994
+ 207296 string characters out of 5858185
+ 546135 words of memory out of 5000000
+ 31039 multiletter control sequences out of 15000+600000
  412159 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,19n,88p,1334b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -703,10 +700,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (21 pages, 342298 bytes).
+Output written on elsarticle-forex.pdf (22 pages, 354239 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
- 452 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 533 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
