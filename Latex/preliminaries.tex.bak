@@ -43,10 +43,20 @@ It is well to notice that when the lower shadow is particularly long, the probab
 In our trading system, 20 technical indicators are used as the basis of trading rules. These technical indicators are: Adaptive Moving Average, Average Directional Moving Index, Donchian channel, Stoller Bands, Bollinger Bands, Double Exponential Moving Average, Envelope Moving Avarage, Parabolic SAR, Fractal Adaptive Moving Avarage, Standard Deviation, Triple Exponential Moving Average, Avarage True Range, Bears Power, Bulls Power, MACD (Moving Average Convergence Divergence), Stochastic oscillator, William' Percentage Range, Momentum, RSI (Relative Strength Index), and Heiken Ashi Candles.
 
 \subsection{Trading Rules}
+From each indicator listed in the previous Section, we derive a trading rule. In specific, a trading rule is actually a rule that generates short and long signals. A signal is an indication to open a position on the market. In its simplest form, a trading rule may be such as comparing the value of an indicator against a threshold, that can be fixed or dynamically attached to a time series.
+
+As an example, the Slow Stochastic may generates a short signal when the line \%K, inside the area of iper-bought, crosses from the high towards the bottom the line \%D; while the Slow Stochastic may give a long signal
+\item A bullish signal is had when the market accuses one brusca decrease, comes down under the inferior band (the first candle has one lower shadow under the inferior band), but then the prices bounce and return endured over the same band and draw one second candle bull. 
+%The signal can be strengthened demanding that the Slow Stochastic supplies one signal long (with the line \%K that, inside the area of iper-sold, crosses from the bottom towards the high the line \%D).
+
+
+
+
+A trading rule may be straightforward such as comparing the indica- tor value with a limit value or may be complex such as looking for a special shaped pattern in the price.
 
 
 \subsubsection{Trading Rules with Dynamic Channels}
-Many operating strategies built for short-term trading use signals provided by what are known in technical jargon as 'dynamic channels'. In some cases the strategies are of type trend following, that is they aim to follow the main trend present on the market, in other cases instead they are of type reversal in how much they try to take advantage of a possible reversal of trend.
+Many operating strategies built for short-term trading use signals provided by what are known in technical jargon as \textit{dynamic channels}. In some cases the strategies are of type trend following, that is they aim to follow the main trend present on the market, in other cases instead they are of type reversal in how much they try to take advantage of a possible reversal of trend.
 The principle of base of these operating techniques is based on the individualization of some bands of oscillation (envelopes) that:
 
 \begin{itemize}
@@ -140,6 +150,18 @@ This is an interesting strategy from a theoretical point of view, but it can res
 
 \begin{itemize}
 \setlength\itemsep{0.3em}
-\item A bearish signal occurs when the market rips to the upside, crosses the upper band (the upper shadow of the first candle is above the upper band), but then prices undergo a correction and return just below the band itself and the next session draws a bear candle.The signal can be strengthened demanding that the Slow Stochastic gives a short signal (with the line \%K that, inside the area of iper-bought, crosses from the high towards the bottom the line \%D).
-\item A bullish signal is had when the market accuses one brusca decrease, comes down under the inferior band (the first candle has one lower shadow under the inferior band), but then the prices bounce and return endured over the same band and draw one second candle bull.The signal can be strengthened demanding that the Slow Stochastic supplies one signal long (with the line \%K that, inside the area of iper-sold, crosses from the bottom towards the high the line \%D).
+\item A bearish signal occurs when the market rips to the upside, crosses the upper band (the upper shadow of the first candle is above the upper band), but then prices undergo a correction and return just below the band itself and the next session draws a bear candle. 
+%The signal can be strengthened demanding that the Slow Stochastic gives a short signal (with the line \%K that, inside the area of iper-bought, crosses from the high towards the bottom the line \%D).
+\item A bullish signal is had when the market accuses one brusca decrease, comes down under the inferior band (the first candle has one lower shadow under the inferior band), but then the prices bounce and return endured over the same band and draw one second candle bull. 
+%The signal can be strengthened demanding that the Slow Stochastic supplies one signal long (with the line \%K that, inside the area of iper-sold, crosses from the bottom towards the high the line \%D).
 \end{itemize} 
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{2.5}
+\centering
+\caption{USD/GBP Chart: signal generated by the \textit{signals of reversal} technique on the Bollinger Bands.}
+\label{fig:25} 
+\end{figure}
+
+As an example, we report in Fig.~\ref{fig:25} the signals short and long generated by this technique on USD/GBP chart~\footnote{Source: Trading, G. Probo, Hoepli} .
+
