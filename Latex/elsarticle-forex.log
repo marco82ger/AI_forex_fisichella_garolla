@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  20 MAY 2021 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  20 MAY 2021 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -682,7 +682,7 @@ Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
 Here is how much of TeX's memory you used:
  13908 strings out of 478994
  207548 string characters out of 5858185
- 547427 words of memory out of 5000000
+ 546427 words of memory out of 5000000
  31049 multiletter control sequences out of 15000+600000
  412159 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -707,10 +707,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (24 pages, 506163 bytes).
+Output written on elsarticle-forex.pdf (24 pages, 508102 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 499 compressed objects within 5 object streams
+ 563 PDF objects out of 1000 (max. 8388607)
+ 497 compressed objects within 5 object streams
  117 named destinations out of 1000 (max. 500000)
  240 words of extra memory for PDF output out of 10000 (max. 10000000)
 

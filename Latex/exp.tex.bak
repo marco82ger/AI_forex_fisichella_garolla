@@ -14,21 +14,19 @@ All our experiments are reproducible with the code of our final implemented expe
 \end{itemize}
 
 \subsubsection{Evaluation Metrics}
+\noindent The following evaluation metrics were computed for our experiments:
 
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item \textbf{Net Profit:} the financial result of all trades in terms of money.
+\item \textbf{Total trades:} the total number of trades where 1 trade includes 2 deals either by closing a long (first buy then sell) or short (first sell then buy) position.
+\item \textbf{Profit Factor:} the ratio of the gross profit to the gross loss. A value of one means that these parameters are equal. The gross profit is the sum of all profitable trades in terms of money, while the gross loss is the sum of all losing trades in terms of money.
+\item \textbf{Expected Payoff:} a statistically calculated value showing the average return of one deal. 
+\item \textbf{Drawdown in \%:} difference between the initial deposit and the minimal level below initial deposit throughout the whole testing period.
+\item \textbf{Recovery Factor:} the value reflects the riskiness of the strategy, i.e. the amount of money risked by the Expert Advisor to make the profit it obtained.
+\item \textbf{Sharpe Ratio:} this ratio characterizes efficiency and stability of a strategy. It reflects the ratio of the arithmetical mean profit for the position holding time to the standard deviation from it.
+\end{itemize}
 
-Profit
-
-Total trades
-
-Profit Factor
-
-Expected Payoff
-
-Drawdown in \%
-
-Recovery Factor
-
-Sharpe Ratio
 
 
 \input{filippo_exp}
