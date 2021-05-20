@@ -1,8 +1,21 @@
 \section{Experiments}
+All our experiments are reproducible with the code of our final implemented expert advisor publicly available~\footnote{https://git.l3s.uni-hannover.de/mfisichella/forex}.
 
 \subsection{Investment Setup}
+\noindent In our experiments we used the following configuration:
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item Our investment was limited to \$ 10000.
+\item For each transaction, we allocated the amount indicated by the money management risk presented in Section~\ref{sec:tradsys} with an upper limit to 4\% of the current available capital.
+\item The leverage was set to 1:30. 
+\item The ideal execution for order placement with zero latency during trading execution was chosen.
+\item We used a demo account with a trading broker \footnote{https://www.icmarkets.com/en/open-trading-account/demo/} simulating the placement of buy/sell positions.
+\end{itemize}
 
 \subsubsection{Evaluation Metrics}
+
+
 Profit
 
 Total trades

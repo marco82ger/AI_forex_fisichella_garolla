@@ -1,4 +1,5 @@
 \section{The Trading System}
+\label{sec:tradsys}
 In this section, we present our trading system which uses the trading simulation layer and GA to select and combine trading rules coming both from technical indicators, as depicted in the previous section, and from our AI layer, described in Section~\ref{subsection:ai}, to generate buy/sell signals. The trading system uses time series price data of 6 currency pairs: 4 major pairs like GBP/USD, EUR/USD, USD/CHF and USD/JPY, and 2 minor pairs like EUR/GBP and GBP/JPY.
 
 The idea to combine trading rules it is borrowed by the real world of trading, where traders and analysts, before opening positions on the market, try to confirm their decision using different approaches and indicators. 
@@ -233,7 +234,7 @@ Hereafter we report the steps on how the GA layer works:
 \setlength\itemsep{0.3em}
 \item Firstly, a range of values as function of start-stop-step values is defined for each gene of a chromosome.
 \item Secondly, the chromosomes which represent the parameter combos are randomly generated to shape an initial proto-population.
-\item Thirdly, for each chromosome the fitness value is computed and sent to be simulated into the Trading Layer.
+\item Thirdly, for each chromosome the fitness value is simulated and computed by the Trading Layer.
 \item Finally, we run the main loop of the GA until the selected number of offspring iterations are generated:
 \begin{itemize}	
 	\item Making ready the population for reproduction, after disposing of chromosome duplicates.
@@ -305,8 +306,9 @@ Rule 1 & Rule 2 & Rule 3 & $\cdot\cdot\cdot$ & Rule N \\
 \begin{enumerate}
 \setlength\itemsep{0.3em}
 \item In primis, each chromosome is constituted by the same number of genes as the number of qualified rules from the first phase. Each gene is binary, i.e. represented by either 0 or 1 denoting whether the trading rule is selected to be present in the combination. As an example, the chromosome representation with $N$ trading rules is illustrated in Table~\ref{tab:ChromosomeCombo}. In this example, the total amount of combination is $2^N$.
-\item Then, the GA layer generates randomly chromosome candidates with the goal to form an initial population.
-\item Thirdly, for each chromosome the fitness value is computed and sent to be simulated into the Trading Layer.
+\item Then, the GA layer generates randomly chromosome candidates with the goal to form an initial population. 
+\item For each of the chromosome generated, we will have the subset of trading rules selected to be present in the combination. For such a subset of trading rules, GA computes the average of the interval of the stop loss, $intervalSL$, the average of the multiplier factor of take profit with respect to stop loss, $takeProfitXSL$, the average of the money management risk in percentage, $risk\%$, the average of the trailing of the current price by a specified number of points, $trailingStop$, and the average of the minimum profit for activating the trailing stop, $minProfit$, of all rules selected in the combination. Such a values are the gene related to the trade taken from each chromosome's trading rule output from the first phase.
+\item Thirdly, for each chromosome the fitness value is computed and sent by the Trading Layer.
 \item GA goes into the same loop as reported in Section~\ref{subsection:ga}.
 \end{enumerate}
 

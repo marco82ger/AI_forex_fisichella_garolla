@@ -1,21 +1,31 @@
 \section{Experiments}
+All our experiments are reproducible with the code of our final implemented expert advisor publicly available~\footnote{https://git.l3s.uni-hannover.de/mfisichella/forex}.
 
 \subsection{Investment Setup}
+\noindent In our experiments we used the following configuration:
+
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item Our investment was limited to \$ 10000.
+\item For each transaction, we allocated the amount indicated by the money management risk presented in Section~\ref{sec:tradsys} with an upper limit to 4\% of the current available capital.
+\item The leverage was set to 1:30. 
+\item The ideal execution for order placement with zero latency during trading execution was chosen.
+\item We used a demo account with a trading broker \footnote{https://www.icmarkets.com/en/open-trading-account/demo/} simulating the placement of buy/sell positions.
+\end{itemize}
 
 \subsubsection{Evaluation Metrics}
-Profit
 
-Total trades
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item \textbf{Profit:}
+\item \textbf{Total trades:} the total number of trades where 1 trade includes 2 deals either by closing a long (first buy then sell) or short (first sell then buy) position.
+\item \textbf{Profit Factor:}
+\item \textbf{Expected Payoff:}
+\item \textbf{Drawdown in \%:}
+\item \textbf{Recovery Factor:}
+\item \textbf{Sharpe Ratio:}
+\end{itemize}
 
-Profit Factor
-
-Expected Payoff
-
-Drawdown in \%
-
-Recovery Factor
-
-Sharpe Ratio
 
 
 \input{filippo_exp}
