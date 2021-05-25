@@ -18,8 +18,9 @@ All our experiments are reproducible with the code of our final implemented expe
 
 \begin{itemize}
 \setlength\itemsep{0.3em}
-\item \textbf{Net Profit:} the financial result of all trades in terms of money.
-\item \textbf{Total trades:} the total number of trades where 1 trade includes 2 deals either by closing a long (first buy then sell) or short (first sell then buy) position.
+\item \textbf{Balance:} the final financial value of the balance in terms of money.
+\item \textbf{Net Profit:} the financial result (profit/loss) of all trades in terms of money.
+\item \textbf{Total Trades:} the total number of trades where 1 trade includes 2 deals either by closing a long (first buy then sell) or short (first sell then buy) position.
 \item \textbf{Profit Factor:} the ratio of the gross profit to the gross loss. A value of one means that these parameters are equal. The gross profit is the sum of all profitable trades in terms of money, while the gross loss is the sum of all losing trades in terms of money.
 \item \textbf{Expected Payoff:} a statistically calculated value showing the average return of one deal. 
 \item \textbf{Drawdown in \%:} difference between the initial deposit and the minimal level below initial deposit throughout the whole testing period.

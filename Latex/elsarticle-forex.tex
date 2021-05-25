@@ -11,8 +11,9 @@
 \usepackage{subfig}
 \usepackage{verbatim}
 \usepackage{multirow}
-\usepackage [table]{xcolor}
-\usepackage{colortbl}
+%\usepackage [table]{xcolor}
+%\usepackage{colortbl}
+\usepackage[dvipsnames]{xcolor}
 
 \modulolinenumbers[5]
 
@@ -108,6 +109,48 @@ This template helps you to create a properly formatted \LaTeX\ manuscript.
 %---------- Experiments-----
 \input{exp}
 
+\begin{table}[h!]
+  \begin{center}
+    \caption{Multirow and -column table.}
+    \label{tab:table1}
+    \begin{tabular}{p{3cm} c c c c c c c c c}
+    \hline
+    \multirow{2}{*}{\textbf{Date}} & \multirow{2}{*}{\textbf{Currency Pairs}} &  \multicolumn{8}{c}{\textbf{Metrics}}\\\cline{3-10} % <-- Combining 2 rows with arbitrary with (*) and content 12
+   
+      &  & Balance & Net Profit & Total Trades & Profit Factor & Expected Payoff & Drawdown in \% & Recovery Factor & Sharpe Ratio\\ % <-- Content of first column omitted.
+      \hline
+       \multirow{6}{*}{\textbf{2019}} & GBP/USD & 11490.90 & {\color{OliveGreen} 1490.90} & 74 & 1.19 & 20.15 & 19.18 & 0.57 & 0.09\\
+       & EUR/USD & 13470.01 & {\color{OliveGreen} 3470.01} & 46 & 1.87 & 75.43 & 12.83 & 1.78 & 0.28\\
+       & USD/CHF & 12466.51 & {\color{OliveGreen} 2466.51} & 47 & 1.54 & 52.48 & 9.91 & 2.33 & 0.18\\
+       & USD/JPY & 9824.48 & {\color{BrickRed} -175.52} & 51 & 0.96 & -3.44 & 15.56 & -0.11 & -0.01\\
+       & EUR/GBP & 9013.66 & {\color{BrickRed} -986.34} & 62 & 0.85 & -15.91 & 20.53 & -0.44 & -0.05\\
+       & GBP/JPY & 10117.27 & {\color{OliveGreen} 117.27} & 89 & 1.01 & 1.32 & 19.34 & 0.05 & 0.02\\
+       \hline
+
+       \multirow{6}{*}{\textbf{2020}} & GBP/USD & 13883.91 & {\color{OliveGreen} 3883.91} & 102 & 1.44 & 38.08 & 11.66 & 2.79 & 0.16\\
+       & EUR/USD & 10884.04 & {\color{OliveGreen} 884.04} & 78 & 1.12 & 11.33 & 18.13 & 0.40 & 0.06\\
+       & USD/CHF & 11172.22& {\color{OliveGreen} 1172.22} & 68 & 1.18 & 17.24 & 12.82 & 0.73 & 0.08\\
+       & USD/JPY & 11552.46 & {\color{OliveGreen} 1552.46} & 66 & 1.29 & 23.52 & 11.70 & 1.24 & 0.11\\
+       & EUR/GBP & 14526.89 & {\color{OliveGreen} 4526.89} & 71 & 1.77 & 63.76 & 12.45 & 2.95 & 0.23\\
+       & GBP/JPY & 13438.72 & {\color{OliveGreen} 3438.72} & 97 & 1.50 & 35.45 & 11.22 & 2.53 & 0.17\\
+       \hline
+      
+       \multirow{6}{*}{\parbox{3cm}{\textbf{2021 \\ (Till 30.04.2021)}}} & GBP/USD & 9951.18 & {\color{BrickRed} -48.82} & 27 & 0.98 & -1.81 & 11.11 & -0.04 & 0.00\\
+       & EUR/USD & 9285.14 & {\color{BrickRed} -714.86} & 21 & 0.67 & -34.04 & 11.60 & -0.61 & -0.15\\
+       & USD/CHF & 9739.23 & {\color{BrickRed} -260.77} & 20 & 0.87 & -13.04 & 9.61 & -0.27 & -0.05\\
+       & USD/JPY & 12301.49 & {\color{OliveGreen} 2301.49} & 13 & 3.58 & 177.04 & 7.02 & 2.63 & 0.55\\
+       & EUR/GBP & 11368.48 & {\color{OliveGreen} 1368.48} & 14 & 2.06 & 97.75 & 8.81 & 1.42 & 0.30\\
+       & GBP/JPY & 10900.31 & {\color{OliveGreen} 900.31} & 29 & 1.30 & 31.05 & 20.99 & 0.38 & 0.12\\
+       \hline
+
+    \end{tabular}
+  \end{center}
+\end{table}
+
+%\multirow{2}{*}{12} & 1110.1 & a\\ % <-- Combining 2 rows with arbitrary with (*) and content 12
+   %   & 10.1 & b\\ % <-- Content of first column omitted.
+      %\hline
+      
 %-----
 
 \bibliography{mybibfile}
