@@ -6,7 +6,7 @@ All our experiments are reproducible with the code of our final implemented expe
 
 \begin{itemize}
 \setlength\itemsep{0.3em}
-\item Our investment was limited to \$ 10000.
+\item Our investment was limited to \$ 10,000.
 \item For each transaction, we allocated the amount indicated by the money management risk presented in Section~\ref{sec:tradsys} with an upper limit to 4\% of the current available capital.
 \item The leverage was set to 1:30. 
 \item The ideal execution for order placement with zero latency during trading execution was chosen.
@@ -27,6 +27,63 @@ All our experiments are reproducible with the code of our final implemented expe
 \item \textbf{Recovery Factor:} the value reflects the riskiness of the strategy, i.e. the amount of money risked by the Expert Advisor to make the profit it obtained.
 \item \textbf{Sharpe Ratio:} this ratio characterizes efficiency and stability of a strategy. It reflects the ratio of the arithmetical mean profit for the position holding time to the standard deviation from it.
 \end{itemize}
+
+\textbf{TODO}: forse rimuovere Balance dalla tabella
+
+\begin{table}[h!]
+  \begin{adjustwidth}{-1in}{-.5in}  
+  \begin{center} 
+    \caption{Multirow and -column table.}
+    \label{tab:table1}
+    \begin{tabular}{p{2.4cm} c c c p{2.5em} p{2.9em} p{3.4em}  p{3.7em} p{3em} p{3.1em}  p{2.5em} }
+    \hline
+    \multirow{2}{*}{\centering \textbf{Date}} & \multirow{2}{*}{\textbf{Currency Pairs}} &  \multicolumn{8}{c}{\textbf{Metrics}}\\\cline{3-10} % <-- Combining 2 rows with arbitrary with (*) and content 12
+   
+      &  & Balance & Net Profit & Total Trades & Profit Factor & Expected Payoff & Drawdown in \% & Recovery Factor & Sharpe Ratio\\ % <-- Content of first column omitted.
+      \hline
+       \multirow{6}{*}{\parbox{3cm}{\centering \textbf{2019 \\ (01.01. - 31.12.)}}} & GBP/USD & 11490.90 & {\color{OliveGreen} 1490.90} & \centering 74 & 1.19 & 20.15 & 19.18 & 0.57 & 0.09\\
+       & EUR/USD & 13470.01 & {\color{OliveGreen} 3470.01} & \centering 46 & 1.87 & 75.43 & 12.83 & 1.78 & 0.28\\
+       & USD/CHF & 12466.51 & {\color{OliveGreen} 2466.51} & \centering 47 & 1.54 & 52.48 & 9.91 & 2.33 & 0.18\\
+       & USD/JPY & 9824.48 & {\color{BrickRed} -175.52} & \centering 51 & 0.96 & -3.44 & 15.56 & -0.11 & -0.01\\
+       & EUR/GBP & 9013.66 & {\color{BrickRed} -986.34} & \centering 62 & 0.85 & -15.91 & 20.53 & -0.44 & -0.05\\
+       & GBP/JPY & 10117.27 & {\color{OliveGreen} 117.27} & \centering 89 & 1.01 & 1.32 & 19.34 & 0.05 & 0.02\\
+       \hline
+	\textbf{Yearly Total} &  & & {\color{OliveGreen} \textbf{6382.83}} & & & & & \\
+	\hline
+	\hline
+       \multirow{6}{*}{\parbox{3cm}{\centering \textbf{2020 \\ (01.01. - 31.12.)}}} & GBP/USD & 13883.91 & {\color{OliveGreen} 3883.91} & \centering 102 & 1.44 & 38.08 & 11.66 & 2.79 & 0.16\\
+       & EUR/USD & 10884.04 & {\color{OliveGreen} 884.04} & \centering 78 & 1.12 & 11.33 & 18.13 & 0.40 & 0.06\\
+       & USD/CHF & 11172.22& {\color{OliveGreen} 1172.22} & \centering 68 & 1.18 & 17.24 & 12.82 & 0.73 & 0.08\\
+       & USD/JPY & 11552.46 & {\color{OliveGreen} 1552.46} & \centering 66 & 1.29 & 23.52 & 11.70 & 1.24 & 0.11\\
+       & EUR/GBP & 14526.89 & {\color{OliveGreen} 4526.89} & \centering 71 & 1.77 & 63.76 & 12.45 & 2.95 & 0.23\\
+       & GBP/JPY & 13438.72 & {\color{OliveGreen} 3438.72} & \centering 97 & 1.50 & 35.45 & 11.22 & 2.53 & 0.17\\
+    \hline
+	\textbf{Yearly Total} &  & & {\color{OliveGreen} \textbf{15458.24}} & & & & & \\
+	\hline
+	\hline
+      
+       \multirow{6}{*}{\parbox{3cm}{\centering \textbf{2021 \\ (01.01. - 30.04.)}}} & GBP/USD & 9951.18 & {\color{BrickRed} -48.82} & \centering 27 & 0.98 & -1.81 & 11.11 & -0.04 & 0.00\\
+       & EUR/USD & 9285.14 & {\color{BrickRed} -714.86} & \centering 21 & 0.67 & -34.04 & 11.60 & -0.61 & -0.15\\
+       & USD/CHF & 9739.23 & {\color{BrickRed} -260.77} & \centering 20 & 0.87 & -13.04 & 9.61 & -0.27 & -0.05\\
+       & USD/JPY & 12301.49 & {\color{OliveGreen} 2301.49} & \centering 13 & 3.58 & 177.04 & 7.02 & 2.63 & 0.55\\
+       & EUR/GBP & 11368.48 & {\color{OliveGreen} 1368.48} & \centering 14 & 2.06 & 97.75 & 8.81 & 1.42 & 0.30\\
+       & GBP/JPY & 10900.31 & {\color{OliveGreen} 900.31} & \centering 29 & 1.30 & 31.05 & 20.99 & 0.38 & 0.12\\
+     \hline
+	\textbf{Yearly Total} &  & & {\color{OliveGreen} \textbf{3545.83}} & & & & & \\
+	\hline
+	\hline
+    \end{tabular}
+  \end{center}
+  \end{adjustwidth}
+\end{table}
+
+The deposit load value shows the percent of account funds used to open positions.
+If the current account value is \$ 10,000 and the margin of open positions is \$ 5,000, the account load is 50\% = \$5,000 / \$ 10,000 * 100\%. Larger traded lot values cause larger equity fluctuations on the provider's account in case of market price changes, resulting in a larger load on the trading account. In other words, the higher the load on the account, the higher the risks.
+Margin depends on the account leverage, which means that the load on an account with the 1:500 leverage will be 5 times less than that on the account with the 1:100 leverage. But the risk will be the same. 
+
+Balance shows the amount of deposited money in our trading account. The profit/loss of our orders will be added or deducted to/from our trading account balance when we close our orders.
+Balance and Equity show the same values as long as there is not any open order. When we have open orders in our trading account, the Balance will not change and it will stay fixed but the Equity will be floated according to the profit/loss of our current orders. 
+
 
 
 

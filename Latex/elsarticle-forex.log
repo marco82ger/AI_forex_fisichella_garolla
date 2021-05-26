@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  25 MAY 2021 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  26 MAY 2021 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -485,29 +485,53 @@ Package: chngpage 2009/10/20 v1.2b change page layout
 \c@cp@tempcnt=\count310
 LaTeX Info: Redefining \checkoddpage on input line 48.
 )
-(./elsarticle-forex.aux)
+(./elsarticle-forex.aux
+
+LaTeX Warning: Label `fig:flickr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:flickr' multiply defined.
+
+
+LaTeX Warning: Label `fig:flickr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:flickr' multiply defined.
+
+
+LaTeX Warning: Label `fig:flickr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:flickr' multiply defined.
+
+
+LaTeX Warning: Label `fig:flickr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:flickr' multiply defined.
+
+)
 \openout1 = `elsarticle-forex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-
-(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+ (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count311
 \scratchdimen=\dimen187
@@ -565,7 +589,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 56.
+Package hyperref Info: Link coloring OFF on input line 59.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -578,9 +602,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count317
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
  (./elsarticle-forex.out) (./elsarticle-forex.out)
 \@outlinefile=\write4
 \openout4 = `elsarticle-forex.out'.
@@ -588,13 +612,13 @@ LaTeX Info: Redefining \nameref on input line 56.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -665,73 +689,114 @@ Overfull \hbox (20.36096pt too wide) in paragraph at lines 101--101
 deSize; stopLossDistance; buyProfit; symbol$\OT1/cmr/m/n/10 ); 
  []
 
-[13] [14] [15] [16] [17] [18] [19] [20]) (./exp.tex [21] (./filippo_exp.tex))
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[13] [14] [15] [16] [17] [18] [19] [20]) (./exp.tex [21]
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 []\OT1/cmr/m/n/10 Total
  []
 
 
-Overfull \hbox (4.25pt too wide) in paragraph at lines 122--122
+Overfull \hbox (4.25pt too wide) in paragraph at lines 42--42
 \OT1/cmr/m/n/10 Trades| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 []\OT1/cmr/m/n/10 Profit
  []
 
 
-Overfull \hbox (6.69455pt too wide) in paragraph at lines 122--122
+Overfull \hbox (6.69455pt too wide) in paragraph at lines 42--42
 []\OT1/cmr/m/n/10 Expected
  []
 
 
-Overfull \hbox (9.55562pt too wide) in paragraph at lines 122--122
+Overfull \hbox (9.55562pt too wide) in paragraph at lines 42--42
 []\OT1/cmr/m/n/10 Drawdown
  []
 
 
-Overfull \hbox (9.61111pt too wide) in paragraph at lines 122--122
+Overfull \hbox (9.61111pt too wide) in paragraph at lines 42--42
 []\OT1/cmr/m/n/10 Recovery
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 []\OT1/cmr/m/n/10 Sharpe
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 124--124
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 44--44
 [][]| 
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 134--134
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 54--54
 [][]| 
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 145--145
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 65--65
 [][]| 
  []
 
 
-Overfull \hbox (40.43146pt too wide) in paragraph at lines 118--157
+Overfull \hbox (40.43146pt too wide) in paragraph at lines 38--76
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./elsarticle-forex.bbl [22] [23] [24]) [25] (./elsarticle-forex.aux)
+[22] (./filippo_exp.tex))
+<../img//2019_GBPUSD.png, id=394, 1217.2978pt x 323.70938pt>
+File: ../img//2019_GBPUSD.png Graphic file (type png)
+<use ../img//2019_GBPUSD.png>
+Package pdftex.def Info: ../img//2019_GBPUSD.png  used on input line 118.
+(pdftex.def)             Requested size: 307.20117pt x 81.69275pt.
+<../img//2019_EURUSD.png, id=395, 1217.2978pt x 323.70938pt>
+File: ../img//2019_EURUSD.png Graphic file (type png)
+<use ../img//2019_EURUSD.png>
+Package pdftex.def Info: ../img//2019_EURUSD.png  used on input line 119.
+(pdftex.def)             Requested size: 307.20117pt x 81.69275pt.
+<../img//2019_USDCHF.png, id=396, 1217.2978pt x 323.70938pt>
+File: ../img//2019_USDCHF.png Graphic file (type png)
+<use ../img//2019_USDCHF.png>
+Package pdftex.def Info: ../img//2019_USDCHF.png  used on input line 120.
+(pdftex.def)             Requested size: 307.20117pt x 81.69275pt.
+<../img//2019_USDJPY.png, id=397, 1217.2978pt x 323.70938pt>
+File: ../img//2019_USDJPY.png Graphic file (type png)
+<use ../img//2019_USDJPY.png>
+Package pdftex.def Info: ../img//2019_USDJPY.png  used on input line 121.
+(pdftex.def)             Requested size: 307.20117pt x 81.69275pt.
+<../img//2019_EURGBP.png, id=398, 1217.2978pt x 323.70938pt>
+File: ../img//2019_EURGBP.png Graphic file (type png)
+<use ../img//2019_EURGBP.png>
+Package pdftex.def Info: ../img//2019_EURGBP.png  used on input line 122.
+(pdftex.def)             Requested size: 307.20117pt x 81.69275pt.
+<../img//2019_GBPJPY.png, id=399, 1333.98375pt x 298.11375pt>
+File: ../img//2019_GBPJPY.png Graphic file (type png)
+<use ../img//2019_GBPJPY.png>
+Package pdftex.def Info: ../img//2019_GBPJPY.png  used on input line 123.
+(pdftex.def)             Requested size: 307.20117pt x 68.65114pt.
+
+
+LaTeX Warning: Float too large for page by 70.61478pt on input line 126.
+
+(./elsarticle-forex.bbl [23] [24 <../img//2019_GBPUSD.png (PNG copy)> <../img//
+2019_EURUSD.png (PNG copy)> <../img//2019_USDCHF.png (PNG copy)> <../img//2019_
+USDJPY.png (PNG copy)> <../img//2019_EURGBP.png (PNG copy)> <../img//2019_GBPJP
+Y.png (PNG copy)>] [25]) [26] (./elsarticle-forex.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
 (rerunfilecheck)             Checksum: 0EDAD175763EDCCF9BEB252871D45E56;5510.
  ) 
 Here is how much of TeX's memory you used:
- 13921 strings out of 478994
- 208077 string characters out of 5858185
- 566056 words of memory out of 5000000
- 31059 multiletter control sequences out of 15000+600000
+ 13973 strings out of 478994
+ 209198 string characters out of 5858185
+ 566341 words of memory out of 5000000
+ 31096 multiletter control sequences out of 15000+600000
  412159 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,19n,88p,1334b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -755,10 +820,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (25 pages, 512072 bytes).
+Output written on elsarticle-forex.pdf (26 pages, 632123 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 504 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 514 compressed objects within 6 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

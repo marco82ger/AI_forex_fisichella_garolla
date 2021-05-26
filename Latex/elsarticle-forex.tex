@@ -13,8 +13,11 @@
 \usepackage{multirow}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{chngpage}
+\usepackage{subfig}
 %\usepackage [table]{xcolor}
 %\usepackage{colortbl}
+%\usepackage[demo]{graphicx}
+
 
 \modulolinenumbers[5]
 
@@ -109,6 +112,21 @@ This template helps you to create a properly formatted \LaTeX\ manuscript.
 
 %---------- Experiments-----
 \input{exp}
+
+\begin{figure}
+  \centering
+  \subfloat[][GBP/USD]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_GBPUSD.png}} \\     
+  \subfloat[][EUR/USD]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_EURUSD.png}} \\   
+  \subfloat[][USD/CHF]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_USDCHF.png}} \\   
+  \subfloat[][USD/JPY]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_USDJPY.png}} \\   
+  \subfloat[][EUR/GBP]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_EURGBP.png}} \\              
+  \subfloat[][GBP/JPY]{\label{fig:tiny}\includegraphics[width=.8\textwidth]{2019_GBPJPY.png}}
+  \caption{Balance/Equity Graphs and Deposit Load for 2019}
+  \label{fig:datasets}
+\end{figure}
+
+
+
 
 %-----
 
