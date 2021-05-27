@@ -113,20 +113,25 @@ This template helps you to create a properly formatted \LaTeX\ manuscript.
 %---------- Experiments-----
 \input{exp}
 
-\begin{figure}
-  \centering
-  \subfloat[][GBP/USD]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_GBPUSD.png}} \\     
-  \subfloat[][EUR/USD]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_EURUSD.png}} \\   
-  \subfloat[][USD/CHF]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_USDCHF.png}} \\   
-  \subfloat[][USD/JPY]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_USDJPY.png}} \\   
-  \subfloat[][EUR/GBP]{\label{fig:flickr}\includegraphics[width=.8\textwidth]{2019_EURGBP.png}} \\              
-  \subfloat[][GBP/JPY]{\label{fig:tiny}\includegraphics[width=.8\textwidth]{2019_GBPJPY.png}}
-  \caption{Balance/Equity Graphs and Deposit Load for 2019}
-  \label{fig:datasets}
-\end{figure}
 
 
-
+\begin{table}[h!]
+  \begin{center} 
+    \caption{Qualified and unqualified trading rules.}
+    \label{tab:table1}
+    \begin{tabular}{l l}
+    \hline
+    \multicolumn{2}{c}{\textbf{Rule Name}}
+    \\\cline{1-2}
+    \textbf{Qualified Rules} & \textbf{Unqualified Rules}\\
+    \hline
+    Adaptive Moving Average, Donchian channel, Stoller Bands,  Double Exponential Moving Average, Envelope Moving Avarage,  Fractal Adaptive Moving Avarage, Triple Exponential Moving Average, Avarage True Range,  MACD (Moving Average Convergence Divergence),  William' Percentage Range, Momentum, RSI (Relative Strength Index). 
+    &
+    Average Directional Moving Index, Bollinger Bands, Standard Deviation, Parabolic SAR, Bears Power, Bulls Power, Stochastic oscillator, Heiken Ashi Candles.\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
 
 %-----
 
