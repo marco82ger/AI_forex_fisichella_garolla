@@ -28,12 +28,68 @@ All our experiments are reproducible with the code of our final implemented expe
 \item \textbf{Sharpe Ratio:} this ratio characterizes efficiency and stability of a strategy. It reflects the ratio of the arithmetical mean profit for the position holding time to the standard deviation from it.
 \end{itemize}
 
+\subsubsection{Datasets}
+Data were collected and represent the historical data, measured at 4-hours intervals candlesticks, of 6 currency pairs: 4 major pairs like GBP/USD, EUR/USD, USD/CHF and USD/JPY, and 2 minor pairs like EUR/GBP and GBP/JPY.
+
+Dataset spans from 01-01-2010 till 30-04-2021. Training-set was build considering data in the interval from 01-01-2010 till 31-12-2018. The remaining are the test-set. Data were extracted from Metatrader 5 software, introduced in Section~\ref{sec:mt5}. 
+
+Experiments on all 6 currency pairs are conducted on three test-sets:
+\begin{itemize}
+\setlength\itemsep{0.3em}
+\item Entire 2019: from 01-01-2019 till 31-12-2019.
+\item Entire 2020: from 01-01-2020 till 31-12-2020.
+\item Current year 2021: from 01-01-2021 till 30-04-2021.
+\end{itemize}
+
+Trading rules are active on each candlesticks, but as soon as a position is open and on the market, our approach check each tick of the market. A tick is an event characterized by a new price for a symbol at some moment; ticks are more frequent than candlesticks. In Table~\ref{tab:ticks}, we report the number of ticks for each test set intervals.
+
+ \begin{table}[h!]
+    \caption{Test-set data details.}
+  \begin{center} 
+    \label{tab:ticks}
+    \begin{tabular}{c c c c }
+    \hline
+    \multirow{2}{*}{\centering \textbf{Currency Pairs}} &  \multicolumn{2}{c}{\textbf{2019} } &  \multicolumn{2}{c}{\textbf{2020}}&  \multicolumn{2}{c}{\textbf{2021}}\\\cline{2-4} % <-- Combining 2 rows with arbitrary with (*) and content 12
+         & Ticks  & Ticks  & Ticks\\ % <-- Content of first column omitted.
+      \hline
+        EUR/USD   & 14,107,144   & 22,493,176  & 6,418,430\\
+        USD/CHF     & 13,057,137   & 15,598,601  & 4,256,816\\
+        USD/JPY    &   & 19,068,209   & 4,487,949\\
+        EUR/GBP    &  & 19,224,884  & 5,481,037\\
+        GBP/JPY   &   & 35,299,958  & 9,181,770\\
+        GBP/USD    &   & 24,012,594  & 7,117,293\\
+	\hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+\textbf{TODO: non ho messo AI based rule, vedere se metterla o tenere separati gli esperimenti}
+\begin{table}[h!]
+  \begin{center} 
+    \caption{Qualified and unqualified trading rules.}
+    \label{tab:qualrules}
+    \begin{tabular}{p{6cm}  p{6cm} }
+    \hline
+    \multicolumn{2}{c}{\textbf{Rule Name}}
+    \\\cline{1-2}
+    \textbf{Qualified Rules} & \textbf{Unqualified Rules}\\
+    \hline
+    Adaptive Moving Average, Donchian channel, Stoller Bands,  Double Exponential Moving Average, Envelope Moving Avarage,  Fractal Adaptive Moving Avarage, Triple Exponential Moving Average, Avarage True Range,  MACD (Moving Average Convergence Divergence),  William' Percentage Range, Momentum, RSI (Relative Strength Index). 
+    &
+    Average Directional Moving Index, Bollinger Bands, Standard Deviation, Parabolic SAR, Bears Power, Bulls Power, Stochastic oscillator, Heiken Ashi Candles.\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
 
 \begin{table}[h!]
+    \caption{Experiments on several datasets. In green the net profit, in red the net loss. }
   \begin{adjustwidth}{-.7in}{-.5in}  
   \begin{center} 
-    \caption{Experiments on several datasets. In green the net profit, in red the net loss. }
-    \label{tab:table1}
+
+    \label{tab:expyears}
     \begin{tabular}{p{2.4cm} c c p{2.5em} p{2.9em} p{3.4em}  p{3.7em} p{3em} p{3.1em}  p{2.5em} }
     \hline
     \multirow{2}{*}{\centering \textbf{Date}} & \multirow{2}{*}{\textbf{Currency Pairs}} &  \multicolumn{7}{c}{\textbf{Metrics}}\\\cline{3-9} % <-- Combining 2 rows with arbitrary with (*) and content 12
@@ -93,7 +149,7 @@ Balance and Equity show the same values as long as there is not any open order. 
   \subfloat[][EUR/GBP]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2019_EURGBP.png}} \\  [-.1ex]              
   \subfloat[][GBP/JPY]{\label{fig:tiny}\includegraphics[width=.77\textwidth]{2019_GBPJPY.png}}  \\  [-.1ex]    
   \caption{Balance/Equity Graphs and Deposit Load for the entire 2019}
-  \label{fig:datasets}
+  \label{fig:d2019}
 \end{figure}
 
 \begin{figure}
@@ -105,7 +161,7 @@ Balance and Equity show the same values as long as there is not any open order. 
   \subfloat[][EUR/GBP]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2020_EURGBP.png}} \\  [-.1ex]              
   \subfloat[][GBP/JPY]{\label{fig:tiny}\includegraphics[width=.77\textwidth]{2020_GBPJPY.png}}  \\  [-.1ex]    
   \caption{Balance/Equity Graphs and Deposit Load for the entire 2020}
-  \label{fig:datasets}
+  \label{fig:2020}
 \end{figure}
 
 \begin{figure}
@@ -117,8 +173,10 @@ Balance and Equity show the same values as long as there is not any open order. 
   \subfloat[][EUR/GBP]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2021_EURGBP.png}} \\  [-.1ex]              
   \subfloat[][GBP/JPY]{\label{fig:tiny}\includegraphics[width=.77\textwidth]{2021_GBPJPY.png}}  \\  [-.1ex]    
   \caption{Balance/Equity Graphs and Deposit Load for 2021, from 01.01 until 30.04}
-  \label{fig:datasets}
+  \label{fig:2021}
 \end{figure}
+
+
 
 
 \input{filippo_exp}

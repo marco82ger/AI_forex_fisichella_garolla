@@ -113,26 +113,6 @@ This template helps you to create a properly formatted \LaTeX\ manuscript.
 %---------- Experiments-----
 \input{exp}
 
-
-
-\begin{table}[h!]
-  \begin{center} 
-    \caption{Qualified and unqualified trading rules.}
-    \label{tab:table1}
-    \begin{tabular}{l l}
-    \hline
-    \multicolumn{2}{c}{\textbf{Rule Name}}
-    \\\cline{1-2}
-    \textbf{Qualified Rules} & \textbf{Unqualified Rules}\\
-    \hline
-    Adaptive Moving Average, Donchian channel, Stoller Bands,  Double Exponential Moving Average, Envelope Moving Avarage,  Fractal Adaptive Moving Avarage, Triple Exponential Moving Average, Avarage True Range,  MACD (Moving Average Convergence Divergence),  William' Percentage Range, Momentum, RSI (Relative Strength Index). 
-    &
-    Average Directional Moving Index, Bollinger Bands, Standard Deviation, Parabolic SAR, Bears Power, Bulls Power, Stochastic oscillator, Heiken Ashi Candles.\\
-      \hline
-    \end{tabular}
-  \end{center}
-\end{table}
-
 %-----
 
 \bibliography{mybibfile}
