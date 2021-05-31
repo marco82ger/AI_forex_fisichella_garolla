@@ -26,7 +26,7 @@ The rules whose best chromosome does not have a positive net profit are directly
 \label{subsection:trading}
 This layer is used to simulate any buying and selling rule on the given time series data with respect to specific currency pairs in order to generate buy/sell/StopLoss/TakeProfit signals (hereafter explained) and calculate net profit as well as different statistics (number trades/deals, total net profit, number of ticks, balance drawdown absolute/max/relative, consecutive wins/profit, consecutive losses, and many others) at the end of the simulation. Our trading simulation system adopts a realistic approach to compute the net profit: we use a demo account with a trading broker \footnote{https://www.icmarkets.com/en/open-trading-account/demo/} simulating the placement of buy/sell positions. Our choice to go through a demo trading account is fundamental for realistically computing the gain and loss of our proposed approach. Finally, the net profit of the simulated trading rule is used as fitness value for the GA layer. 
 
-The simulation of the placement of a buy order is given in Algorithm \ref{alg:tradingSim}. Similarly is done the placement of a sell order.
+The simulation of the placement of a buy order is given in Algorithm \ref{alg:tradingSim}. Similarly is done the placement of a sell order. For sake of clarity, \textit{Point} is the minimum amount of price change.
 
 \vspace{\baselineskip}% Insert a blank line
 \SetInd{0.5em}{0.5em}

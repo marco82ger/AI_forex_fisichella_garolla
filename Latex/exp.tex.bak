@@ -14,6 +14,7 @@ All our experiments are reproducible with the code of our final implemented expe
 \end{itemize}
 
 \subsubsection{Evaluation Metrics}
+\label{sec:metrics}
 \noindent The following evaluation metrics were computed for our experiments:
 
 \begin{itemize}
@@ -30,9 +31,7 @@ All our experiments are reproducible with the code of our final implemented expe
 
 \subsubsection{Datasets}
 Data were collected and represent the historical data, measured at 4-hours intervals candlesticks, of 6 currency pairs: 4 major pairs like GBP/USD, EUR/USD, USD/CHF and USD/JPY, and 2 minor pairs like EUR/GBP and GBP/JPY.
-
-Dataset spans from 01-01-2010 till 30-04-2021. Training-set was build considering data in the interval from 01-01-2010 till 31-12-2018. The remaining are the test-set. Data were extracted from Metatrader 5 software, introduced in Section~\ref{sec:mt5}. 
-
+Dataset spans from 01-01-2010 till 30-04-2021. Training-set was built considering data in the interval from 01-01-2010 till 31-12-2018. The remaining data constitute the test-set. Data were extracted from Metatrader 5 software, introduced in Section~\ref{sec:mt5}. 
 Experiments on all 6 currency pairs are conducted on three test-sets:
 \begin{itemize}
 \setlength\itemsep{0.3em}
@@ -49,22 +48,24 @@ Trading rules are active on each candlesticks, but as soon as a position is open
     \label{tab:ticks}
     \begin{tabular}{c c c c }
     \hline
-    \multirow{2}{*}{\centering \textbf{Currency Pairs}} &  \multicolumn{2}{c}{\textbf{2019} } &  \multicolumn{2}{c}{\textbf{2020}}&  \multicolumn{2}{c}{\textbf{2021}}\\\cline{2-4} % <-- Combining 2 rows with arbitrary with (*) and content 12
+    \multirow{2}{*}{\centering \textbf{Currency Pairs}} &  \textbf{2019}  &  \textbf{2020}&  \textbf{2021}\\\cline{2-4} % <-- Combining 2 rows with arbitrary with (*) and content 12
          & Ticks  & Ticks  & Ticks\\ % <-- Content of first column omitted.
       \hline
         EUR/USD   & 14,107,144   & 22,493,176  & 6,418,430\\
         USD/CHF     & 13,057,137   & 15,598,601  & 4,256,816\\
-        USD/JPY    &   & 19,068,209   & 4,487,949\\
-        EUR/GBP    &  & 19,224,884  & 5,481,037\\
-        GBP/JPY   &   & 35,299,958  & 9,181,770\\
-        GBP/USD    &   & 24,012,594  & 7,117,293\\
+        USD/JPY    & 16,510,745  & 19,068,209   & 4,487,949\\
+        EUR/GBP    &  15,810,439 & 19,224,884  & 5,481,037\\
+        GBP/JPY   &  32,155,222 & 35,299,958  & 9,181,770\\
+        GBP/USD    & 20,904,274  & 24,012,594  & 7,117,293\\
 	\hline
     \end{tabular}
   \end{center}
 \end{table}
 
+\subsection{Results on Phase 1}
+The goal of the first phase is the selection of trading rules: rules whose best chromosome does not have a positive net profit are directly eliminated and do not pass to the second phase.
+In Table~\ref{tab:qualrules}, we report the qualified and unqualified trading rules.
 
-\textbf{TODO: non ho messo AI based rule, vedere se metterla o tenere separati gli esperimenti}
 \begin{table}[h!]
   \begin{center} 
     \caption{Qualified and unqualified trading rules.}
@@ -83,6 +84,11 @@ Trading rules are active on each candlesticks, but as soon as a position is open
   \end{center}
 \end{table}
 
+\subsection{Results on Phase 2: without AI-based}
+In the second phase, profitable rules among the qualified rules are selected and combined. The final output is the best chromosomes having the highest Net Profit.
+The best chromosome output the combination of the following rules: Bollinger Bands, Stochastic oscillator, Bears Power, Bulls Power, and Heiken Ashi Candles. According to this combination, we implemented the expert advisor for trading. 
+
+The results of the experiments using all metrics presented in Section~\ref{sec:metrics} are reported in Table~\ref{tab:expyears}. For almost all currency pairs during the three long considered time intervals we are profitable and the results show that the best strategy is to invest simultaneously on all of the currency to reduce the loss risk and stay profitable.
 
 \begin{table}[h!]
     \caption{Experiments on several datasets. In green the net profit, in red the net loss. }
@@ -132,15 +138,16 @@ Trading rules are active on each candlesticks, but as soon as a position is open
   \end{adjustwidth}
 \end{table}
 
-The deposit load value shows the percent of account funds used to open positions.
-If the current account value is \$ 10,000 and the margin of open positions is \$ 5,000, the account load is 50\% = \$5,000 / \$ 10,000 * 100\%. Larger traded lot values cause larger equity fluctuations on the provider's account in case of market price changes, resulting in a larger load on the trading account. In other words, the higher the load on the account, the higher the risks.
-Margin depends on the account leverage, which means that the load on an account with the 1:500 leverage will be 5 times less than that on the account with the 1:100 leverage. But the risk will be the same. 
+For sake of clarity, we also present the temporal investment graph for all 6 currency pairs conducted on the three test-sets: Fig.~\ref{fig:2019} for 2019, Fig.~\ref{fig:2020} for 2020, and Fig.~\ref{fig:2021} for 2021. In details, we report the Balance/Equity chart and the Deposit load chart.
 
 Balance shows the amount of deposited money in our trading account. The profit/loss of our orders will be added or deducted to/from our trading account balance when we close our orders.
 Balance and Equity show the same values as long as there is not any open order. When we have open orders in our trading account, the Balance will not change and it will stay fixed but the Equity will be floated according to the profit/loss of our current orders. 
 
+The deposit load value shows the percent of account funds used to open positions. 
+If the current account value is \$ 10,000 and the margin of open positions is \$ 5,000, the account load is 50\% = \$5,000 / \$ 10,000 * 100\%. Larger traded lot values cause larger equity fluctuations on the provider's account in case of market price changes, resulting in a larger load on the trading account. In other words, the higher the load on the account, the higher the risks.
+Margin depends on the account leverage, which means that the load on an account with the 1:500 leverage will be 5 times less than that on the account with the 1:100 leverage. But the risk will be the same. In our experiment the deposit load was always below or around 25\%.
 
-\begin{figure}
+\begin{figure}[htb]
   \centering
   \subfloat[][GBP/USD]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2019_GBPUSD.png}} \\[-.1ex]   
   \subfloat[][EUR/USD]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2019_EURUSD.png}}  \\[-.1ex]  
@@ -149,10 +156,10 @@ Balance and Equity show the same values as long as there is not any open order. 
   \subfloat[][EUR/GBP]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2019_EURGBP.png}} \\  [-.1ex]              
   \subfloat[][GBP/JPY]{\label{fig:tiny}\includegraphics[width=.77\textwidth]{2019_GBPJPY.png}}  \\  [-.1ex]    
   \caption{Balance/Equity Graphs and Deposit Load for the entire 2019}
-  \label{fig:d2019}
+  \label{fig:2019}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \subfloat[][GBP/USD]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2020_GBPUSD.png}} \\[-.1ex]   
   \subfloat[][EUR/USD]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2020_EURUSD.png}}  \\[-.1ex]  
@@ -164,7 +171,7 @@ Balance and Equity show the same values as long as there is not any open order. 
   \label{fig:2020}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \subfloat[][GBP/USD]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2021_GBPUSD.png}} \\[-.1ex]   
   \subfloat[][EUR/USD]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2021_EURUSD.png}}  \\[-.1ex]  
@@ -176,7 +183,7 @@ Balance and Equity show the same values as long as there is not any open order. 
   \label{fig:2021}
 \end{figure}
 
-
+\subsection{Results on Phase 2: including AI-based}
 
 
 \input{filippo_exp}
