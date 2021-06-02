@@ -1,4 +1,5 @@
 \section{Experiments}
+\label{sec:5}
 All our experiments are reproducible with the code of our final implemented expert advisor publicly available~\footnote{https://git.l3s.uni-hannover.de/mfisichella/forex}.
 
 \subsection{Investment Setup}
@@ -68,13 +69,13 @@ In Table~\ref{tab:qualrules}, we report the qualified and unqualified trading ru
 
 \begin{table}[h!]
   \begin{center} 
-    \caption{Qualified and unqualified trading rules.}
+    \caption{Unqualified and qualified trading rules.}
     \label{tab:qualrules}
     \begin{tabular}{p{6cm}  p{6cm} }
     \hline
     \multicolumn{2}{c}{\textbf{Rule Name}}
     \\\cline{1-2}
-    \textbf{Qualified Rules} & \textbf{Unqualified Rules}\\
+    \textbf{Unqualified Rules} & \textbf{Qualified Rules}\\
     \hline
     Adaptive Moving Average, Donchian channel, Stoller Bands,  Double Exponential Moving Average, Envelope Moving Avarage,  Fractal Adaptive Moving Avarage, Triple Exponential Moving Average, Avarage True Range,  MACD (Moving Average Convergence Divergence),  William' Percentage Range, Momentum, RSI (Relative Strength Index). 
     &
@@ -147,7 +148,7 @@ The deposit load value shows the percent of account funds used to open positions
 If the current account value is \$ 10,000 and the margin of open positions is \$ 5,000, the account load is 50\% = \$5,000 / \$ 10,000 * 100\%. Larger traded lot values cause larger equity fluctuations on the provider's account in case of market price changes, resulting in a larger load on the trading account. In other words, the higher the load on the account, the higher the risks.
 Margin depends on the account leverage, which means that the load on an account with the 1:500 leverage will be 5 times less than that on the account with the 1:100 leverage. But the risk will be the same. In our experiment the deposit load was always below or around 25\%.
 
-\begin{figure}[htb]
+\begin{figure}[h]
   \centering
   \subfloat[][GBP/USD]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2019_GBPUSD.png}} \\[-.1ex]   
   \subfloat[][EUR/USD]{\label{fig:flickr}\includegraphics[width=.77\textwidth]{2019_EURUSD.png}}  \\[-.1ex]  

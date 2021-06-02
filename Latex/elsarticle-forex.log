@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  31 MAY 2021 12:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  2 JUN 2021 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -703,53 +703,54 @@ Overfull \hbox (2.22221pt too wide) has occurred while \output is active
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 16.
+(hyperref)                removing `\<def>-command' on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cnotenum' on input line 16.
+(hyperref)                removing `\cnotenum' on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 16.
+(hyperref)                removing `\<def>-command' on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@corref' on input line 16.
+(hyperref)                removing `\@corref' on input line 14.
 
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-(./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex [6]
-<../img//candle.pdf, id=226, 261.81805pt x 185.91336pt>
+(./relatedwork.tex [2] [3] [4] [5]) (./preliminaries.tex [6] [7]
+<../img//candle.pdf, id=242, 261.81805pt x 185.91336pt>
 File: ../img//candle.pdf Graphic file (type pdf)
 <use ../img//candle.pdf>
-Package pdftex.def Info: ../img//candle.pdf  used on input line 30.
+Package pdftex.def Info: ../img//candle.pdf  used on input line 31.
 (pdftex.def)             Requested size: 130.90869pt x 92.95645pt.
- [7 <../img//candle.pdf>] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+ [8 <../img//candle.pdf>] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-[10]
-<../img//2.5.pdf, id=268, 843.9805pt x 388.38922pt>
+<../img//2.5.pdf, id=274, 843.9805pt x 388.38922pt>
 File: ../img//2.5.pdf Graphic file (type pdf)
 <use ../img//2.5.pdf>
-Package pdftex.def Info: ../img//2.5.pdf  used on input line 158.
+Package pdftex.def Info: ../img//2.5.pdf  used on input line 159.
 (pdftex.def)             Requested size: 337.58621pt x 155.35292pt.
-) (./trading.tex [11 <../img//2.5.pdf, page is rotated 90 degrees>]
-<../img//framework.pdf, id=288, 891.06178pt x 440.34422pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./trading.tex [11]
+<../img//framework.pdf, id=286, 891.06178pt x 440.34422pt>
 File: ../img//framework.pdf Graphic file (type pdf)
 <use ../img//framework.pdf>
 Package pdftex.def Info: ../img//framework.pdf  used on input line 12.
 (pdftex.def)             Requested size: 267.32059pt x 132.10428pt.
-
-[12 <../img//framework.pdf>]
+ [12 <../img//2.5.pdf, page is rotated 90 degrees> <../img//framework.pdf>]
 Overfull \hbox (73.62915pt too wide) in paragraph at lines 101--101
 []$\OML/cmm/m/it/10 tradeSize$\OT1/cmr/m/n/10 =MoneyManagement($\OML/cmm/m/it/1
 0 symbol; fixedVolume; riskPercent; stopLossDistance$\OT1/cmr/m/n/10 ); 
@@ -762,200 +763,200 @@ deSize; stopLossDistance; buyProfit; symbol$\OT1/cmr/m/n/10 );
  []
 
 [13] [14] [15] [16] [17] [18] [19] [20]) (./exp.tex [21] [22]
-Underfull \hbox (badness 1137) in paragraph at lines 79--80
+Underfull \hbox (badness 1137) in paragraph at lines 80--81
 \OT1/cmr/m/n/10 chan-nel, Stoller Bands, Dou-ble Ex-
  []
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 79--80
+Underfull \hbox (badness 4595) in paragraph at lines 80--81
 \OT1/cmr/m/n/10 Mov-ing Avarage, Frac-tal Adap-tive
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 79--80
+Underfull \hbox (badness 6859) in paragraph at lines 80--81
 \OT1/cmr/m/n/10 Mov-ing Avarage, Triple Ex-po-nen-
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 79--80
+Underfull \hbox (badness 1253) in paragraph at lines 80--81
 \OT1/cmr/m/n/10 tial Mov-ing Av-er-age, Avarage True
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 79--80
+Underfull \hbox (badness 1515) in paragraph at lines 80--81
 \OT1/cmr/m/n/10 ver-gence Di-ver-gence), William' Per-
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 81--82
+Underfull \hbox (badness 4254) in paragraph at lines 82--83
 []\OT1/cmr/m/n/10 Average Di-rec-tional Mov-ing In-dex,
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 81--82
+Underfull \hbox (badness 1389) in paragraph at lines 82--83
 \OT1/cmr/m/n/10 Parabolic SAR, Bears Power, Bulls
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 81--82
+Underfull \hbox (badness 1648) in paragraph at lines 82--83
 \OT1/cmr/m/n/10 Power, Stochas-tic os-cil-la-tor, Heiken
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
 []\OT1/cmr/m/n/10 Total
  []
 
 
-Overfull \hbox (4.25pt too wide) in paragraph at lines 103--103
+Overfull \hbox (4.25pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 Trades| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
 []\OT1/cmr/m/n/10 Profit
  []
 
 
-Overfull \hbox (6.69455pt too wide) in paragraph at lines 103--103
+Overfull \hbox (6.69455pt too wide) in paragraph at lines 104--104
 []\OT1/cmr/m/n/10 Expected
  []
 
 
-Overfull \hbox (9.55562pt too wide) in paragraph at lines 103--103
+Overfull \hbox (9.55562pt too wide) in paragraph at lines 104--104
 []\OT1/cmr/m/n/10 Drawdown
  []
 
 
-Overfull \hbox (9.61111pt too wide) in paragraph at lines 103--103
+Overfull \hbox (9.61111pt too wide) in paragraph at lines 104--104
 []\OT1/cmr/m/n/10 Recovery
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 []\OT1/cmr/m/n/10 Sharpe
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 105--105
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 106--106
 [][]| 
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 115--115
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 116--116
 [][]| 
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 126--126
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 127--127
 [][]| 
  []
 
 
-Overfull \hbox (12.33476pt too wide) in paragraph at lines 99--137
+Overfull \hbox (12.33476pt too wide) in paragraph at lines 100--138
  [] 
  []
 
 [24]
-<../img//2019_GBPUSD.png, id=433, 1217.2978pt x 323.70938pt>
+<../img//2019_GBPUSD.png, id=440, 1217.2978pt x 323.70938pt>
 File: ../img//2019_GBPUSD.png Graphic file (type png)
 <use ../img//2019_GBPUSD.png>
-Package pdftex.def Info: ../img//2019_GBPUSD.png  used on input line 152.
+Package pdftex.def Info: ../img//2019_GBPUSD.png  used on input line 153.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_EURUSD.png, id=434, 1217.2978pt x 323.70938pt>
+<../img//2019_EURUSD.png, id=441, 1217.2978pt x 323.70938pt>
 File: ../img//2019_EURUSD.png Graphic file (type png)
 <use ../img//2019_EURUSD.png>
-Package pdftex.def Info: ../img//2019_EURUSD.png  used on input line 153.
+Package pdftex.def Info: ../img//2019_EURUSD.png  used on input line 154.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_USDCHF.png, id=435, 1217.2978pt x 323.70938pt>
+<../img//2019_USDCHF.png, id=442, 1217.2978pt x 323.70938pt>
 File: ../img//2019_USDCHF.png Graphic file (type png)
 <use ../img//2019_USDCHF.png>
-Package pdftex.def Info: ../img//2019_USDCHF.png  used on input line 154.
+Package pdftex.def Info: ../img//2019_USDCHF.png  used on input line 155.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_USDJPY.png, id=436, 1217.2978pt x 323.70938pt>
+<../img//2019_USDJPY.png, id=443, 1217.2978pt x 323.70938pt>
 File: ../img//2019_USDJPY.png Graphic file (type png)
 <use ../img//2019_USDJPY.png>
-Package pdftex.def Info: ../img//2019_USDJPY.png  used on input line 155.
+Package pdftex.def Info: ../img//2019_USDJPY.png  used on input line 156.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_EURGBP.png, id=437, 1217.2978pt x 323.70938pt>
+<../img//2019_EURGBP.png, id=444, 1217.2978pt x 323.70938pt>
 File: ../img//2019_EURGBP.png Graphic file (type png)
 <use ../img//2019_EURGBP.png>
-Package pdftex.def Info: ../img//2019_EURGBP.png  used on input line 156.
+Package pdftex.def Info: ../img//2019_EURGBP.png  used on input line 157.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_GBPJPY.png, id=438, 1333.98375pt x 298.11375pt>
+<../img//2019_GBPJPY.png, id=445, 1333.98375pt x 298.11375pt>
 File: ../img//2019_GBPJPY.png Graphic file (type png)
 <use ../img//2019_GBPJPY.png>
-Package pdftex.def Info: ../img//2019_GBPJPY.png  used on input line 157.
+Package pdftex.def Info: ../img//2019_GBPJPY.png  used on input line 158.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
 
 
-LaTeX Warning: Float too large for page by 0.11986pt on input line 160.
+LaTeX Warning: Float too large for page by 0.11986pt on input line 161.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../img//2020_GBPUSD.png, id=439, 1333.98375pt x 298.11375pt>
+<../img//2020_GBPUSD.png, id=446, 1333.98375pt x 298.11375pt>
 File: ../img//2020_GBPUSD.png Graphic file (type png)
 <use ../img//2020_GBPUSD.png>
-Package pdftex.def Info: ../img//2020_GBPUSD.png  used on input line 164.
+Package pdftex.def Info: ../img//2020_GBPUSD.png  used on input line 165.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_EURUSD.png, id=440, 1333.98375pt x 298.11375pt>
+<../img//2020_EURUSD.png, id=447, 1333.98375pt x 298.11375pt>
 File: ../img//2020_EURUSD.png Graphic file (type png)
 <use ../img//2020_EURUSD.png>
-Package pdftex.def Info: ../img//2020_EURUSD.png  used on input line 165.
+Package pdftex.def Info: ../img//2020_EURUSD.png  used on input line 166.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_USDCHF.png, id=441, 1333.98375pt x 298.11375pt>
+<../img//2020_USDCHF.png, id=448, 1333.98375pt x 298.11375pt>
 File: ../img//2020_USDCHF.png Graphic file (type png)
 <use ../img//2020_USDCHF.png>
-Package pdftex.def Info: ../img//2020_USDCHF.png  used on input line 166.
+Package pdftex.def Info: ../img//2020_USDCHF.png  used on input line 167.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_USDJPY.png, id=442, 1333.98375pt x 298.11375pt>
+<../img//2020_USDJPY.png, id=449, 1333.98375pt x 298.11375pt>
 File: ../img//2020_USDJPY.png Graphic file (type png)
 <use ../img//2020_USDJPY.png>
-Package pdftex.def Info: ../img//2020_USDJPY.png  used on input line 167.
+Package pdftex.def Info: ../img//2020_USDJPY.png  used on input line 168.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_EURGBP.png, id=443, 1333.98375pt x 298.11375pt>
+<../img//2020_EURGBP.png, id=450, 1333.98375pt x 298.11375pt>
 File: ../img//2020_EURGBP.png Graphic file (type png)
 <use ../img//2020_EURGBP.png>
-Package pdftex.def Info: ../img//2020_EURGBP.png  used on input line 168.
+Package pdftex.def Info: ../img//2020_EURGBP.png  used on input line 169.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_GBPJPY.png, id=444, 1333.98375pt x 298.11375pt>
+<../img//2020_GBPJPY.png, id=451, 1333.98375pt x 298.11375pt>
 File: ../img//2020_GBPJPY.png Graphic file (type png)
 <use ../img//2020_GBPJPY.png>
-Package pdftex.def Info: ../img//2020_GBPJPY.png  used on input line 169.
+Package pdftex.def Info: ../img//2020_GBPJPY.png  used on input line 170.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../img//2021_GBPUSD.png, id=445, 1333.98375pt x 298.11375pt>
+<../img//2021_GBPUSD.png, id=452, 1333.98375pt x 298.11375pt>
 File: ../img//2021_GBPUSD.png Graphic file (type png)
 <use ../img//2021_GBPUSD.png>
-Package pdftex.def Info: ../img//2021_GBPUSD.png  used on input line 176.
+Package pdftex.def Info: ../img//2021_GBPUSD.png  used on input line 177.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_EURUSD.png, id=446, 1333.98375pt x 298.11375pt>
+<../img//2021_EURUSD.png, id=453, 1333.98375pt x 298.11375pt>
 File: ../img//2021_EURUSD.png Graphic file (type png)
 <use ../img//2021_EURUSD.png>
-Package pdftex.def Info: ../img//2021_EURUSD.png  used on input line 177.
+Package pdftex.def Info: ../img//2021_EURUSD.png  used on input line 178.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_USDCHF.png, id=447, 1333.98375pt x 298.11375pt>
+<../img//2021_USDCHF.png, id=454, 1333.98375pt x 298.11375pt>
 File: ../img//2021_USDCHF.png Graphic file (type png)
 <use ../img//2021_USDCHF.png>
-Package pdftex.def Info: ../img//2021_USDCHF.png  used on input line 178.
+Package pdftex.def Info: ../img//2021_USDCHF.png  used on input line 179.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_USDJPY.png, id=448, 1333.98375pt x 298.11375pt>
+<../img//2021_USDJPY.png, id=455, 1333.98375pt x 298.11375pt>
 File: ../img//2021_USDJPY.png Graphic file (type png)
 <use ../img//2021_USDJPY.png>
-Package pdftex.def Info: ../img//2021_USDJPY.png  used on input line 179.
+Package pdftex.def Info: ../img//2021_USDJPY.png  used on input line 180.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_EURGBP.png, id=449, 1333.98375pt x 298.11375pt>
+<../img//2021_EURGBP.png, id=456, 1333.98375pt x 298.11375pt>
 File: ../img//2021_EURGBP.png Graphic file (type png)
 <use ../img//2021_EURGBP.png>
-Package pdftex.def Info: ../img//2021_EURGBP.png  used on input line 180.
+Package pdftex.def Info: ../img//2021_EURGBP.png  used on input line 181.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_GBPJPY.png, id=450, 1333.98375pt x 298.11375pt>
+<../img//2021_GBPJPY.png, id=457, 1333.98375pt x 298.11375pt>
 File: ../img//2021_GBPJPY.png Graphic file (type png)
 <use ../img//2021_GBPJPY.png>
-Package pdftex.def Info: ../img//2021_GBPJPY.png  used on input line 181.
+Package pdftex.def Info: ../img//2021_GBPJPY.png  used on input line 182.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -977,10 +978,10 @@ Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
 (rerunfilecheck)             Checksum: D5EADC97D22E49A777AE6D0A33121625;6291.
  ) 
 Here is how much of TeX's memory you used:
- 14078 strings out of 478994
- 211425 string characters out of 5858185
- 563840 words of memory out of 5000000
- 31166 multiletter control sequences out of 15000+600000
+ 14081 strings out of 478994
+ 211446 string characters out of 5858185
+ 563947 words of memory out of 5000000
+ 31169 multiletter control sequences out of 15000+600000
  412159 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,19n,88p,1334b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1004,10 +1005,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (29 pages, 861697 bytes).
+Output written on elsarticle-forex.pdf (29 pages, 863477 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
+ 666 PDF objects out of 1000 (max. 8388607)
+ 576 compressed objects within 6 object streams
  150 named destinations out of 1000 (max. 500000)
  362 words of extra memory for PDF output out of 10000 (max. 10000000)
 
