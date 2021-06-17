@@ -6,7 +6,7 @@ In first instance, an order is a request to make a trade to open a position.
 A trade is made when the order is matched to a counterpart, i.e a buyer has found a seller, or vice versa.
 Once a trade is opened, it constitutes a position. A position is exposure to the market and will move the balance in the account up or down in line with market movements. Placing an order to close a position will result in a trade opposite to the direction initially took, e.g. if we initially bought, now we sell to close. When we open a buy position, we are \textit{long}, while when we sell we are \textit{short}.
 
-To be able to start a exchange in Forex, one need to open a position. There are alternatives to open a position: both buying the base currency and selling the quote one (going long) or selling the base one and buying for the quote forex currency (going short). The base and quote currencies are the first and second currencies in a foreign money pair, respectively. For instance, GBP is the base and USD is the quote currencies in GBP/USD forex pair.
+To be able to start an exchange in Forex, one need to open a position. There are alternatives to open a position: both buying the base currency and selling the quote one (going long) or selling the base one and buying for the quote Forex currency (going short). The base and quote currencies are the first and second currencies in a foreign money pair, respectively. For instance, GBP is the base and USD is the quote currencies in GBP/USD Forex pair.
 
 A trader can use leverage within the buying and selling. Leverage is the ratio which lets in to trade big amount with a small sum of money. As an instance, if one trades \$ $1000$ with a leverage $1:30$ in GBP/USD, the amount of buying and selling transaction will be \$ $30,000$ instead of \$ $1000$.
 The profit or loss of a buying and selling transaction is calculated with the aid of subtracting the final value from the initial price of the foreign money pair. Assume the trader goes long  \$ $30,000$ in GBP/USD with a buying price of $1.4060$ and closes his position with a selling price of $1.4090$. The difference is $0.0030$ equals to 20 pips. A pip is the smallest price move that an exchange rate can make based on market convention. Due to the fact the initial position is long and price went up, the transaction is profitable and the earnings is $30,000 * 0.0030 =$ \$90. Consequently the trader wants the price of the forex pair to growth whilst he/she is long and decrease when he/she is short to be able to get profit.
@@ -25,7 +25,7 @@ We used MQL5 to implement an \textit{expert advisor} that is an automated tradin
 \label{sec:techInd}
 Technical analysis is the observation of past market motion with the scope to forecast future prices and to deal with the effect of the market movement. Two are the main approaches considered in this analysis. Based on charts, the analysis tends to detect patterns in price charts. There are 4 main types of charts used by traders: Bar chart, line chart, candlestick chart and figure chart. We use Candlestick chart.
 
-The candlestick is a type of graphical representation of the prices in the time, similar to the Bar chart but is of easier reading.
+The candlestick is a type of graphical representation of the prices in the time, similar to the Bar chart but it is of easier reading.
 
 \begin{figure}[h]
 \includegraphics[scale=0.5]{candle}

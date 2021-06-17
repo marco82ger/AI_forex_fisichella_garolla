@@ -186,7 +186,7 @@ The last step of trading simulation layer is the computation of the total net pr
 For each open position that is closed, either due to reverse signal triggered by our system or meeting the stop loss or meeting the take profit, a profit or loss is computed. The sum of all the gains/losses in the entire temporal window under consideration for a specific currency pair constitutes our total net profit.
 
 
-\subsubsection{AI Convolutional Layer}
+\subsubsection{AI-based Rule}
 \label{subsection:ai}
 
 
@@ -319,9 +319,7 @@ Finally, from this layer we output the one best chromosome which has the best fi
 \subsubsection{Trading Simulation Layer: computing the Net Profit of the rules combinations}
 \label{subsection:trading2}
 
-This is the final layer which combines the qualified trading rules extracted by the chromosomes to generate buy/sell open position signals similar to a unique trading ensemble rule and forms the combined trading system. A hard voting method is used in this layer.
-
-\noindent Hereafter we report the steps on how this layer works:
+This is the final layer which combines the qualified trading rules extracted by the chromosomes to generate buy/sell open position signals similar to a unique trading ensemble rule and forms the combined trading system. A hard voting method is used in this layer. Hereafter we report the steps on how this layer works:
 
 \begin{enumerate}
 \setlength\itemsep{0.3em}
