@@ -5,6 +5,33 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{8376549}
+P.~Taveeapiradeecharoen, N.~Aunsri, Dynamic model averaging for daily forex
+  prediction: A comparative study, in: 2018 International Conference on Digital
+  Arts, Media and Technology (ICDAMT), 2018, pp. 321--325.
+\newblock \href {http://dx.doi.org/10.1109/ICDAMT.2018.8376549}
+  {\path{doi:10.1109/ICDAMT.2018.8376549}}.
+
+\bibitem{CONTRERAS20181}
+A.~V. Contreras, A.~Llanes, A.~Pérez-Bernabeu, S.~Navarro, H.~Pérez-Sánchez,
+  J.~J. López-Espín, J.~M. Cecilia,
+  \href{https://www.sciencedirect.com/science/article/pii/S1569190X18300571}{Enmx:
+  An elastic network model to predict the forex market evolution}, Simulation
+  Modelling Practice and Theory 86 (2018) 1--10.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.simpat.2018.04.008}
+  {\path{doi:https://doi.org/10.1016/j.simpat.2018.04.008}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1569190X18300571}
+
+\bibitem{Chandrinos18}
+S.~K. Chandrinos, N.~D. Lagaros,
+  \href{https://www.sciencedirect.com/science/article/pii/S2214716017301148}{Construction
+  of currency portfolios by means of an optimized investment strategy},
+  Operations Research Perspectives 5 (2018) 32--44.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.orp.2018.01.001}
+  {\path{doi:https://doi.org/10.1016/j.orp.2018.01.001}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S2214716017301148}
+
 \bibitem{Raimundo18}
 M.~S. Raimundo, J.~Okamoto, Svr-wavelet adaptive model for forecasting
   financial time series, in: 2018 International Conference on Information and
@@ -34,15 +61,6 @@ S.~Achchab, O.~Bencharef, A.~Ouaarab, A combination of regression techniques
   Correia, H.~Adeli, L.~P. Reis, S.~Costanzo (Eds.), Recent Advances in
   Information Systems and Technologies, Springer International Publishing,
   Cham, 2017, pp. 226--235.
-
-\bibitem{Chandrinos18}
-S.~K. Chandrinos, N.~D. Lagaros,
-  \href{https://www.sciencedirect.com/science/article/pii/S2214716017301148}{Construction
-  of currency portfolios by means of an optimized investment strategy},
-  Operations Research Perspectives 5 (2018) 32--44.
-\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.orp.2018.01.001}
-  {\path{doi:https://doi.org/10.1016/j.orp.2018.01.001}}.
-\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S2214716017301148}
 
 \bibitem{Pradeepkumar17}
 D.~Pradeepkumar, V.~Ravi,
@@ -131,24 +149,6 @@ E.~Bartoš, R.~Pinčák,
 \newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.physa.2017.03.014}
   {\path{doi:https://doi.org/10.1016/j.physa.2017.03.014}}.
 \newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0378437117302273}
-
-\bibitem{8376549}
-P.~Taveeapiradeecharoen, N.~Aunsri, Dynamic model averaging for daily forex
-  prediction: A comparative study, in: 2018 International Conference on Digital
-  Arts, Media and Technology (ICDAMT), 2018, pp. 321--325.
-\newblock \href {http://dx.doi.org/10.1109/ICDAMT.2018.8376549}
-  {\path{doi:10.1109/ICDAMT.2018.8376549}}.
-
-\bibitem{CONTRERAS20181}
-A.~V. Contreras, A.~Llanes, A.~Pérez-Bernabeu, S.~Navarro, H.~Pérez-Sánchez,
-  J.~J. López-Espín, J.~M. Cecilia,
-  \href{https://www.sciencedirect.com/science/article/pii/S1569190X18300571}{Enmx:
-  An elastic network model to predict the forex market evolution}, Simulation
-  Modelling Practice and Theory 86 (2018) 1--10.
-\newblock \href
-  {http://dx.doi.org/https://doi.org/10.1016/j.simpat.2018.04.008}
-  {\path{doi:https://doi.org/10.1016/j.simpat.2018.04.008}}.
-\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1569190X18300571}
 
 \bibitem{WILINSKI2019163}
 A.~Wilinski,
