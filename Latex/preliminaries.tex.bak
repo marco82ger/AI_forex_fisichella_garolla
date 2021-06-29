@@ -55,8 +55,8 @@ Finally, trading rule may be more complex such as rules computed with dynamic ch
 
 \subsubsection{Trading Rules with Dynamic Channels}
 \label{sec:dynCha}
-Many operating strategies built for short-term trading use signals provided by what are known in technical jargon as \textit{dynamic channels}. In some cases the strategies are of type trend following, that is they aim to follow the main trend present on the market, in other cases instead they are of type reversal in how much they try to take advantage of a possible reversal of trend.
-The principle of base of these operating techniques is based on the individualization of some bands of oscillation (envelopes) that:
+Many operating strategies built for short-term trading use signals provided by what are known in technical jargon as \textit{dynamic channels}. In some cases the strategies are of type trend following, that is they aim to follow the main trend present on the market; in other cases instead they are of type reversal in how much they try to take advantage of a possible reversal of trend.
+The base principle of these operating techniques is based on the individualization of some bands of oscillation (envelopes) that:
 
 \begin{itemize}
 \setlength\itemsep{0.3em}
@@ -65,7 +65,7 @@ The principle of base of these operating techniques is based on the individualiz
 \item They supply interesting reversal signals.
 \end{itemize}
 
-These channels are dynamic in how much, measuring (even if in various way) the present instability on the market, they are adapted to the movements (cyclical) carried out from the prices, that alternate in fact phases of consolidation (in which the instability is reduced) to directional/impulsive phases (in which the instability increases in meaningful way). The technique of the bands requires the identification of:
+These channels are dynamic in how much, measuring (even if in various way) the present instability on the market, they are adapted to the movements (cyclical) carried out from the prices, that alternate in phases of consolidation (in which the instability is reduced) to directional/impulsive phases (in which the instability increases in meaningful way). The technique of the bands requires the identification of:
 
 \begin{itemize}
 \setlength\itemsep{0.3em}

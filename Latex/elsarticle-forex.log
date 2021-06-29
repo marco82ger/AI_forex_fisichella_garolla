@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  22 JUN 2021 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.8)  29 JUN 2021 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,45 +407,7 @@ Package: relsize 2013/03/29 ver 4.1
 \algocf@algoframe=\box63
 \algocf@algobox=\box64
 )
-(/usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen178
-\captionmargin@=\dimen179
-\captionwidth=\dimen180
-\caption@tempdima=\dimen181
-\caption@indent=\dimen182
-\caption@parindent=\dimen183
-\caption@hangindent=\dimen184
-Package caption Info: elsarticle document class detected.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-elsarticle.sto
-File: caption-elsarticle.sto 2020/08/22 v2.0 Adaption of the caption package to
- the elsarticle document class (AR)
-))
-\c@caption@flags=\count299
-\c@continuedfloat=\count300
-Package caption Info: hyperref package is loaded.
-)
-\c@KVtest=\count301
-\sf@farskip=\skip76
-\sf@captopadj=\dimen185
-\sf@capskip=\skip77
-\sf@nearskip=\skip78
-\c@subfigure=\count302
-\c@subfigure@save=\count303
-\c@lofdepth=\count304
-\c@subtable=\count305
-\c@subtable@save=\count306
-\c@lotdepth=\count307
-\sf@top=\skip79
-\sf@bottom=\skip80
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks25
 \verbatim@line=\toks26
@@ -453,10 +415,10 @@ Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip81
-\multirow@cntb=\count308
-\multirow@dima=\skip82
-\bigstrutjot=\dimen186
+\multirow@colwidth=\skip76
+\multirow@cntb=\count299
+\multirow@dima=\skip77
+\bigstrutjot=\dimen178
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -481,9 +443,35 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/changepage/chngpage.sty
 Package: chngpage 2009/10/20 v1.2b change page layout
-\c@cp@cnt=\count309
-\c@cp@tempcnt=\count310
+\c@cp@cnt=\count300
+\c@cp@tempcnt=\count301
 LaTeX Info: Redefining \checkoddpage on input line 48.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen179
+\captionmargin@=\dimen180
+\captionwidth=\dimen181
+\caption@tempdima=\dimen182
+\caption@indent=\dimen183
+\caption@parindent=\dimen184
+\caption@hangindent=\dimen185
+Package caption Info: elsarticle document class detected.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-elsarticle.sto
+File: caption-elsarticle.sto 2020/08/22 v2.0 Adaption of the caption package to
+ the elsarticle document class (AR)
+))
+\c@caption@flags=\count302
+\c@continuedfloat=\count303
+Package caption Info: hyperref package is loaded.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count304
+\c@subtable=\count305
 )
 (./elsarticle-forex.aux
 
@@ -585,36 +573,36 @@ LaTeX Warning: Label `sub@fig:tiny' multiply defined.
 )
 \openout1 = `elsarticle-forex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
  (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen187
+\scratchcounter=\count306
+\scratchdimen=\dimen186
 \scratchbox=\box65
-\nofMPsegments=\count312
-\nofMParguments=\count313
+\nofMPsegments=\count307
+\nofMParguments=\count308
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen188
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen187
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
 \everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -661,7 +649,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 59.
+Package hyperref Info: Link coloring OFF on input line 60.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -672,25 +660,24 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count317
+\c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
  (./elsarticle-forex.out) (./elsarticle-forex.out)
 \@outlinefile=\write4
 \openout4 = `elsarticle-forex.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -745,7 +732,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 [2] (./relatedwork.tex [3] [4] [5] [6]) (./preliminaries.tex [7]
-<../img//candle.pdf, id=237, 261.81805pt x 185.91336pt>
+<../img//candle.pdf, id=229, 261.81805pt x 185.91336pt>
 File: ../img//candle.pdf Graphic file (type pdf)
 <use ../img//candle.pdf>
 Package pdftex.def Info: ../img//candle.pdf  used on input line 31.
@@ -761,253 +748,281 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
  []
 
 [11]
-<../img//2.5.pdf, id=280, 843.9805pt x 388.38922pt>
+<../img//2.5.pdf, id=272, 843.9805pt x 388.38922pt>
 File: ../img//2.5.pdf Graphic file (type pdf)
 <use ../img//2.5.pdf>
 Package pdftex.def Info: ../img//2.5.pdf  used on input line 159.
 (pdftex.def)             Requested size: 337.58621pt x 155.35292pt.
 ) (./trading.tex [12 <../img//2.5.pdf, page is rotated 90 degrees>]
-<../img//framework.pdf, id=299, 891.06178pt x 440.34422pt>
-File: ../img//framework.pdf Graphic file (type pdf)
-<use ../img//framework.pdf>
-Package pdftex.def Info: ../img//framework.pdf  used on input line 12.
-(pdftex.def)             Requested size: 267.32059pt x 132.10428pt.
+<../img//framework.png, id=291, 1323.94624pt x 655.44875pt>
+File: ../img//framework.png Graphic file (type png)
+<use ../img//framework.png>
+Package pdftex.def Info: ../img//framework.png  used on input line 12.
+(pdftex.def)             Requested size: 397.18694pt x 196.63614pt.
 
-[13 <../img//framework.pdf>]
-Overfull \hbox (73.62915pt too wide) in paragraph at lines 101--101
+Overfull \hbox (13.18694pt too wide) in paragraph at lines 12--14
+ [][] 
+ []
+
+[13 <../img//framework.png>] [14] [15] [16]
+Overfull \hbox (73.62915pt too wide) in paragraph at lines 208--208
 []$\OML/cmm/m/it/10 tradeSize$\OT1/cmr/m/n/10 =MoneyManagement($\OML/cmm/m/it/1
 0 symbol; fixedVolume; riskPercent; stopLossDistance$\OT1/cmr/m/n/10 ); 
  []
 
 
-Overfull \hbox (20.36096pt too wide) in paragraph at lines 101--101
+Overfull \hbox (20.36096pt too wide) in paragraph at lines 208--208
 []$\OML/cmm/m/it/10 glBuyPlaced$\OT1/cmr/m/n/10 =TradeBuy($\OML/cmm/m/it/10 tra
 deSize; stopLossDistance; buyProfit; symbol$\OT1/cmr/m/n/10 ); 
  []
 
-[14] [15] [16] [17] [18] [19] [20] [21]) (./exp.tex [22] [23]
-Underfull \hbox (badness 1137) in paragraph at lines 80--81
+[17] [18] [19] [20] [21]) (./exp.tex [22] [23]
+Underfull \hbox (badness 1137) in paragraph at lines 81--82
 \OT1/cmr/m/n/10 chan-nel, Stoller Bands, Dou-ble Ex-
  []
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 80--81
+Underfull \hbox (badness 4595) in paragraph at lines 81--82
 \OT1/cmr/m/n/10 Mov-ing Avarage, Frac-tal Adap-tive
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 80--81
+Underfull \hbox (badness 6859) in paragraph at lines 81--82
 \OT1/cmr/m/n/10 Mov-ing Avarage, Triple Ex-po-nen-
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 80--81
+Underfull \hbox (badness 1253) in paragraph at lines 81--82
 \OT1/cmr/m/n/10 tial Mov-ing Av-er-age, Avarage True
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 80--81
+Underfull \hbox (badness 1515) in paragraph at lines 81--82
 \OT1/cmr/m/n/10 ver-gence Di-ver-gence), William' Per-
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 82--83
+Underfull \hbox (badness 4254) in paragraph at lines 83--84
 []\OT1/cmr/m/n/10 Average Di-rec-tional Mov-ing In-dex,
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 82--83
+Underfull \hbox (badness 1389) in paragraph at lines 83--84
 \OT1/cmr/m/n/10 Parabolic SAR, Bears Power, Bulls
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 82--83
+Underfull \hbox (badness 1648) in paragraph at lines 83--84
 \OT1/cmr/m/n/10 Power, Stochas-tic os-cil-la-tor, Heiken
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24] [25]
+<../img//buy.png, id=418, 482.80376pt x 432.61626pt>
+File: ../img//buy.png Graphic file (type png)
+<use ../img//buy.png>
+Package pdftex.def Info: ../img//buy.png  used on input line 118.
+(pdftex.def)             Requested size: 192.0pt x 172.04005pt.
+<../img//stay.png, id=419, 482.80376pt x 433.62pt>
+File: ../img//stay.png Graphic file (type png)
+<use ../img//stay.png>
+Package pdftex.def Info: ../img//stay.png  used on input line 126.
+(pdftex.def)             Requested size: 192.0pt x 172.43921pt.
+<../img//sell.png, id=420, 483.8075pt x 430.60875pt>
+File: ../img//sell.png Graphic file (type png)
+<use ../img//sell.png>
+Package pdftex.def Info: ../img//sell.png  used on input line 133.
+(pdftex.def)             Requested size: 192.0pt x 170.8869pt.
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 116--137
+ [][]  [] 
+ []
+
+[26 <../img//buy.png> <../img//stay.png> <../img//sell.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
 []\OT1/cmr/m/n/10 Total
  []
 
 
-Overfull \hbox (4.25pt too wide) in paragraph at lines 104--104
+Overfull \hbox (4.25pt too wide) in paragraph at lines 168--168
 \OT1/cmr/m/n/10 Trades| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
 []\OT1/cmr/m/n/10 Profit
  []
 
 
-Overfull \hbox (6.69455pt too wide) in paragraph at lines 104--104
+Overfull \hbox (6.69455pt too wide) in paragraph at lines 168--168
 []\OT1/cmr/m/n/10 Expected
  []
 
 
-Overfull \hbox (9.55562pt too wide) in paragraph at lines 104--104
+Overfull \hbox (9.55562pt too wide) in paragraph at lines 168--168
 []\OT1/cmr/m/n/10 Drawdown
  []
 
 
-Overfull \hbox (9.61111pt too wide) in paragraph at lines 104--104
+Overfull \hbox (9.61111pt too wide) in paragraph at lines 168--168
 []\OT1/cmr/m/n/10 Recovery
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 []\OT1/cmr/m/n/10 Sharpe
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 106--106
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 170--170
 [][]| 
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 116--116
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 180--180
 [][]| 
  []
 
 
-Overfull \hbox (17.07182pt too wide) in paragraph at lines 127--127
+Overfull \hbox (17.07182pt too wide) in paragraph at lines 191--191
 [][]| 
  []
 
 
-Overfull \hbox (12.33476pt too wide) in paragraph at lines 100--138
+Overfull \hbox (12.33476pt too wide) in paragraph at lines 164--202
  [] 
  []
 
-[25]
-<../img//2019_GBPUSD.png, id=445, 1217.2978pt x 323.70938pt>
+[27]
+<../img//2019_GBPUSD.png, id=443, 1217.2978pt x 323.70938pt>
 File: ../img//2019_GBPUSD.png Graphic file (type png)
 <use ../img//2019_GBPUSD.png>
-Package pdftex.def Info: ../img//2019_GBPUSD.png  used on input line 153.
+Package pdftex.def Info: ../img//2019_GBPUSD.png  used on input line 217.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_EURUSD.png, id=446, 1217.2978pt x 323.70938pt>
+<../img//2019_EURUSD.png, id=444, 1217.2978pt x 323.70938pt>
 File: ../img//2019_EURUSD.png Graphic file (type png)
 <use ../img//2019_EURUSD.png>
-Package pdftex.def Info: ../img//2019_EURUSD.png  used on input line 154.
+Package pdftex.def Info: ../img//2019_EURUSD.png  used on input line 218.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_USDCHF.png, id=447, 1217.2978pt x 323.70938pt>
+<../img//2019_USDCHF.png, id=445, 1217.2978pt x 323.70938pt>
 File: ../img//2019_USDCHF.png Graphic file (type png)
 <use ../img//2019_USDCHF.png>
-Package pdftex.def Info: ../img//2019_USDCHF.png  used on input line 155.
+Package pdftex.def Info: ../img//2019_USDCHF.png  used on input line 219.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_USDJPY.png, id=448, 1217.2978pt x 323.70938pt>
+<../img//2019_USDJPY.png, id=446, 1217.2978pt x 323.70938pt>
 File: ../img//2019_USDJPY.png Graphic file (type png)
 <use ../img//2019_USDJPY.png>
-Package pdftex.def Info: ../img//2019_USDJPY.png  used on input line 156.
+Package pdftex.def Info: ../img//2019_USDJPY.png  used on input line 220.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_EURGBP.png, id=449, 1217.2978pt x 323.70938pt>
+<../img//2019_EURGBP.png, id=447, 1217.2978pt x 323.70938pt>
 File: ../img//2019_EURGBP.png Graphic file (type png)
 <use ../img//2019_EURGBP.png>
-Package pdftex.def Info: ../img//2019_EURGBP.png  used on input line 157.
+Package pdftex.def Info: ../img//2019_EURGBP.png  used on input line 221.
 (pdftex.def)             Requested size: 295.68164pt x 78.62538pt.
-<../img//2019_GBPJPY.png, id=450, 1333.98375pt x 298.11375pt>
+<../img//2019_GBPJPY.png, id=448, 1333.98375pt x 298.11375pt>
 File: ../img//2019_GBPJPY.png Graphic file (type png)
 <use ../img//2019_GBPJPY.png>
-Package pdftex.def Info: ../img//2019_GBPJPY.png  used on input line 158.
+Package pdftex.def Info: ../img//2019_GBPJPY.png  used on input line 222.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
 
 
-LaTeX Warning: Float too large for page by 0.11986pt on input line 161.
+LaTeX Warning: Float too large for page by 3.11995pt on input line 225.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../img//2020_GBPUSD.png, id=451, 1333.98375pt x 298.11375pt>
+<../img//2020_GBPUSD.png, id=449, 1333.98375pt x 298.11375pt>
 File: ../img//2020_GBPUSD.png Graphic file (type png)
 <use ../img//2020_GBPUSD.png>
-Package pdftex.def Info: ../img//2020_GBPUSD.png  used on input line 165.
+Package pdftex.def Info: ../img//2020_GBPUSD.png  used on input line 229.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_EURUSD.png, id=452, 1333.98375pt x 298.11375pt>
+<../img//2020_EURUSD.png, id=450, 1333.98375pt x 298.11375pt>
 File: ../img//2020_EURUSD.png Graphic file (type png)
 <use ../img//2020_EURUSD.png>
-Package pdftex.def Info: ../img//2020_EURUSD.png  used on input line 166.
+Package pdftex.def Info: ../img//2020_EURUSD.png  used on input line 230.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_USDCHF.png, id=453, 1333.98375pt x 298.11375pt>
+<../img//2020_USDCHF.png, id=451, 1333.98375pt x 298.11375pt>
 File: ../img//2020_USDCHF.png Graphic file (type png)
 <use ../img//2020_USDCHF.png>
-Package pdftex.def Info: ../img//2020_USDCHF.png  used on input line 167.
+Package pdftex.def Info: ../img//2020_USDCHF.png  used on input line 231.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_USDJPY.png, id=454, 1333.98375pt x 298.11375pt>
+<../img//2020_USDJPY.png, id=452, 1333.98375pt x 298.11375pt>
 File: ../img//2020_USDJPY.png Graphic file (type png)
 <use ../img//2020_USDJPY.png>
-Package pdftex.def Info: ../img//2020_USDJPY.png  used on input line 168.
+Package pdftex.def Info: ../img//2020_USDJPY.png  used on input line 232.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_EURGBP.png, id=455, 1333.98375pt x 298.11375pt>
+<../img//2020_EURGBP.png, id=453, 1333.98375pt x 298.11375pt>
 File: ../img//2020_EURGBP.png Graphic file (type png)
 <use ../img//2020_EURGBP.png>
-Package pdftex.def Info: ../img//2020_EURGBP.png  used on input line 169.
+Package pdftex.def Info: ../img//2020_EURGBP.png  used on input line 233.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2020_GBPJPY.png, id=456, 1333.98375pt x 298.11375pt>
+<../img//2020_GBPJPY.png, id=454, 1333.98375pt x 298.11375pt>
 File: ../img//2020_GBPJPY.png Graphic file (type png)
 <use ../img//2020_GBPJPY.png>
-Package pdftex.def Info: ../img//2020_GBPJPY.png  used on input line 170.
+Package pdftex.def Info: ../img//2020_GBPJPY.png  used on input line 234.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../img//2021_GBPUSD.png, id=457, 1333.98375pt x 298.11375pt>
+<../img//2021_GBPUSD.png, id=455, 1333.98375pt x 298.11375pt>
 File: ../img//2021_GBPUSD.png Graphic file (type png)
 <use ../img//2021_GBPUSD.png>
-Package pdftex.def Info: ../img//2021_GBPUSD.png  used on input line 177.
+Package pdftex.def Info: ../img//2021_GBPUSD.png  used on input line 241.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_EURUSD.png, id=458, 1333.98375pt x 298.11375pt>
+<../img//2021_EURUSD.png, id=456, 1333.98375pt x 298.11375pt>
 File: ../img//2021_EURUSD.png Graphic file (type png)
 <use ../img//2021_EURUSD.png>
-Package pdftex.def Info: ../img//2021_EURUSD.png  used on input line 178.
+Package pdftex.def Info: ../img//2021_EURUSD.png  used on input line 242.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_USDCHF.png, id=459, 1333.98375pt x 298.11375pt>
+<../img//2021_USDCHF.png, id=457, 1333.98375pt x 298.11375pt>
 File: ../img//2021_USDCHF.png Graphic file (type png)
 <use ../img//2021_USDCHF.png>
-Package pdftex.def Info: ../img//2021_USDCHF.png  used on input line 179.
+Package pdftex.def Info: ../img//2021_USDCHF.png  used on input line 243.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_USDJPY.png, id=460, 1333.98375pt x 298.11375pt>
+<../img//2021_USDJPY.png, id=458, 1333.98375pt x 298.11375pt>
 File: ../img//2021_USDJPY.png Graphic file (type png)
 <use ../img//2021_USDJPY.png>
-Package pdftex.def Info: ../img//2021_USDJPY.png  used on input line 180.
+Package pdftex.def Info: ../img//2021_USDJPY.png  used on input line 244.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_EURGBP.png, id=461, 1333.98375pt x 298.11375pt>
+<../img//2021_EURGBP.png, id=459, 1333.98375pt x 298.11375pt>
 File: ../img//2021_EURGBP.png Graphic file (type png)
 <use ../img//2021_EURGBP.png>
-Package pdftex.def Info: ../img//2021_EURGBP.png  used on input line 181.
+Package pdftex.def Info: ../img//2021_EURGBP.png  used on input line 245.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
-<../img//2021_GBPJPY.png, id=462, 1333.98375pt x 298.11375pt>
+<../img//2021_GBPJPY.png, id=460, 1333.98375pt x 298.11375pt>
 File: ../img//2021_GBPJPY.png Graphic file (type png)
 <use ../img//2021_GBPJPY.png>
-Package pdftex.def Info: ../img//2021_GBPJPY.png  used on input line 182.
+Package pdftex.def Info: ../img//2021_GBPJPY.png  used on input line 246.
 (pdftex.def)             Requested size: 295.68164pt x 66.07649pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./filippo_exp.tex)) [26] (./elsarticle-forex.bbl [27]) [28] [29 <../img//2019_
-GBPUSD.png (PNG copy)> <../img//2019_EURUSD.png (PNG copy)> <../img//2019_USDCH
-F.png (PNG copy)> <../img//2019_USDJPY.png (PNG copy)> <../img//2019_EURGBP.png
- (PNG copy)> <../img//2019_GBPJPY.png (PNG copy)>] [30 <../img//2020_GBPUSD.png
- (PNG copy)> <../img//2020_EURUSD.png (PNG copy)> <../img//2020_USDCHF.png (PNG
- copy)> <../img//2020_USDJPY.png (PNG copy)> <../img//2020_EURGBP.png (PNG copy
-)> <../img//2020_GBPJPY.png (PNG copy)>] [31 <../img//2021_GBPUSD.png (PNG copy
-)> <../img//2021_EURUSD.png (PNG copy)> <../img//2021_USDCHF.png (PNG copy)> <.
-./img//2021_USDJPY.png (PNG copy)> <../img//2021_EURGBP.png (PNG copy)> <../img
-//2021_GBPJPY.png (PNG copy)>] (./elsarticle-forex.aux)
+) [28] (./elsarticle-forex.bbl [29]) [30] [31 <../img//2019_GBPUSD.png (PNG cop
+y)> <../img//2019_EURUSD.png (PNG copy)> <../img//2019_USDCHF.png (PNG copy)> <
+../img//2019_USDJPY.png (PNG copy)> <../img//2019_EURGBP.png (PNG copy)> <../im
+g//2019_GBPJPY.png (PNG copy)>] [32 <../img//2020_GBPUSD.png (PNG copy)> <../im
+g//2020_EURUSD.png (PNG copy)> <../img//2020_USDCHF.png (PNG copy)> <../img//20
+20_USDJPY.png (PNG copy)> <../img//2020_EURGBP.png (PNG copy)> <../img//2020_GB
+PJPY.png (PNG copy)>] [33 <../img//2021_GBPUSD.png (PNG copy)> <../img//2021_EU
+RUSD.png (PNG copy)> <../img//2021_USDCHF.png (PNG copy)> <../img//2021_USDJPY.
+png (PNG copy)> <../img//2021_EURGBP.png (PNG copy)> <../img//2021_GBPJPY.png (
+PNG copy)>] (./elsarticle-forex.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `elsarticle-forex.out' has not changed.
-(rerunfilecheck)             Checksum: A39F775DFFA1C4E50ADF057C165C413B;6426.
+(rerunfilecheck)             Checksum: B3749A4C85C0AEA28B2E34FB71BB5921;5924.
  ) 
 Here is how much of TeX's memory you used:
- 14072 strings out of 478994
- 211334 string characters out of 5858185
- 563976 words of memory out of 5000000
- 31161 multiletter control sequences out of 15000+600000
+ 13992 strings out of 478994
+ 210132 string characters out of 5858185
+ 560928 words of memory out of 5000000
+ 31099 multiletter control sequences out of 15000+600000
  410912 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,19n,88p,1334b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,19n,88p,1334b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
@@ -1028,10 +1043,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on elsarticle-forex.pdf (31 pages, 870711 bytes).
+Output written on elsarticle-forex.pdf (33 pages, 1217785 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 583 compressed objects within 6 object streams
- 150 named destinations out of 1000 (max. 500000)
- 370 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 653 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 369 words of extra memory for PDF output out of 10000 (max. 10000000)
 

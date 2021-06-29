@@ -181,4 +181,8 @@ M.~Ozturk, I.~H. Toroslu, G.~Fidan,
   {\path{doi:https://doi.org/10.1016/j.asoc.2016.01.048}}.
 \newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1568494616300369}
 
+\bibitem{kingma2017adam}
+D.~P. Kingma, J.~Ba, Adam: A method for stochastic optimization (2017).
+\newblock \href {http://arxiv.org/abs/1412.6980} {\path{arXiv:1412.6980}}.
+
 \end{thebibliography}

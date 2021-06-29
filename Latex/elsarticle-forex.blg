@@ -3,50 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: elsarticle-forex.aux
 The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
-Repeated entry---line 136 of file mybibfile.bib
+Repeated entry---line 145 of file mybibfile.bib
  : @article{Chandrinos18
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--empty publisher in young13
-You've used 21 entries,
+You've used 22 entries,
             2937 wiz_defined-function locations,
-            837 strings with 11006 characters,
-and the built_in function-call counts, 7695 in all, are:
-= -- 773
-> -- 212
+            841 strings with 11102 characters,
+and the built_in function-call counts, 7921 in all, are:
+= -- 795
+> -- 219
 < -- 5
-+ -- 84
-- -- 63
-* -- 639
-:= -- 1034
-add.period$ -- 39
-call.type$ -- 21
-change.case$ -- 21
++ -- 87
+- -- 65
+* -- 651
+:= -- 1062
+add.period$ -- 41
+call.type$ -- 22
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 251
-empty$ -- 856
-format.name$ -- 82
-if$ -- 2006
+cite$ -- 23
+duplicate$ -- 258
+empty$ -- 884
+format.name$ -- 85
+if$ -- 2068
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 22
 missing$ -- 22
-newline$ -- 103
-num.names$ -- 25
-pop$ -- 135
+newline$ -- 107
+num.names$ -- 26
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 446
+skip$ -- 464
 stack$ -- 0
 substring$ -- 419
-swap$ -- 104
+swap$ -- 107
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 52
-width$ -- 23
-write$ -- 230
+while$ -- 53
+width$ -- 24
+write$ -- 239
 (There was 1 error message)

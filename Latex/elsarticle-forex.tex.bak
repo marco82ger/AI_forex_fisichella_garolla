@@ -8,12 +8,13 @@
 \usepackage[ruled,vlined]{algorithm2e}
 \usepackage{graphicx}
 \graphicspath{ {../img/} }
-\usepackage{subfig}
+%\usepackage{subfig}
 \usepackage{verbatim}
 \usepackage{multirow}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{chngpage}
-\usepackage{subfig}
+\usepackage{caption}
+\usepackage{subcaption}
 %\usepackage [table]{xcolor}
 %\usepackage{colortbl}
 %\usepackage[demo]{graphicx}

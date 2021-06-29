@@ -31,6 +31,7 @@ All our experiments are reproducible with the code of our final implemented expe
 \end{itemize}
 
 \subsubsection{Datasets}
+\label{sec:data}
 Data were collected and represent the historical data, measured at 4-hours intervals candlesticks, of 6 currency pairs: 4 major pairs like GBP/USD, EUR/USD, USD/CHF and USD/JPY, and 2 minor pairs like EUR/GBP and GBP/JPY.
 Dataset spans from 01-01-2010 till 30-04-2021. Training-set was built considering data in the interval from 01-01-2010 till 31-12-2018. The remaining data constitute the test-set. Data were extracted from Metatrader 5 software, introduced in Section~\ref{sec:mt5}. 
 Experiments on all 6 currency pairs are conducted on three test-sets:
@@ -77,7 +78,7 @@ In Table~\ref{tab:qualrules}, we report the qualified and unqualified trading ru
     \\\cline{1-2}
     \textbf{Unqualified Rules} & \textbf{Qualified Rules}\\
     \hline
-    Adaptive Moving Average, Donchian channel, Stoller Bands,  Double Exponential Moving Average, Envelope Moving Avarage,  Fractal Adaptive Moving Avarage, Triple Exponential Moving Average, Avarage True Range,  MACD (Moving Average Convergence Divergence),  William' Percentage Range, Momentum, RSI (Relative Strength Index). 
+    Adaptive Moving Average, Donchian channel, Stoller Bands,  Double Exponential Moving Average, Envelope Moving Avarage,  Fractal Adaptive Moving Avarage, Triple Exponential Moving Average, Avarage True Range,  MACD (Moving Average Convergence Divergence),  William' Percentage Range, Momentum, RSI (Relative Strength Index), AI-based. 
     &
     Average Directional Moving Index, Bollinger Bands, Standard Deviation, Parabolic SAR, Bears Power, Bulls Power, Stochastic oscillator, Heiken Ashi Candles.\\
       \hline
@@ -85,7 +86,70 @@ In Table~\ref{tab:qualrules}, we report the qualified and unqualified trading ru
   \end{center}
 \end{table}
 
-\subsection{Results on Phase 2: without AI-based}
+\subsection{AI-based Rule Layer}
+\label{sec:expAI}
+In this Section, we provide details of our experimental results on the AI-base rule layer.
+
+\subsubsection{Experimental Setup}
+For the network model, we selected a widely-used convolutional image classification network, i.e. ResNet50, pretrained on ImageNet and fine-tuned on our data, and an attention-based network, i.e. Vision Transformer, trained from scratch on our data.
+
+Models are trained on a GPU Google Colab instance (NVIDIA K80 GPU) with the Adam~\cite{kingma2017adam} optimizer with weight decay $0.0001$ using Tensorflow and Keras. We used the recommended default values for Adam’s $\beta_1$, $\beta_2$ hyperparameters. Model weights are randomly initialized as suggested by Proceedings of Machine Learning Research~\footnote{http://proceedings.mlr.press/v9/glorot10a.html}. We used a batch size of 256 and trained for 100 epochs, evaluating the model at the end of each epoch on a held-out validation dataset. At the end of training, the model weights of the model with the lowest validation loss are restored.
+
+The trained model is deployed for inference in a Docker container running the Tensorflow Serving docker image~\footnote{https://www.tensorflow.org/tfx/serving/docker}. Integration with Metatrader is obtained by introducing a proxy server between Metatrader and the Tensorflow Serving server. The proxy server, implemented in python, received historical information about the last 20 time units and generates an image visualization of the data using MPLFinance~\footnote{https://github.com/matplotlib/mplfinance}, similarly to how the model’s training dataset was generated (candle-stick diagram with running averages). This image is then forwarded to the Tensorflow model to obtain a classification. The resulting prediction is finally returned to the Metatrader Expert Advisor. 
+
+%TODO forse mettere hyper parameters del Vision Transformer
+%\subsubsection{Evaluation Metrics}
+
+\subsubsection{Dataset}
+To train our convolutional neural network, we used the same data exposed in Section~\ref{sec:data}. Training-set was built considering data in the interval from 01-01-2010 till 31-12-2018. The remaining was reserved for test and validation.
+
+Using the MPLFinance library, we generated a series of candle plots in \textit{Yahoo style} showing a configurable number of data points preceding the classification point. The window selected is 20 data points. The images are generated with 100 dpi, so each generated image has shape 519x516 pixels.
+The images also show the moving average curve in addition to the candlesticks themselves.
+
+Each image is classified in 3 classes: i) class buy when best return prediction on a given time window (future 3 candles) is positive and greater than a threshold chosen in 700 points; ii) class sell when best return prediction on a given time window (future 3 candles) is negative and less than a threshold chosen in 700 points; iii) class stay for all the remaining.
+
+\subsubsection{Results} 
+When training on an almost exactly balanced dataset, it becomes evident that none of the networks manage to learn an effective prediction strategy, instead settling on predicting with higher probability the class that is most represented in the data. Analysing the image data, it becomes evident that the recent performance trend alone (without absolute values to use as reference) is not sufficient to predict the optimal behaviour. Figures~\ref{fig:curves} show some examples of ambiguous images that appear very similar but belong to the three different classes.
+
+\begin{figure}[h]
+        \centering
+        \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=\columnwidth]{buy}
+               % \caption{The Friday of Anger}
+                %\label{fig:egypt}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=\columnwidth]{stay}
+               %\caption{83rd Academy Awards Nominations}
+                %\label{fig:oscars}
+        \end{subfigure}
+        %\caption{Example detected events}
+                \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=\columnwidth]{sell}
+                %\caption{83rd Academy Awards Nominations}
+                %\label{fig:oscars}
+        \end{subfigure}
+         \caption{Example of ambiguous images belonging to the three classes}
+         \label{fig:curves} 
+\end{figure}
+
+%\begin{figure}[h]
+%\includegraphics[scale=0.3]{framework}
+%\centering
+%\caption{The framework of our trading system.}
+%\label{fig:sys} 
+%\end{figure}
+
+These results suggest that supplementing the image data with numerical metadata such as absolute minimum low/maximum high in the image may help the network differentiate between similar-looking images belonging to different cases. We leave the study of this scenario and other multimodal approaches for further work.
+
+%TODO Add table with training results after 100 epochs
+
+\subsection{Results on Phase 2}
 In the second phase, profitable rules among the qualified rules are selected and combined. The final output is the best chromosomes having the highest Net Profit.
 The best chromosome output the combination of the following rules: Bollinger Bands, Stochastic oscillator, Bears Power, Bulls Power, and Heiken Ashi Candles. According to this combination, we implemented the expert advisor for trading. 
 
@@ -184,8 +248,7 @@ Margin depends on the account leverage, which means that the load on an account 
   \label{fig:2021}
 \end{figure}
 
-\subsection{Results on Phase 2: including AI-based}
+%\subsection{Results on Phase 2}
 
 
-\input{filippo_exp}
 
