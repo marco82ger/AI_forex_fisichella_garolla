@@ -11,6 +11,7 @@ The main file is located inside MQL5_2020_06_15/Experts/Advisors/EA_istoch_BB_v0
 Link to the paper: https://ieeexplore.ieee.org/document/9612217
 
 To cite our work
+
 @ARTICLE{9612217,
   author={Fisichella, Marco and Garolla, Filippo},
   journal={IEEE Access}, 
